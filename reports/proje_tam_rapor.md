@@ -1,8 +1,7 @@
 # Üveit Karar Destek Sistemi — Proje Tam Durum Raporu
 
 **Tarih:** 26 Nisan 2026  
-**Ortam:** Python 3.13.5, PyTorch 2.11.0, macOS (Apple Silicon MPS)  
-**Proje Dizini:** `/Users/recepozturk/Desktop/uveitis_project`
+**Ortam:** Python 3.13.5, PyTorch 2.11.0, macOS (Apple Silicon MPS)
 
 ---
 

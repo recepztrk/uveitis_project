@@ -85,6 +85,12 @@ python evaluation/gradcam_cfp.py
 - **Sınıf Dengesizliği:** WeightedRandomSampler, pos_weight, Label Smoothing
 - **Açıklanabilirlik:** Grad-CAM ile model karar bölgelerinin görselleştirilmesi
 
+## Dokümantasyon
+
+Projenin tüm teknik detayları, model sonuçları, eğitim stratejileri ve geliştirme geçmişi için:
+
+📄 **[Proje Tam Durum Raporu](reports/proje_tam_rapor.md)**
+
 ## Ortam
 
 - Python 3.13

@@ -1,0 +1,1578 @@
+[
+  {
+    "image_id": "n_0644",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_669.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 1,
+    "prob": 0.8740889430046082
+  },
+  {
+    "image_id": "n_0708",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_147.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.13389770686626434
+  },
+  {
+    "image_id": "n_0243",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_344.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.04632977023720741
+  },
+  {
+    "image_id": "n_0456",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_249.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.005302644334733486
+  },
+  {
+    "image_id": "n_0462",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_258.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.02151302807033062
+  },
+  {
+    "image_id": "u_0176",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_830.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9991154074668884
+  },
+  {
+    "image_id": "n_0503",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_310.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.051487911492586136
+  },
+  {
+    "image_id": "n_0962",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_611.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.020093437284231186
+  },
+  {
+    "image_id": "n_0941",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_560.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.005557780619710684
+  },
+  {
+    "image_id": "n_0166",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_273.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.02712935581803322
+  },
+  {
+    "image_id": "n_0348",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_742.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0012973418924957514
+  },
+  {
+    "image_id": "n_0546",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_373.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.06504478305578232
+  },
+  {
+    "image_id": "u_0182",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_911.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9975128173828125
+  },
+  {
+    "image_id": "n_0432",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_216.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.03860041871666908
+  },
+  {
+    "image_id": "n_0529",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_356.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.018674211576581
+  },
+  {
+    "image_id": "n_0324",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_718.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.014257170259952545
+  },
+  {
+    "image_id": "u_0103",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_336.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.988329291343689
+  },
+  {
+    "image_id": "n_1103",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_968.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.002383637009188533
+  },
+  {
+    "image_id": "n_0304",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_524.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.001768319634720683
+  },
+  {
+    "image_id": "n_1059",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_868.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.00783943384885788
+  },
+  {
+    "image_id": "n_0925",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_528.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.010548259131610394
+  },
+  {
+    "image_id": "u_0167",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_779.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9994564652442932
+  },
+  {
+    "image_id": "n_0270",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_413.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.012817678041756153
+  },
+  {
+    "image_id": "n_0532",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_359.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.05523001775145531
+  },
+  {
+    "image_id": "n_0201",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_306.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.12423721700906754
+  },
+  {
+    "image_id": "n_0632",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_64.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.09551279991865158
+  },
+  {
+    "image_id": "n_0452",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_245.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.04802365601062775
+  },
+  {
+    "image_id": "n_0536",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_363.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.051245398819446564
+  },
+  {
+    "image_id": "u_0104",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_340.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 0,
+    "prob": 0.4286012649536133
+  },
+  {
+    "image_id": "n_0779",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_252.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.01059049554169178
+  },
+  {
+    "image_id": "n_1016",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_773.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.008370034396648407
+  },
+  {
+    "image_id": "u_0090",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_309.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9999079704284668
+  },
+  {
+    "image_id": "n_0934",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_539.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.004259706940501928
+  },
+  {
+    "image_id": "n_0498",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_301.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.08050321042537689
+  },
+  {
+    "image_id": "n_0579",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_407.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.04083150252699852
+  },
+  {
+    "image_id": "n_0318",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_712.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.009331504814326763
+  },
+  {
+    "image_id": "n_0851",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_372.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.038787148892879486
+  },
+  {
+    "image_id": "n_0062",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_160.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.009568044915795326
+  },
+  {
+    "image_id": "n_0212",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_316.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.006516965106129646
+  },
+  {
+    "image_id": "n_0921",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_520.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.006471726112067699
+  },
+  {
+    "image_id": "n_1110",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_982.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.016472546383738518
+  },
+  {
+    "image_id": "n_0407",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_168.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.37615713477134705
+  },
+  {
+    "image_id": "n_0829",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_334.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0008232829277403653
+  },
+  {
+    "image_id": "n_0414",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_187.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.04838433861732483
+  },
+  {
+    "image_id": "n_1055",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_860.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.006521544419229031
+  },
+  {
+    "image_id": "n_1009",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_761.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.010520688258111477
+  },
+  {
+    "image_id": "n_0866",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_397.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.05182133987545967
+  },
+  {
+    "image_id": "n_0857",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_383.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.008283478207886219
+  },
+  {
+    "image_id": "n_0106",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_20.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 1,
+    "prob": 0.7387322783470154
+  },
+  {
+    "image_id": "n_0697",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_131.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.006874841172248125
+  },
+  {
+    "image_id": "n_0671",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_96.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.028386101126670837
+  },
+  {
+    "image_id": "n_0385",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_136.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.04662937670946121
+  },
+  {
+    "image_id": "n_0585",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_414.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.11961383372545242
+  },
+  {
+    "image_id": "n_0342",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_736.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0014798667980358005
+  },
+  {
+    "image_id": "n_1039",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_841.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.030148256570100784
+  },
+  {
+    "image_id": "n_0217",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_320.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.009051795117557049
+  },
+  {
+    "image_id": "n_0903",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_468.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0711182951927185
+  },
+  {
+    "image_id": "n_0032",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_130.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.005213758442550898
+  },
+  {
+    "image_id": "n_0680",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_102.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0140762347728014
+  },
+  {
+    "image_id": "n_0982",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_668.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.025019431486725807
+  },
+  {
+    "image_id": "n_0027",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_126.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.007118004374206066
+  },
+  {
+    "image_id": "u_0024",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_137.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9880808591842651
+  },
+  {
+    "image_id": "n_0772",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_240.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.026553219184279442
+  },
+  {
+    "image_id": "n_0755",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_211.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.014981379732489586
+  },
+  {
+    "image_id": "u_0062",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_181.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.999649167060852
+  },
+  {
+    "image_id": "n_1040",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_842.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.009211715310811996
+  },
+  {
+    "image_id": "n_0305",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_534.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.028151486068964005
+  },
+  {
+    "image_id": "n_0942",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_569.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.007388881873339415
+  },
+  {
+    "image_id": "n_0290",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_434.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.006250007543712854
+  },
+  {
+    "image_id": "n_0514",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_322.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.016242146492004395
+  },
+  {
+    "image_id": "u_0034",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_148.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9988425970077515
+  },
+  {
+    "image_id": "n_0926",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_529.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.005972845945507288
+  },
+  {
+    "image_id": "u_0142",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_69.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.7871947884559631
+  },
+  {
+    "image_id": "n_0269",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_412.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0005064126453362405
+  },
+  {
+    "image_id": "n_0102",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_197.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.010447372682392597
+  },
+  {
+    "image_id": "n_0020",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_119.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.01942291669547558
+  },
+  {
+    "image_id": "n_0293",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_437.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.012213124893605709
+  },
+  {
+    "image_id": "u_0147",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_71.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9919820427894592
+  },
+  {
+    "image_id": "n_0597",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_434.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.021227044984698296
+  },
+  {
+    "image_id": "n_0330",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_724.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.010661972686648369
+  },
+  {
+    "image_id": "n_0357",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_1.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 1,
+    "prob": 0.9914116859436035
+  },
+  {
+    "image_id": "n_0162",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_269.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0043071541003882885
+  },
+  {
+    "image_id": "n_0618",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_535.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.011637270450592041
+  },
+  {
+    "image_id": "n_0812",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_305.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0034289523027837276
+  },
+  {
+    "image_id": "n_0459",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_251.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.011401977390050888
+  },
+  {
+    "image_id": "n_0171",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_278.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0058758435770869255
+  },
+  {
+    "image_id": "u_0178",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_874.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9995949864387512
+  },
+  {
+    "image_id": "n_0326",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_720.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.008642992936074734
+  },
+  {
+    "image_id": "n_0390",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_141.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.005825618281960487
+  },
+  {
+    "image_id": "n_1053",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_858.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.004670929629355669
+  },
+  {
+    "image_id": "n_0509",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_316.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.037587739527225494
+  },
+  {
+    "image_id": "n_1080",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_912.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.029569240286946297
+  },
+  {
+    "image_id": "n_0792",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_273.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.012986714020371437
+  },
+  {
+    "image_id": "n_1064",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_878.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.03769104555249214
+  },
+  {
+    "image_id": "n_0049",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_147.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.06598472595214844
+  },
+  {
+    "image_id": "n_0013",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_112.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.03271815925836563
+  },
+  {
+    "image_id": "n_0354",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_748.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.013203809969127178
+  },
+  {
+    "image_id": "u_0016",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_13.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.5797409415245056
+  },
+  {
+    "image_id": "n_0553",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_38.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.49537259340286255
+  },
+  {
+    "image_id": "n_1079",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_910.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.004863021429628134
+  },
+  {
+    "image_id": "n_0595",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_430.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.04688350856304169
+  },
+  {
+    "image_id": "u_0109",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_40.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 0,
+    "prob": 0.046115677803754807
+  },
+  {
+    "image_id": "n_0320",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_714.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.004007916897535324
+  },
+  {
+    "image_id": "n_0825",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_321.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.01406676135957241
+  },
+  {
+    "image_id": "n_0980",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_661.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.03588680922985077
+  },
+  {
+    "image_id": "n_0627",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_608.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.06023930758237839
+  },
+  {
+    "image_id": "n_0273",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_416.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0007847707020118833
+  },
+  {
+    "image_id": "n_0100",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_195.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.05638871341943741
+  },
+  {
+    "image_id": "n_0190",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_296.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.06794209778308868
+  },
+  {
+    "image_id": "n_0977",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_654.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.016094429418444633
+  },
+  {
+    "image_id": "n_0008",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_107.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.021521171554923058
+  },
+  {
+    "image_id": "n_0235",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_337.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 1,
+    "prob": 0.5116252303123474
+  },
+  {
+    "image_id": "n_0061",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_16.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.006775017827749252
+  },
+  {
+    "image_id": "n_0325",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_719.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.10232838243246078
+  },
+  {
+    "image_id": "n_0927",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_53.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.007406290620565414
+  },
+  {
+    "image_id": "n_1025",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_807.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.010923311114311218
+  },
+  {
+    "image_id": "n_0130",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_221.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.012636831030249596
+  },
+  {
+    "image_id": "u_0149",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_730.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9990822076797485
+  },
+  {
+    "image_id": "n_0052",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_15.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.01059816312044859
+  },
+  {
+    "image_id": "n_0960",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_608.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.012768778018653393
+  },
+  {
+    "image_id": "u_0129",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_63.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9120921492576599
+  },
+  {
+    "image_id": "n_1105",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_971.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.014300359413027763
+  },
+  {
+    "image_id": "n_0494",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_297.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.039274949580430984
+  },
+  {
+    "image_id": "u_0114",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_469.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9999628067016602
+  },
+  {
+    "image_id": "n_0442",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_235.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.032553158700466156
+  },
+  {
+    "image_id": "n_1008",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_755.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.001713875331915915
+  },
+  {
+    "image_id": "n_0625",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_606.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.08268401026725769
+  },
+  {
+    "image_id": "n_0071",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_169.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.011910566128790379
+  },
+  {
+    "image_id": "n_0135",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_226.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.3108721971511841
+  },
+  {
+    "image_id": "u_0134",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_653.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9997612833976746
+  },
+  {
+    "image_id": "n_0263",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_406.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.004916565027087927
+  },
+  {
+    "image_id": "u_0028",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_140.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9963100552558899
+  },
+  {
+    "image_id": "u_0192",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_964.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9954647421836853
+  },
+  {
+    "image_id": "n_0668",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_93.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.01016475260257721
+  },
+  {
+    "image_id": "n_0985",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_675.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.028545023873448372
+  },
+  {
+    "image_id": "n_0506",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_313.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.06042654439806938
+  },
+  {
+    "image_id": "n_0910",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_477.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.13490518927574158
+  },
+  {
+    "image_id": "n_0156",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_263.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.003960281610488892
+  },
+  {
+    "image_id": "n_0988",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_679.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.009078442119061947
+  },
+  {
+    "image_id": "n_0900",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_462.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.009112272411584854
+  },
+  {
+    "image_id": "n_0576",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_404.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.020733019337058067
+  },
+  {
+    "image_id": "n_0480",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_28.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.15834268927574158
+  },
+  {
+    "image_id": "n_0767",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_235.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.06558699160814285
+  },
+  {
+    "image_id": "u_0087",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_300.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9997550845146179
+  },
+  {
+    "image_id": "n_0839",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_358.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.01715884730219841
+  },
+  {
+    "image_id": "u_0185",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_919.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9999624490737915
+  },
+  {
+    "image_id": "u_0179",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_878.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.998746395111084
+  },
+  {
+    "image_id": "n_0548",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_375.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.024165412411093712
+  },
+  {
+    "image_id": "n_0571",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_399.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.023648666217923164
+  },
+  {
+    "image_id": "n_0987",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_678.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.012442445382475853
+  },
+  {
+    "image_id": "n_0064",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_162.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.009596436284482479
+  },
+  {
+    "image_id": "n_0552",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_379.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.04549776017665863
+  },
+  {
+    "image_id": "n_0317",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_710.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.005367795005440712
+  },
+  {
+    "image_id": "n_0785",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_260.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.011438190937042236
+  },
+  {
+    "image_id": "n_0260",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_402.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.002209259895607829
+  },
+  {
+    "image_id": "n_0404",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_155.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.02916094660758972
+  },
+  {
+    "image_id": "u_0010",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_116.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9787389636039734
+  },
+  {
+    "image_id": "n_0578",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_406.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.025983206927776337
+  },
+  {
+    "image_id": "n_0594",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_428.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.015164568088948727
+  },
+  {
+    "image_id": "u_0039",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_153.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9373561143875122
+  },
+  {
+    "image_id": "n_0780",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_254.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.010554337874054909
+  },
+  {
+    "image_id": "n_0562",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_388.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.026478370651602745
+  },
+  {
+    "image_id": "n_0187",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_293.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.007790879812091589
+  },
+  {
+    "image_id": "n_0319",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_713.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0008306899107992649
+  },
+  {
+    "image_id": "u_0083",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_29.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9998346567153931
+  },
+  {
+    "image_id": "n_0054",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_153.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.05869678407907486
+  },
+  {
+    "image_id": "n_0746",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_202.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.006533648353070021
+  },
+  {
+    "image_id": "n_0924",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_527.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.009411419741809368
+  },
+  {
+    "image_id": "n_0929",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_531.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.06511613726615906
+  },
+  {
+    "image_id": "n_0034",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_132.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.015053809620440006
+  },
+  {
+    "image_id": "n_0737",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_194.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0358409620821476
+  },
+  {
+    "image_id": "n_0661",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_686.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.32693520188331604
+  },
+  {
+    "image_id": "n_0105",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_2.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.007418591529130936
+  },
+  {
+    "image_id": "n_0590",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_421.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.024971971288323402
+  },
+  {
+    "image_id": "n_0743",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_2.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.005383211653679609
+  },
+  {
+    "image_id": "n_0616",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_533.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.01972159743309021
+  },
+  {
+    "image_id": "n_0840",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_36.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.007168199401348829
+  },
+  {
+    "image_id": "n_1022",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_799.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0068741450086236
+  },
+  {
+    "image_id": "n_0728",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_185.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.013875909149646759
+  },
+  {
+    "image_id": "n_0869",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_400.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.01501691248267889
+  },
+  {
+    "image_id": "n_0959",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_607.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0032214950770139694
+  },
+  {
+    "image_id": "n_0161",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_268.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.01568515971302986
+  },
+  {
+    "image_id": "u_0148",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_726.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9996440410614014
+  },
+  {
+    "image_id": "n_0713",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_155.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0047995587810873985
+  },
+  {
+    "image_id": "n_0128",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_22.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.15919488668441772
+  },
+  {
+    "image_id": "n_0501",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_304.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.04344261810183525
+  },
+  {
+    "image_id": "u_0052",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_167.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.9993215799331665
+  },
+  {
+    "image_id": "n_0858",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_385.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.04565901681780815
+  },
+  {
+    "image_id": "n_0216",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_32.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0465412437915802
+  },
+  {
+    "image_id": "n_0879",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_412.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.006133477669209242
+  },
+  {
+    "image_id": "u_0164",
+    "filepath": "data_work/slitlamp_clean/uveitis/slit_uveitis_771.jpg",
+    "raw_class": "Uveitis",
+    "label": 1,
+    "pred": 1,
+    "prob": 0.5385436415672302
+  },
+  {
+    "image_id": "n_0053",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_cataract_150.jpg",
+    "raw_class": "Cataract",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.0068948110565543175
+  },
+  {
+    "image_id": "n_1072",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_897.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.015408383682370186
+  },
+  {
+    "image_id": "n_0448",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_240.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.1347610205411911
+  },
+  {
+    "image_id": "n_0542",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_conjunctivitis_369.jpg",
+    "raw_class": "Conjunctivitis",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.023868579417467117
+  },
+  {
+    "image_id": "n_0881",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_414.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.012015940621495247
+  },
+  {
+    "image_id": "n_0957",
+    "filepath": "data_work/slitlamp_clean/non_uveitis/slit_eyelid_605.jpg",
+    "raw_class": "Eyelid",
+    "label": 0,
+    "pred": 0,
+    "prob": 0.012537273578345776
+  }
+]

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Data (çok büyük — GitHub'a gitmemeli)
+data_raw/
+data_work/
+
+# Model ağırlıkları (GitHub 100MB limiti aşar)
+outputs/models/*.pth
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/
+
+# Misc
+*.log
+*.tmp

@@ -1,0 +1,60 @@
+{
+  "test_metrics": {
+    "accuracy": 0.9618,
+    "precision": 0.6429,
+    "recall": 1.0,
+    "f1": 0.7826,
+    "roc_auc": 1.0
+  },
+  "test_count": 131,
+  "source_analysis": {
+    "cfp1000": {
+      "count": 85,
+      "pos_count": 2,
+      "neg_count": 83,
+      "accuracy": 0.9647,
+      "f1": 0.5714,
+      "precision": 0.4,
+      "recall": 1.0
+    },
+    "rfmimd2": {
+      "count": 46,
+      "pos_count": 7,
+      "neg_count": 39,
+      "accuracy": 0.9565,
+      "f1": 0.875,
+      "precision": 0.7778,
+      "recall": 1.0
+    }
+  },
+  "error_analysis": {
+    "false_positives": [
+      {
+        "image_id": "cfp_cfp1000_nonuv_rd_0031",
+        "source_class": "rd",
+        "prob": 0.5059
+      },
+      {
+        "image_id": "cfp_rfmimd2_nonuv_wnl_0164",
+        "source_class": "wnl",
+        "prob": 0.5029
+      },
+      {
+        "image_id": "cfp_cfp1000_nonuv_dr2_0036",
+        "source_class": "dr2",
+        "prob": 0.5014
+      },
+      {
+        "image_id": "cfp_cfp1000_nonuv_cscr_0005",
+        "source_class": "cscr",
+        "prob": 0.5611
+      },
+      {
+        "image_id": "cfp_rfmimd2_nonuv_wnl_0005",
+        "source_class": "wnl",
+        "prob": 0.7983
+      }
+    ],
+    "false_negatives": []
+  }
+}

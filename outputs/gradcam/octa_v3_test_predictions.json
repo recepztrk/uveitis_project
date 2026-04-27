@@ -1,7 +1,7 @@
 [
   {
     "image_id": "u_0010",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/active_deep_BH-OCTA-HD-11.png",
+    "filepath": "data_work/octa_clean/uveitis/active_deep_BH-OCTA-HD-11.png",
     "source_class": "active",
     "label": 1,
     "pred": 1,
@@ -9,7 +9,7 @@
   },
   {
     "image_id": "u_0014",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/active_deep_BH-OCTA-HD-15.png",
+    "filepath": "data_work/octa_clean/uveitis/active_deep_BH-OCTA-HD-15.png",
     "source_class": "active",
     "label": 1,
     "pred": 1,
@@ -17,7 +17,7 @@
   },
   {
     "image_id": "u_0018",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/active_deep_BH-OCTA-HD-19.png",
+    "filepath": "data_work/octa_clean/uveitis/active_deep_BH-OCTA-HD-19.png",
     "source_class": "active",
     "label": 1,
     "pred": 1,
@@ -25,7 +25,7 @@
   },
   {
     "image_id": "u_0024",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/active_deep_BH-OCTA-HD-25.png",
+    "filepath": "data_work/octa_clean/uveitis/active_deep_BH-OCTA-HD-25.png",
     "source_class": "active",
     "label": 1,
     "pred": 1,
@@ -33,7 +33,7 @@
   },
   {
     "image_id": "u_0035",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/active_sup_BH-OCTA-HD-11.png",
+    "filepath": "data_work/octa_clean/uveitis/active_sup_BH-OCTA-HD-11.png",
     "source_class": "active",
     "label": 1,
     "pred": 1,
@@ -41,7 +41,7 @@
   },
   {
     "image_id": "u_0039",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/active_sup_BH-OCTA-HD-15.png",
+    "filepath": "data_work/octa_clean/uveitis/active_sup_BH-OCTA-HD-15.png",
     "source_class": "active",
     "label": 1,
     "pred": 1,
@@ -49,7 +49,7 @@
   },
   {
     "image_id": "u_0043",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/active_sup_BH-OCTA-HD-19.png",
+    "filepath": "data_work/octa_clean/uveitis/active_sup_BH-OCTA-HD-19.png",
     "source_class": "active",
     "label": 1,
     "pred": 1,
@@ -57,7 +57,7 @@
   },
   {
     "image_id": "u_0049",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/active_sup_BH-OCTA-HD-25.png",
+    "filepath": "data_work/octa_clean/uveitis/active_sup_BH-OCTA-HD-25.png",
     "source_class": "active",
     "label": 1,
     "pred": 1,
@@ -65,7 +65,7 @@
   },
   {
     "image_id": "u_0052",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-03.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-03.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -73,7 +73,7 @@
   },
   {
     "image_id": "u_0066",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-17.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-17.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -81,7 +81,7 @@
   },
   {
     "image_id": "u_0069",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-20.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-20.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 0,
@@ -89,7 +89,7 @@
   },
   {
     "image_id": "u_0070",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-21.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-21.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -97,7 +97,7 @@
   },
   {
     "image_id": "u_0090",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-42.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-42.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 0,
@@ -105,7 +105,7 @@
   },
   {
     "image_id": "u_0097",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-49.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-49.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -113,7 +113,7 @@
   },
   {
     "image_id": "u_0099",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-51.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-51.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -121,7 +121,7 @@
   },
   {
     "image_id": "u_0109",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-62.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-62.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -129,7 +129,7 @@
   },
   {
     "image_id": "u_0110",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-63.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-63.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -137,7 +137,7 @@
   },
   {
     "image_id": "u_0111",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-64.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_deep_BH-OCTA-HD-64.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 0,
@@ -145,7 +145,7 @@
   },
   {
     "image_id": "u_0117",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-03.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-03.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -153,7 +153,7 @@
   },
   {
     "image_id": "u_0131",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-17.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-17.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -161,7 +161,7 @@
   },
   {
     "image_id": "u_0134",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-20.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-20.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -169,7 +169,7 @@
   },
   {
     "image_id": "u_0135",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-21.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-21.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -177,7 +177,7 @@
   },
   {
     "image_id": "u_0155",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-42.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-42.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -185,7 +185,7 @@
   },
   {
     "image_id": "u_0162",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-49.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-49.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -193,7 +193,7 @@
   },
   {
     "image_id": "u_0164",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-51.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-51.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 0,
@@ -201,7 +201,7 @@
   },
   {
     "image_id": "u_0174",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-62.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-62.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -209,7 +209,7 @@
   },
   {
     "image_id": "u_0175",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-63.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-63.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 1,
@@ -217,7 +217,7 @@
   },
   {
     "image_id": "u_0176",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-64.png",
+    "filepath": "data_work/octa_clean/uveitis/inactive_sup_BH-OCTA-HD-64.png",
     "source_class": "inactive",
     "label": 1,
     "pred": 0,
@@ -225,7 +225,7 @@
   },
   {
     "image_id": "n_0003",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-04.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-04.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -233,7 +233,7 @@
   },
   {
     "image_id": "n_0007",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-08.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-08.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -241,7 +241,7 @@
   },
   {
     "image_id": "n_0008",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-09.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-09.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -249,7 +249,7 @@
   },
   {
     "image_id": "n_0017",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-18.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-18.png",
     "source_class": "control",
     "label": 0,
     "pred": 1,
@@ -257,7 +257,7 @@
   },
   {
     "image_id": "n_0021",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-22.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-22.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -265,7 +265,7 @@
   },
   {
     "image_id": "n_0039",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-40.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-40.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -273,7 +273,7 @@
   },
   {
     "image_id": "n_0044",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-45.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-45.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -281,7 +281,7 @@
   },
   {
     "image_id": "n_0047",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-48.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-48.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -289,7 +289,7 @@
   },
   {
     "image_id": "n_0049",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-50.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-50.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -297,7 +297,7 @@
   },
   {
     "image_id": "n_0053",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-54.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-54.png",
     "source_class": "control",
     "label": 0,
     "pred": 1,
@@ -305,7 +305,7 @@
   },
   {
     "image_id": "n_0054",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-55.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-55.png",
     "source_class": "control",
     "label": 0,
     "pred": 1,
@@ -313,7 +313,7 @@
   },
   {
     "image_id": "n_0059",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-60.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-60.png",
     "source_class": "control",
     "label": 0,
     "pred": 1,
@@ -321,7 +321,7 @@
   },
   {
     "image_id": "n_0063",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-64.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-64.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -329,7 +329,7 @@
   },
   {
     "image_id": "n_0070",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-71.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-71.png",
     "source_class": "control",
     "label": 0,
     "pred": 1,
@@ -337,7 +337,7 @@
   },
   {
     "image_id": "n_0072",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-73.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_deep_BH-OCTA-HD-73.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -345,7 +345,7 @@
   },
   {
     "image_id": "n_0082",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-04.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-04.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -353,7 +353,7 @@
   },
   {
     "image_id": "n_0086",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-08.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-08.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -361,7 +361,7 @@
   },
   {
     "image_id": "n_0087",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-09.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-09.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -369,7 +369,7 @@
   },
   {
     "image_id": "n_0096",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-18.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-18.png",
     "source_class": "control",
     "label": 0,
     "pred": 1,
@@ -377,7 +377,7 @@
   },
   {
     "image_id": "n_0100",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-22.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-22.png",
     "source_class": "control",
     "label": 0,
     "pred": 1,
@@ -385,7 +385,7 @@
   },
   {
     "image_id": "n_0118",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-40.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-40.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -393,7 +393,7 @@
   },
   {
     "image_id": "n_0123",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-45.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-45.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -401,7 +401,7 @@
   },
   {
     "image_id": "n_0126",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-48.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-48.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -409,7 +409,7 @@
   },
   {
     "image_id": "n_0128",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-50.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-50.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -417,7 +417,7 @@
   },
   {
     "image_id": "n_0132",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-54.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-54.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -425,7 +425,7 @@
   },
   {
     "image_id": "n_0133",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-55.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-55.png",
     "source_class": "control",
     "label": 0,
     "pred": 1,
@@ -433,7 +433,7 @@
   },
   {
     "image_id": "n_0138",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-60.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-60.png",
     "source_class": "control",
     "label": 0,
     "pred": 1,
@@ -441,7 +441,7 @@
   },
   {
     "image_id": "n_0142",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-64.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-64.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -449,7 +449,7 @@
   },
   {
     "image_id": "n_0149",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-71.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-71.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -457,7 +457,7 @@
   },
   {
     "image_id": "n_0151",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-73.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_BH-OCTA-HD-73.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -465,7 +465,7 @@
   },
   {
     "image_id": "n_0160",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-100.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-100.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -473,7 +473,7 @@
   },
   {
     "image_id": "n_0168",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-108.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-108.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -481,7 +481,7 @@
   },
   {
     "image_id": "n_0184",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-122.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-122.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -489,7 +489,7 @@
   },
   {
     "image_id": "n_0186",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-124.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-124.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -497,7 +497,7 @@
   },
   {
     "image_id": "n_0189",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-127.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-127.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -505,7 +505,7 @@
   },
   {
     "image_id": "n_0209",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-145.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-145.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -513,7 +513,7 @@
   },
   {
     "image_id": "n_0212",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-148.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-148.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -521,7 +521,7 @@
   },
   {
     "image_id": "n_0232",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-166.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-166.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -529,7 +529,7 @@
   },
   {
     "image_id": "n_0240",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-173.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-173.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -537,7 +537,7 @@
   },
   {
     "image_id": "n_0245",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-178.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-178.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -545,7 +545,7 @@
   },
   {
     "image_id": "n_0250",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-182.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-182.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -553,7 +553,7 @@
   },
   {
     "image_id": "n_0277",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-38.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-38.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -561,7 +561,7 @@
   },
   {
     "image_id": "n_0278",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-39.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-39.png",
     "source_class": "control",
     "label": 0,
     "pred": 1,
@@ -569,7 +569,7 @@
   },
   {
     "image_id": "n_0280",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-40.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-40.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -577,7 +577,7 @@
   },
   {
     "image_id": "n_0283",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-43.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-43.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -585,7 +585,7 @@
   },
   {
     "image_id": "n_0296",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-55.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-55.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -593,7 +593,7 @@
   },
   {
     "image_id": "n_0310",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-68.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-68.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -601,7 +601,7 @@
   },
   {
     "image_id": "n_0311",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-69.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-69.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -609,7 +609,7 @@
   },
   {
     "image_id": "n_0320",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-77.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-77.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -617,7 +617,7 @@
   },
   {
     "image_id": "n_0322",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-79.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-79.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -625,7 +625,7 @@
   },
   {
     "image_id": "n_0327",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-83.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-83.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -633,7 +633,7 @@
   },
   {
     "image_id": "n_0335",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-90.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-90.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -641,7 +641,7 @@
   },
   {
     "image_id": "n_0336",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-91.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-91.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -649,7 +649,7 @@
   },
   {
     "image_id": "n_0337",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-92.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-92.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,
@@ -657,7 +657,7 @@
   },
   {
     "image_id": "n_0338",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-93.png",
+    "filepath": "data_work/octa_clean/non_uveitis/control_sup_UT-OCTA-OV-93.png",
     "source_class": "control",
     "label": 0,
     "pred": 0,

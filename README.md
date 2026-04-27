@@ -15,6 +15,10 @@ Bu proje, farklı oftalmolojik görüntüleme modalitelerinden elde edilen veril
 | **CFP** | EfficientNet-B0 | 870 | 0.783 | 1.000 | ✅ |
 | **B-scan OCT** | ResNet-18 | 55 | 1.000 | 1.000 | ⚠️ Overfit |
 
+## Veri Seti Bilgisi
+
+Projede kullanılan ham oftalmolojik görüntüler (`data_raw/`) ve eğitim için ön işleme tabi tutulmuş veri setleri (`data_work/`), boyut sınırları ve olası veri gizliliği politikaları nedeniyle bu GitHub reposuna yüklenmemiştir. Ancak projenin nasıl çalıştığını incelemek için tüm meta veriler (`metadata/*.csv`), özellik çıkarım scriptleri ve değerlendirme metrikleri repoda eksiksiz olarak mevcuttur.
+
 ## Proje Yapısı
 
 ```

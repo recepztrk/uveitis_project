@@ -1,7 +1,7 @@
 [
   {
     "image_id": "cfp_cfp1000_nonuv_normal_0014",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0014.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0014.jpg",
     "source_class": "normal",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -10,7 +10,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_peripheral_degeneration_break_0010",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_peripheral_degeneration_break_0010.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_peripheral_degeneration_break_0010.jpg",
     "source_class": "peripheral_degeneration_break",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -19,7 +19,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0160",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0160.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0160.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -28,7 +28,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0225",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0225.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0225.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -37,7 +37,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_uv_crs_0036",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0036.jpg",
+    "filepath": "data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0036.jpg",
     "source_class": "crs",
     "source_dataset": "rfmimd2",
     "label": 1,
@@ -46,7 +46,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0146",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0146.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0146.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -55,7 +55,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_normal_0035",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0035.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0035.jpg",
     "source_class": "normal",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -64,7 +64,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_mh_0011",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_mh_0011.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_mh_0011.jpg",
     "source_class": "mh",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -73,7 +73,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_retinitis_pigmentosa_0003",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_retinitis_pigmentosa_0003.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_retinitis_pigmentosa_0003.jpg",
     "source_class": "retinitis_pigmentosa",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -82,7 +82,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_uv_crs_0035",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0035.jpg",
+    "filepath": "data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0035.jpg",
     "source_class": "crs",
     "source_dataset": "rfmimd2",
     "label": 1,
@@ -91,7 +91,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0214",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0214.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0214.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -100,7 +100,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0027",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0027.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0027.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -109,7 +109,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0244",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0244.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0244.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -118,7 +118,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_brvo_0030",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0030.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0030.jpg",
     "source_class": "brvo",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -127,7 +127,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0195",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0195.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0195.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -136,7 +136,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr1_0001",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr1_0001.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr1_0001.jpg",
     "source_class": "dr1",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -145,7 +145,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_cscr_0007",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_cscr_0007.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_cscr_0007.jpg",
     "source_class": "cscr",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -154,7 +154,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr3_0005",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0005.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0005.jpg",
     "source_class": "dr3",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -163,7 +163,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0113",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0113.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0113.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -172,7 +172,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0047",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0047.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0047.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -181,7 +181,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0147",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0147.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0147.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -190,7 +190,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0061",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0061.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0061.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -199,7 +199,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_pathological_myopia_0032",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0032.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0032.jpg",
     "source_class": "pathological_myopia",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -208,7 +208,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_peripheral_degeneration_break_0003",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_peripheral_degeneration_break_0003.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_peripheral_degeneration_break_0003.jpg",
     "source_class": "peripheral_degeneration_break",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -217,7 +217,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_normal_0012",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0012.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0012.jpg",
     "source_class": "normal",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -226,7 +226,7 @@
   },
   {
     "image_id": "cfp_cfp1000_uv_vkh_0007",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/uveitis/cfp_cfp1000_uv_vkh_0007.jpg",
+    "filepath": "data_work/cfp_clean/uveitis/cfp_cfp1000_uv_vkh_0007.jpg",
     "source_class": "vkh",
     "source_dataset": "cfp1000",
     "label": 1,
@@ -235,7 +235,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_laser_spots_0006",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_laser_spots_0006.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_laser_spots_0006.jpg",
     "source_class": "laser_spots",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -244,7 +244,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0039",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0039.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0039.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -253,7 +253,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rd_0044",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0044.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0044.jpg",
     "source_class": "rd",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -262,7 +262,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_pathological_myopia_0028",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0028.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0028.jpg",
     "source_class": "pathological_myopia",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -271,7 +271,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_erm_0019",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_erm_0019.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_erm_0019.jpg",
     "source_class": "erm",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -280,7 +280,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rd_0012",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0012.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0012.jpg",
     "source_class": "rd",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -289,7 +289,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0090",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0090.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0090.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -298,7 +298,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_brvo_0044",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0044.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0044.jpg",
     "source_class": "brvo",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -307,7 +307,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr3_0029",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0029.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0029.jpg",
     "source_class": "dr3",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -316,7 +316,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rd_0043",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0043.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0043.jpg",
     "source_class": "rd",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -325,7 +325,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0122",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0122.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0122.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -334,7 +334,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_pathological_myopia_0023",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0023.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0023.jpg",
     "source_class": "pathological_myopia",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -343,7 +343,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0022",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0022.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0022.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -352,7 +352,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rd_0046",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0046.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0046.jpg",
     "source_class": "rd",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -361,7 +361,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rd_0031",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0031.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0031.jpg",
     "source_class": "rd",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -370,7 +370,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0083",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0083.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0083.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -379,7 +379,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr3_0023",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0023.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0023.jpg",
     "source_class": "dr3",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -388,7 +388,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0164",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0164.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0164.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -397,7 +397,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_bietti_0008",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_bietti_0008.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_bietti_0008.jpg",
     "source_class": "bietti",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -406,7 +406,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_uv_crs_0014",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0014.jpg",
+    "filepath": "data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0014.jpg",
     "source_class": "crs",
     "source_dataset": "rfmimd2",
     "label": 1,
@@ -415,7 +415,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0167",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0167.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0167.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -424,7 +424,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0165",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0165.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0165.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -433,7 +433,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rd_0045",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0045.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0045.jpg",
     "source_class": "rd",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -442,7 +442,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_erm_0024",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_erm_0024.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_erm_0024.jpg",
     "source_class": "erm",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -451,7 +451,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0045",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0045.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0045.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -460,7 +460,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr2_0036",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0036.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0036.jpg",
     "source_class": "dr2",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -469,7 +469,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rd_0008",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0008.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0008.jpg",
     "source_class": "rd",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -478,7 +478,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0166",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0166.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0166.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -487,7 +487,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_cscr_0005",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_cscr_0005.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_cscr_0005.jpg",
     "source_class": "cscr",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -496,7 +496,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr3_0035",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0035.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0035.jpg",
     "source_class": "dr3",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -505,7 +505,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rao_0012",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rao_0012.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rao_0012.jpg",
     "source_class": "rao",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -514,7 +514,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0005",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0005.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0005.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -523,7 +523,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0153",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0153.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0153.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -532,7 +532,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0173",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0173.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0173.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -541,7 +541,7 @@
   },
   {
     "image_id": "cfp_cfp1000_uv_vkh_0005",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/uveitis/cfp_cfp1000_uv_vkh_0005.jpg",
+    "filepath": "data_work/cfp_clean/uveitis/cfp_cfp1000_uv_vkh_0005.jpg",
     "source_class": "vkh",
     "source_dataset": "cfp1000",
     "label": 1,
@@ -550,7 +550,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_hypertensive_retinopathy_0014",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_hypertensive_retinopathy_0014.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_hypertensive_retinopathy_0014.jpg",
     "source_class": "hypertensive_retinopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -559,7 +559,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_mh_0007",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_mh_0007.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_mh_0007.jpg",
     "source_class": "mh",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -568,7 +568,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_erm_0007",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_erm_0007.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_erm_0007.jpg",
     "source_class": "erm",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -577,7 +577,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0159",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0159.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0159.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -586,7 +586,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_brvo_0012",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0012.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0012.jpg",
     "source_class": "brvo",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -595,7 +595,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_brvo_0021",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0021.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0021.jpg",
     "source_class": "brvo",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -604,7 +604,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_pathological_myopia_0012",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0012.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0012.jpg",
     "source_class": "pathological_myopia",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -613,7 +613,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0057",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0057.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0057.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -622,7 +622,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0161",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0161.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0161.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -631,7 +631,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0178",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0178.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0178.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -640,7 +640,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0003",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0003.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0003.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -649,7 +649,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_retinitis_pigmentosa_0009",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_retinitis_pigmentosa_0009.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_retinitis_pigmentosa_0009.jpg",
     "source_class": "retinitis_pigmentosa",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -658,7 +658,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_pathological_myopia_0054",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0054.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0054.jpg",
     "source_class": "pathological_myopia",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -667,7 +667,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0189",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0189.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0189.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -676,7 +676,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0021",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0021.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0021.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -685,7 +685,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0014",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0014.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0014.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -694,7 +694,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rd_0023",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0023.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0023.jpg",
     "source_class": "rd",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -703,7 +703,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rd_0026",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0026.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rd_0026.jpg",
     "source_class": "rd",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -712,7 +712,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr2_0023",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0023.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0023.jpg",
     "source_class": "dr2",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -721,7 +721,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_normal_0002",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0002.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0002.jpg",
     "source_class": "normal",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -730,7 +730,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0117",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0117.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0117.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -739,7 +739,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0141",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0141.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0141.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -748,7 +748,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0205",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0205.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0205.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -757,7 +757,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0070",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0070.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0070.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -766,7 +766,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_normal_0028",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0028.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0028.jpg",
     "source_class": "normal",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -775,7 +775,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0029",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0029.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0029.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -784,7 +784,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0044",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0044.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0044.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -793,7 +793,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_crvo_0003",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_crvo_0003.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_crvo_0003.jpg",
     "source_class": "crvo",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -802,7 +802,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_retinitis_pigmentosa_0019",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_retinitis_pigmentosa_0019.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_retinitis_pigmentosa_0019.jpg",
     "source_class": "retinitis_pigmentosa",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -811,7 +811,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_rao_0008",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rao_0008.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_rao_0008.jpg",
     "source_class": "rao",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -820,7 +820,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_uv_crs_0004",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0004.jpg",
+    "filepath": "data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0004.jpg",
     "source_class": "crs",
     "source_dataset": "rfmimd2",
     "label": 1,
@@ -829,7 +829,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_crvo_0011",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_crvo_0011.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_crvo_0011.jpg",
     "source_class": "crvo",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -838,7 +838,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_brvo_0002",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0002.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0002.jpg",
     "source_class": "brvo",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -847,7 +847,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_pathological_myopia_0009",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0009.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0009.jpg",
     "source_class": "pathological_myopia",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -856,7 +856,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr1_0005",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr1_0005.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr1_0005.jpg",
     "source_class": "dr1",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -865,7 +865,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0033",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0033.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0033.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -874,7 +874,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_erm_0001",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_erm_0001.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_erm_0001.jpg",
     "source_class": "erm",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -883,7 +883,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_mh_0008",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_mh_0008.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_mh_0008.jpg",
     "source_class": "mh",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -892,7 +892,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_brvo_0003",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0003.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0003.jpg",
     "source_class": "brvo",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -901,7 +901,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_normal_0032",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0032.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_normal_0032.jpg",
     "source_class": "normal",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -910,7 +910,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_uv_crs_0008",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0008.jpg",
+    "filepath": "data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0008.jpg",
     "source_class": "crs",
     "source_dataset": "rfmimd2",
     "label": 1,
@@ -919,7 +919,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0202",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0202.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0202.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -928,7 +928,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr2_0013",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0013.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0013.jpg",
     "source_class": "dr2",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -937,7 +937,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0041",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0041.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0041.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -946,7 +946,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0108",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0108.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0108.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -955,7 +955,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr2_0030",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0030.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0030.jpg",
     "source_class": "dr2",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -964,7 +964,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_laser_spots_0011",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_laser_spots_0011.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_laser_spots_0011.jpg",
     "source_class": "laser_spots",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -973,7 +973,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0229",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0229.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0229.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -982,7 +982,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_hypertensive_retinopathy_0013",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_hypertensive_retinopathy_0013.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_hypertensive_retinopathy_0013.jpg",
     "source_class": "hypertensive_retinopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -991,7 +991,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0017",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0017.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0017.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1000,7 +1000,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_laser_spots_0004",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_laser_spots_0004.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_laser_spots_0004.jpg",
     "source_class": "laser_spots",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1009,7 +1009,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_uv_crs_0022",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0022.jpg",
+    "filepath": "data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_crs_0022.jpg",
     "source_class": "crs",
     "source_dataset": "rfmimd2",
     "label": 1,
@@ -1018,7 +1018,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr3_0028",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0028.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0028.jpg",
     "source_class": "dr3",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1027,7 +1027,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0191",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0191.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0191.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -1036,7 +1036,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_crvo_0017",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_crvo_0017.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_crvo_0017.jpg",
     "source_class": "crvo",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1045,7 +1045,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_uv_rs_0004",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_rs_0004.jpg",
+    "filepath": "data_work/cfp_clean/uveitis/cfp_rfmimd2_uv_rs_0004.jpg",
     "source_class": "rs",
     "source_dataset": "rfmimd2",
     "label": 1,
@@ -1054,7 +1054,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_brvo_0036",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0036.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_brvo_0036.jpg",
     "source_class": "brvo",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1063,7 +1063,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0137",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0137.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0137.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -1072,7 +1072,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr2_0048",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0048.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0048.jpg",
     "source_class": "dr2",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1081,7 +1081,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_pathological_myopia_0042",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0042.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0042.jpg",
     "source_class": "pathological_myopia",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1090,7 +1090,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr2_0037",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0037.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0037.jpg",
     "source_class": "dr2",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1099,7 +1099,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_retinitis_pigmentosa_0004",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_retinitis_pigmentosa_0004.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_retinitis_pigmentosa_0004.jpg",
     "source_class": "retinitis_pigmentosa",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1108,7 +1108,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0008",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0008.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0008.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1117,7 +1117,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr3_0038",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0038.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr3_0038.jpg",
     "source_class": "dr3",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1126,7 +1126,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0192",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0192.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0192.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -1135,7 +1135,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_dr2_0039",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0039.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_dr2_0039.jpg",
     "source_class": "dr2",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1144,7 +1144,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_maculopathy_0067",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0067.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_maculopathy_0067.jpg",
     "source_class": "maculopathy",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1153,7 +1153,7 @@
   },
   {
     "image_id": "cfp_rfmimd2_nonuv_wnl_0200",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0200.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_rfmimd2_nonuv_wnl_0200.jpg",
     "source_class": "wnl",
     "source_dataset": "rfmimd2",
     "label": 0,
@@ -1162,7 +1162,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_pathological_myopia_0017",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0017.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_pathological_myopia_0017.jpg",
     "source_class": "pathological_myopia",
     "source_dataset": "cfp1000",
     "label": 0,
@@ -1171,7 +1171,7 @@
   },
   {
     "image_id": "cfp_cfp1000_nonuv_mh_0001",
-    "filepath": "/Users/recepozturk/Desktop/uveitis_project/data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_mh_0001.jpg",
+    "filepath": "data_work/cfp_clean/non_uveitis/cfp_cfp1000_nonuv_mh_0001.jpg",
     "source_class": "mh",
     "source_dataset": "cfp1000",
     "label": 0,

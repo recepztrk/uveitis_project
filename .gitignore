@@ -35,6 +35,14 @@ outputs/models/*.pth
 .ipynb_checkpoints/
 notebooks/
 
+# Raporlar (kişisel akademik belgeler)
+reports/*.pdf
+reports/*.docx
+reports/makale_plani.md
+
+# Makale dosyaları
+paper/
+
 # Misc
 *.log
 *.tmp

@@ -1,6 +1,6 @@
 # Üveit Karar Destek Sistemi — Proje Tam Durum Raporu
 
-**Tarih:** 26 Nisan 2026  
+**Tarih:** 2 Mayıs 2026  
 **Ortam:** Python 3.13.5, PyTorch 2.11.0, macOS (Apple Silicon MPS)
 
 ---
@@ -20,6 +20,11 @@ Bu proje, üveit göz hastalığının tanı süreçlerinde göz hekimlerine yar
 
 ```
 uveitis_project/
+├── app/                         # [YENİ] Demo Web Arayüzü (FastAPI + HTML/CSS/JS)
+│   ├── main.py                  # API ve sunucu
+│   ├── inference.py             # Birleşik model motoru
+│   ├── templates/               # HTML Şablonları (index.html)
+│   └── static/                  # CSS, JS ve Örnek Vaka görselleri
 ├── data_raw/                    # Orijinal ham veriler (dokunulmaz arşiv)
 │   ├── bscan_oct_raw/
 │   ├── octa_raw/
@@ -377,6 +382,12 @@ Bu tablo, OCTA modeline yapılan tüm iyileştirmeleri ve etkilerini göstermekt
 - `evaluation/gradcam_cfp.py` — 5 adet Grad-CAM görseli (2 TP + 2 TN + 1 FP) ve training curves üretildi
 - CFP modeli posterior segment inflamatuvar bulgulara (chorioretinitis lezyonları, optik disk çevresi) doğru odaklanıyor
 
+### 8.4 Oturum: Canlı Demo Arayüzü (Sunum Katmanı) Geliştirme (1-2 Mayıs 2026)
+- **Amaç:** Projenin akademik sunumlarda ve üniversite bitirme projesi pazarında canlı olarak sergilenebilmesi.
+- **Backend:** `FastAPI` kullanılarak yüksek performanslı bir API (`app/main.py`) geliştirildi. Tüm modeller bellekte bir kerede yüklenip sunuma hazır tutuluyor (`app/inference.py`).
+- **Frontend:** Tek sayfalık uygulama (SPA) mantığı ile `HTML/CSS/JS` kullanılarak projeksiyona uygun **Dark Mode** temalı tıbbi bir arayüz geliştirildi.
+- **Özellikler:** Canlı yükleme, test setinden ayrılan hazır örnek vakaları anında analiz etme ve Grad-CAM ısı haritalarını orijinal görüntü üzerinde "Overlay" olarak gösterme özellikleri başarıyla sisteme entegre edildi. Modellerin başarı metrikleri (F1, AUC, Veri sayısı) arayüzde gösteriliyor.
+
 ---
 
 ## 9. Proje Gidişatı ve Sonraki Adımlar
@@ -391,6 +402,7 @@ Bu tablo, OCTA modeline yapılan tüm iyileştirmeleri ve etkilerini göstermekt
 7. OCTA 5-Fold CV → **Tamamlandı** (güvenilirlik doğrulaması)
 8. Grad-CAM analizi (Slit-lamp + OCTA V3 + CFP) → **Tamamlandı**
 9. Proje temizliği ve raporlama → **Tamamlandı**
+10. **Demo Web Arayüzü (Sunum Katmanı)** geliştirilmesi ve FastAPI entegrasyonu → **Tamamlandı**
 
 ### 📋 Yapılması Gereken İşler
 1. **B-scan modeli iyileştirme** — 55 veriyle overfit var; cross-validation veya ek veri gerekli

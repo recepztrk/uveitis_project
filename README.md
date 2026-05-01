@@ -23,6 +23,7 @@ Projede kullanılan ham oftalmolojik görüntüler (`data_raw/`) ve eğitim içi
 
 ```
 uveitis_project/
+├── app/                    # [YENİ] Demo Web Arayüzü (FastAPI)
 ├── src/                    # PyTorch Dataset sınıfları
 ├── preprocessing/          # Veri hazırlama scriptleri
 ├── training/               # Model eğitim scriptleri
@@ -81,6 +82,15 @@ python evaluation/gradcam_slitlamp.py
 python evaluation/gradcam_octa_v3.py
 python evaluation/gradcam_cfp.py
 ```
+
+### 🌐 Canlı Demo Web Arayüzü (Sunum Katmanı)
+
+Projeyi test etmek ve sonuçları (Grad-CAM görselleştirmesi ile) tarayıcıda canlı olarak görmek için yerel sunucuyu başlatın:
+
+```bash
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
+Ardından tarayıcınızdan `http://localhost:8000` adresine gidin.
 
 ## Teknik Detaylar
 

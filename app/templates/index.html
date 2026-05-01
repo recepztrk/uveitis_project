@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üveit Karar Destek Sistemi</title>
+    <meta name="description" content="Multimodal derin öğrenme tabanlı oftalmolojik üveit tanı destek sistemi">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👁️</text></svg>">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <span class="header-icon">👁️‍🗨️</span>
+        <h1>Üveit Karar Destek Sistemi</h1>
+        <p>Multimodal Derin Öğrenme Tabanlı Oftalmolojik Tanı Desteği</p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- STEP INDICATORS -->
+        <div class="steps">
+            <div class="step active" id="step-1">
+                <span class="step-number">1</span>
+                <span class="step-label">Görüntü Yükle</span>
+            </div>
+            <div class="step-line" id="step-line-1"></div>
+            <div class="step" id="step-2">
+                <span class="step-number">2</span>
+                <span class="step-label">Modalite Seç</span>
+            </div>
+            <div class="step-line" id="step-line-2"></div>
+            <div class="step" id="step-3">
+                <span class="step-number">3</span>
+                <span class="step-label">Analiz Et</span>
+            </div>
+        </div>
+
+        <!-- STEP 1: UPLOAD -->
+        <section class="upload-section">
+            <div class="section-title">
+                <span class="title-icon">📎</span>
+                Oftalmolojik Görüntü Yükle
+            </div>
+
+            <div class="upload-area" id="upload-area">
+                <!-- Placeholder (görüntü yüklenmeden önce) -->
+                <div class="upload-placeholder">
+                    <span class="upload-icon">🖼️</span>
+                    <div class="upload-text">
+                        Görüntüyü <strong>sürükleyip bırakın</strong> veya tıklayarak seçin
+                    </div>
+                    <div class="upload-hint">JPG, PNG, TIFF • Maks. 20 MB</div>
+                </div>
+
+                <!-- Preview (görüntü yüklendikten sonra) -->
+                <div class="upload-preview">
+                    <img class="preview-image" id="preview-image" src="" alt="Yüklenen görüntü">
+                    <div class="preview-info">
+                        <div class="preview-name" id="preview-name">—</div>
+                        <div class="preview-meta" id="preview-meta">—</div>
+                        <span class="preview-change" onclick="event.stopPropagation(); document.getElementById('file-input').click();">
+                            Değiştir
+                        </span>
+                    </div>
+                </div>
+
+                <input type="file" id="file-input" accept="image/*" style="display: none;">
+            </div>
+
+            <!-- Sample case buttons -->
+            <div class="sample-bar" id="sample-bar">
+                <span class="sample-label">Örnek vaka yükle:</span>
+                <div style="position: relative;">
+                    <button class="sample-btn" onclick="event.stopPropagation(); showSamples('slitlamp')">🔬 Slit-lamp</button>
+                    <div class="sample-dropdown" id="samples-slitlamp"></div>
+                </div>
+                <div style="position: relative;">
+                    <button class="sample-btn" onclick="event.stopPropagation(); showSamples('octa')">🩻 OCTA</button>
+                    <div class="sample-dropdown" id="samples-octa"></div>
+                </div>
+                <div style="position: relative;">
+                    <button class="sample-btn" onclick="event.stopPropagation(); showSamples('cfp')">👁️ CFP</button>
+                    <div class="sample-dropdown" id="samples-cfp"></div>
+                </div>
+                <div style="position: relative;">
+                    <button class="sample-btn" onclick="event.stopPropagation(); showSamples('bscan_oct')">📡 B-scan</button>
+                    <div class="sample-dropdown" id="samples-bscan_oct"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 2: MODALITY SELECTION -->
+        <section class="modality-section">
+            <div class="section-title">
+                <span class="title-icon">🔬</span>
+                Görüntüleme Modalitesini Seçin
+            </div>
+
+            <div class="modality-grid" id="modality-grid">
+                <!-- Kartlar JS ile doldurulur -->
+            </div>
+
+            <div class="warning-banner" id="warning-banner"></div>
+        </section>
+
+        <!-- STEP 3: ANALYZE -->
+        <section class="analyze-section">
+            <button class="analyze-btn" id="analyze-btn" disabled onclick="analyze()">
+                <span class="btn-text">🔍 Analiz Et</span>
+                <span class="spinner"><div class="spinner-circle"></div></span>
+            </button>
+        </section>
+
+        <!-- RESULTS -->
+        <section class="results-section" id="results-section">
+            <div class="results-card">
+                <div class="results-header">
+                    <h3>📊 Analiz Sonucu</h3>
+                </div>
+
+                <div class="results-body">
+                    <!-- Sol: Görüntüler -->
+                    <div class="results-images">
+                        <div class="image-tabs">
+                            <button class="image-tab active" data-tab="overlay" onclick="showImageTab('overlay')">Overlay</button>
+                            <button class="image-tab" data-tab="original" onclick="showImageTab('original')">Orijinal</button>
+                            <button class="image-tab" data-tab="gradcam" onclick="showImageTab('gradcam')">Grad-CAM</button>
+                        </div>
+                        <img class="result-image" id="result-img-original" src="" alt="Orijinal" style="display:none;">
+                        <img class="result-image" id="result-img-gradcam" src="" alt="Grad-CAM" style="display:none;">
+                        <img class="result-image" id="result-img-overlay" src="" alt="Overlay">
+                    </div>
+
+                    <!-- Sağ: Detaylar -->
+                    <div class="results-details">
+                        <div id="prediction-badge" class="prediction-badge normal">—</div>
+
+                        <div class="probability-section">
+                            <div class="prob-header">
+                                <span class="prob-label">Üveit Olasılığı</span>
+                                <span class="prob-value" id="prob-value">—</span>
+                            </div>
+                            <div class="prob-bar">
+                                <div class="prob-fill" id="prob-fill"></div>
+                            </div>
+                        </div>
+
+                        <div id="confidence-badge" class="confidence-badge medium">—</div>
+
+                        <div class="model-info">
+                            <h4>Model Bilgileri</h4>
+                            <div class="model-info-grid">
+                                <div class="model-info-item">
+                                    <span class="info-label">Backbone: </span>
+                                    <span class="info-value" id="info-backbone">—</span>
+                                </div>
+                                <div class="model-info-item">
+                                    <span class="info-label">F1 Score: </span>
+                                    <span class="info-value" id="info-f1">—</span>
+                                </div>
+                                <div class="model-info-item">
+                                    <span class="info-label">AUC: </span>
+                                    <span class="info-value" id="info-auc">—</span>
+                                </div>
+                                <div class="model-info-item">
+                                    <span class="info-label">Eğitim Verisi: </span>
+                                    <span class="info-value" id="info-data">—</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clinical-note">
+                            <strong>📝 Klinik Not: </strong>
+                            <span id="clinical-note-text">—</span>
+                        </div>
+
+                        <div class="model-warning" id="model-warning" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SESSION HISTORY -->
+        <section class="history-section" id="history-section" style="display: none;">
+            <div class="history-header">
+                <div class="section-title" style="margin-bottom: 0;">
+                    <span class="title-icon">📋</span>
+                    Analiz Geçmişi
+                </div>
+                <button class="history-clear" onclick="clearHistory()">Temizle</button>
+            </div>
+            <div class="history-grid" id="history-grid"></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        Üveit Karar Destek Sistemi • Bitirme Projesi • 2026
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

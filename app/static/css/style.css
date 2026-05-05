@@ -3,12 +3,29 @@
    
    Dark theme, tıbbi-profesyonel tasarım.
    Poster sunumu ve proje pazarı için optimize edilmiştir.
+
+   İçerik Yapısı:
+   1. Google Fonts & CSS Custom Properties (Tasarım Tokenları)
+   2. Reset & Base Stiller
+   3. Header (Başlık + Navigasyon)
+   4. Container & Step Indicators (Adım Göstergeleri)
+   5. Upload Area (Görüntü Yükleme Alanı + Drag & Drop)
+   6. Sample Cases (Hazır Örnek Vaka Dropdown'ları)
+   7. Modality Cards (Demo Bölümü — Modalite Seçim Kartları)
+   8. Analyze Button (Analiz Butonu + Yükleniyor Animasyonu)
+   9. Results Panel (Sonuç Paneli — Görüntüler + Detaylar)
+   10. Session History (Oturum Analiz Geçmişi)
+   11. Bilgi Bölümleri (Hastalık, Modalite Açıklamaları, Pipeline)
+   12. Footer & Responsive Breakpoints
    ============================================================================== */
 
 /* === GOOGLE FONTS === */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-/* === CSS CUSTOM PROPERTIES === */
+/* === CSS CUSTOM PROPERTIES (Tasarım Tokenları) ===
+   Tüm renk, boyut, gölge ve geçiş değerleri burada tanımlanır.
+   Değişiklik yapılırken sadece bu değişkenler güncellenir,
+   tüm bileşenler otomatik olarak yeni değerleri alır. */
 :root {
     --bg-primary: #0a0e1a;
     --bg-secondary: #111827;
@@ -906,15 +923,365 @@ body::before {
     margin-bottom: 0.75rem;
 }
 
-/* === FOOTER === */
+/* === HEADER NAV (Sayfa İçi Navigasyon) ===
+   Header altındaki anchor linkler. Tıklandığında ilgili bölüme
+   smooth scroll yapar (html { scroll-behavior: smooth } ile). */
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.header-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    border: 1px solid transparent; /* Hover'da görünür olacak */
+}
+
+.header-nav a:hover {
+    color: var(--accent-primary);
+    border-color: var(--border-color);
+    background: rgba(14, 165, 233, 0.05);
+}
+
+/* === INFO SECTIONS (Hastalık Bilgisi, Modalite Açıklamaları, Pipeline) ===
+   Demo arayüzünün bilgilendirme katmanı. Scroll ile aşağı inildikçe
+   sırasıyla: Hastalık → Modaliteler → Nasıl Çalışır → Canlı Demo görünür. */
+.info-section {
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+/* Bölüm başlığı: Sol tarafta emoji kutusu + sağda gradient başlık */
+.info-section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Bölüm emojisini çevreleyen kart kutusu */
+.info-icon-large {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+/* Gradient metin efekti — header h1 ile aynı teknik */
+.info-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.info-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 0.15rem;
+}
+
+/* Glass Card — Glassmorphism efektli bilgi kartları.
+   Hastalık bilgisi, anatomik sınıflandırma ve modalite detay
+   kartlarında kullanılır. backdrop-filter ile cam efekti sağlanır. */
+.glass-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.glass-card:hover {
+    border-color: rgba(148, 163, 184, 0.25);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.glass-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.6rem;
+}
+
+.glass-card p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+}
+
+.glass-card strong {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.info-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Vurgulanan kart — sol kenarda accent renk çizgisi */
+.highlight-card {
+    border-left: 3px solid var(--accent-primary);
+}
+
+/* Anatomik Sınıflandırma Grid — Üveit tiplerini (Anterior, İntermediate,
+   Posterior, Panüveit) renkli badge'lerle gösteren 2x2 grid yapısı. */
+.anatomy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.anatomy-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+}
+
+.anatomy-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+/* Renk kodları: mavi=ön segment, mor=orta, turuncu=arka, kırmızı=tümü */
+.anatomy-badge.anterior { background: rgba(14, 165, 233, 0.15); color: var(--accent-primary); }
+.anatomy-badge.intermediate { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
+.anatomy-badge.posterior { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+.anatomy-badge.panuveitis { background: rgba(239, 68, 68, 0.15); color: var(--danger); }
+
+.anatomy-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* === MODALITY INFO CARDS (Modalite Detay Kartları) ===
+   Her görüntüleme modalitesinin klinik açıklaması, model performans
+   metrikleri (Görüntü sayısı, F1, AUC), backbone bilgisi ve durum
+   badge'i (Aktif/Sınırlı/Yakında) bu kartlarda gösterilir.
+   2 sütunlu grid, responsive'de tek sütuna düşer. */
+.modality-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.modality-info-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.modality-info-card.disabled-card {
+    opacity: 0.55;
+}
+
+.modality-info-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.modality-info-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.modality-info-header h3 {
+    margin-bottom: 0.1rem;
+}
+
+.modality-tag {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+.modality-status-badge {
+    margin-left: auto;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* Durum badge renkleri: yeşil=aktif, turuncu=sınırlı veri, gri=geliştiriliyor */
+.modality-status-badge.ready { background: rgba(16, 185, 129, 0.15); color: var(--success); }
+.modality-status-badge.limited { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+.modality-status-badge.upcoming { background: rgba(100, 116, 139, 0.2); color: var(--text-muted); }
+
+.modality-info-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* Performans metrikleri satırı — Görüntü sayısı, F1 Score, AUC */
+.modality-info-stats {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+}
+
+.stat-label {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    margin-top: 0.1rem;
+}
+
+.modality-info-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.backbone-tag {
+    background: rgba(14, 165, 233, 0.1);
+    color: var(--accent-primary);
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.modality-focus {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* === PIPELINE STEPS (Nasıl Çalışır — 3 Adımlı Akış) ===
+   Görüntü Yükleme → Model Analizi → Sonuç & Grad-CAM akışını
+   yatay kartlar ve ok işaretleriyle görselleştirir.
+   Responsive'de dikey düzene geçer, oklar 90° döner. */
+.pipeline-steps {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    justify-content: center;
+}
+
+.pipeline-step {
+    flex: 1;
+    max-width: 280px;
+    text-align: center;
+    padding: 1.5rem 1.2rem;
+}
+
+.pipeline-step h3 {
+    margin-bottom: 0.4rem;
+}
+
+.pipeline-step p {
+    font-size: 0.82rem;
+}
+
+.pipeline-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0 auto 0.8rem;
+}
+
+.pipeline-arrow {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    padding: 0 0.5rem;
+}
+
+/* === DEMO WRAPPER (Canlı Demo Bölümü Sarmalayıcı) ===
+   Mevcut analiz arayüzünü (Upload → Modalite Seç → Analiz Et)
+   çevreleyen ana konteyner. Bilgi bölümlerinden sonra gelir. */
+.demo-wrapper {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+/* === FOOTER (Sayfa Altı) === */
 .footer {
     position: relative;
     z-index: 1;
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     border-top: 1px solid var(--border-color);
+    background: var(--bg-glass);
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+}
+
+.footer-content p {
     color: var(--text-muted);
     font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+.footer-tech {
+    margin-top: 0.5rem;
+    font-size: 0.7rem !important;
+    color: var(--text-muted);
+    opacity: 0.7;
 }
 
 /* === EMPTY STATE === */
@@ -925,7 +1292,9 @@ body::before {
     font-size: 0.85rem;
 }
 
-/* === RESPONSIVE (for different laptop screen sizes) === */
+/* === RESPONSIVE BREAKPOINTS ===
+   900px: Tablet — Modalite grid 3 sütun, sonuçlar dikey, bilgi kartları tek sütun
+   600px: Mobil  — Modalite grid 2 sütun, başlık küçültme, nav daraltma */
 @media (max-width: 900px) {
     .modality-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -939,6 +1308,29 @@ body::before {
         border-right: none;
         border-bottom: 1px solid var(--border-color);
     }
+
+    .info-grid-2col,
+    .modality-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .anatomy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pipeline-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pipeline-arrow {
+        transform: rotate(90deg);
+        padding: 0.3rem 0;
+    }
+
+    .pipeline-step {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -948,5 +1340,14 @@ body::before {
 
     .header h1 {
         font-size: 1.4rem;
+    }
+
+    .header-nav {
+        gap: 0.5rem;
+    }
+
+    .header-nav a {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
     }
 }

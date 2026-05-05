@@ -16,6 +16,7 @@ env/
 # Data (çok büyük — GitHub'a gitmemeli)
 data_raw/
 data_work/
+new-datasets/
 
 # Model ağırlıkları (GitHub 100MB limiti aşar)
 outputs/models/*.pth
@@ -46,3 +47,4 @@ paper/
 # Misc
 *.log
 *.tmp
+claude_proje_ozeti.md

@@ -1,16 +1,27 @@
 // ==============================================================================
 // app.js — Üveit Karar Destek Sistemi Frontend
 //
-// Görüntü yükleme, modalite seçimi, analiz isteği,
-// sonuç gösterimi ve oturum geçmişi yönetimi.
+// Tek sayfa uygulamasının (SPA) tüm istemci tarafı mantığını yönetir:
+//   - Görüntü yükleme (dosya seçimi + drag & drop)
+//   - Hazır örnek vaka yükleme (API üzerinden)
+//   - Modalite seçimi ve adım göstergeleri
+//   - FastAPI backend’e analiz isteği gönderme (POST /api/predict)
+//   - Sonuç gösterimi (tahmin, olasılık, Grad-CAM görselleri)
+//   - Oturum analiz geçmişi (sayfa yenilenene kadar saklanır)
+//
+// Backend API Endpoint'leri:
+//   GET  /api/models           → Mevcut modellerin listesi
+//   POST /api/predict           → Görüntü analizi (tahmin + Grad-CAM)
+//   GET  /api/samples/{mod}     → Hazır örnek vaka dosyaları
 // ==============================================================================
 
-// === STATE ===
-let selectedFile = null;
-let selectedModality = null;
-let isAnalyzing = false;
-let sessionHistory = [];
-let modalityData = [];
+// === STATE (Uygulama Durumu) ===
+// Sayfa yenilenene kadar belleğte tutulan global değişkenler
+let selectedFile = null;        // Kullanıcının yüklediği File nesnesi
+let selectedModality = null;    // Seçili modalite ID'si (slitlamp, octa, cfp, bscan_oct)
+let isAnalyzing = false;        // Analiz sürüyorsa true (çift tıklamayı önler)
+let sessionHistory = [];        // Bu oturumdaki tüm analiz sonuçları
+let modalityData = [];          // /api/models'den yüklenen modalite bilgileri
 
 // === DOM ELEMENTS ===
 const uploadArea = document.getElementById('upload-area');
@@ -31,7 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
     updateStepIndicators();
 });
 
-// === LOAD MODALITIES ===
+// === LOAD MODALITIES (Modalite Verilerini Yükle) ===
+// Sayfa açıldığında /api/models endpoint'inden tüm modalitelerin
+// ad, ikon, metrik, durum bilgilerini çeker ve kartları oluşturur.
 async function loadModalities() {
     try {
         const response = await fetch('/api/models');
@@ -42,6 +55,8 @@ async function loadModalities() {
     }
 }
 
+// Her modalite için seçilebilir kart HTML'i üretir.
+// Devre dışı modeller (AS-OCT) tıklanamaz hale getirilir.
 function renderModalityCards() {
     const grid = document.getElementById('modality-grid');
     grid.innerHTML = '';
@@ -84,7 +99,8 @@ function renderModalityCards() {
     });
 }
 
-// === UPLOAD HANDLERS ===
+// === UPLOAD HANDLERS (Görüntü Yükleme İşlemleri) ===
+// Tıklama ile dosya seçimi ve sürükle-bırak (drag & drop) destekler.
 function setupUploadHandlers() {
     // Click to upload
     uploadArea.addEventListener('click', (e) => {
@@ -117,6 +133,8 @@ function setupUploadHandlers() {
     });
 }
 
+// Seçilen dosyayı doğrular, önizleme gösterir ve state'i günceller.
+// FileReader ile base64 önizleme üretilir (upload alanında görüntülenir).
 function handleFile(file) {
     if (!file.type.startsWith('image/')) {
         alert('Lütfen bir görüntü dosyası seçin (JPG, PNG, TIFF).');
@@ -141,7 +159,9 @@ function handleFile(file) {
     updateAnalyzeButton();
 }
 
-// === SAMPLE CASES ===
+// === SAMPLE CASES (Örnek Vaka Yükleme) ===
+// static/samples/ klasöründeki hazır test görüntülerini yükler.
+// Görüntü fetch edilir, File nesnesine dönüştürülr ve ilgili modalite seçilir.
 async function loadSample(modality, filename) {
     try {
         const response = await fetch(`/static/samples/${modality}/${filename}`);
@@ -154,6 +174,8 @@ async function loadSample(modality, filename) {
     }
 }
 
+// İlgili modalitenin örnek vakalarını dropdown olarak gösterir.
+// /api/samples/{modality} endpoint'inden dosya listesini çeker.
 async function showSamples(modality) {
     // Close any open dropdowns
     document.querySelectorAll('.sample-dropdown').forEach(d => d.classList.remove('show'));
@@ -189,7 +211,8 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// === MODALITY SELECTION ===
+// === MODALITY SELECTION (Modalite Seçimi) ===
+// Seçilen kartı vurgular, varsa uyarı banner'ını gösterir (orn: B-scan sınırlı veri).
 function selectModality(modality) {
     selectedModality = modality;
 
@@ -211,7 +234,11 @@ function selectModality(modality) {
     updateAnalyzeButton();
 }
 
-// === STEP INDICATORS ===
+// === STEP INDICATORS (Adım Göstergeleri) ===
+// 3 adımlı ilerleme çubuğunu günceller:
+//   Adım 1: Görüntü yüklendi mi? → completed (yeşil)
+//   Adım 2: Modalite seçildi mi? → completed (yeşil)
+//   Adım 3: Her ikisi de tamam mı? → active (mavi, analiz hazır)
 function updateStepIndicators() {
     const step1 = document.getElementById('step-1');
     const step2 = document.getElementById('step-2');
@@ -252,11 +279,14 @@ function updateStepIndicators() {
     }
 }
 
-// === ANALYZE BUTTON ===
+// === ANALYZE BUTTON (Analiz Butonu) ===
+// Buton sadece dosya + modalite seçildiğinde aktif olur.
 function updateAnalyzeButton() {
     analyzeBtn.disabled = !selectedFile || !selectedModality || isAnalyzing;
 }
 
+// Ana analiz fonksiyonu: FormData ile görüntüyü POST /api/predict'e gönderir.
+// Backend modeli çalıştırır, tahmin + Grad-CAM üretir ve JSON döner.
 async function analyze() {
     if (!selectedFile || !selectedModality || isAnalyzing) return;
 
@@ -292,7 +322,12 @@ async function analyze() {
     }
 }
 
-// === RESULTS DISPLAY ===
+// === RESULTS DISPLAY (Sonuç Gösterimi) ===
+// API'den dönen JSON sonuçlarını arayüze yansıtır:
+//   - Tahmin badge'ı (kırmızı: üveit, yeşil: normal)
+//   - Olasılık çubuğu (animasyonlu)
+//   - Base64 görseller (orijinal, Grad-CAM ısı haritası, overlay)
+//   - Model metrikleri ve klinik not
 function showResults(result) {
     resultsSection.classList.add('show');
 
@@ -306,7 +341,8 @@ function showResults(result) {
     document.getElementById('prob-value').textContent = `%${probPercent}`;
     const probFill = document.getElementById('prob-fill');
     probFill.className = `prob-fill ${result.prediction}`;
-    // Trigger animation
+    // Çift requestAnimationFrame: Tarayıcının önce 0%'yı render etmesini,
+    // sonra hedef değere animasyonla geçmesini sağlar (CSS transition ile).
     probFill.style.width = '0%';
     requestAnimationFrame(() => {
         requestAnimationFrame(() => {
@@ -349,7 +385,9 @@ function showResults(result) {
     resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// === IMAGE TAB SWITCHING ===
+// === IMAGE TAB SWITCHING (Görüntü Sekme Geçişi) ===
+// Sonuç panelinde 3 görüntü arasında geçiş: Overlay, Orijinal, Grad-CAM.
+// Overlay = orijinal görüntü + Grad-CAM ısı haritası üst üste bindirilmiş hali.
 function showImageTab(tab) {
     document.querySelectorAll('.image-tab').forEach(t => {
         t.classList.toggle('active', t.dataset.tab === tab);
@@ -360,7 +398,9 @@ function showImageTab(tab) {
     document.getElementById('result-img-overlay').style.display = tab === 'overlay' ? 'block' : 'none';
 }
 
-// === SESSION HISTORY ===
+// === SESSION HISTORY (Oturum Geçmişi) ===
+// Her başarılı analiz sonucunu belleğe kaydeder ve alt kısımda listeler.
+// Sayfa yenilendiğinde geçmiş sıfırlanır (localStorage kullanılmaz).
 function addToHistory(result) {
     sessionHistory.push({
         modality: result.model_info.display_name,
@@ -372,6 +412,7 @@ function addToHistory(result) {
     renderHistory();
 }
 
+// Geçmiş kartlarını HTML olarak üretir ve görüntüler.
 function renderHistory() {
     if (sessionHistory.length === 0) {
         historySection.style.display = 'none';
@@ -393,6 +434,7 @@ function renderHistory() {
     `).join('');
 }
 
+// Geçmişi sıfırlar ve bölümü gizler.
 function clearHistory() {
     sessionHistory = [];
     renderHistory();

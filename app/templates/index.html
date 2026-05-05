@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👁️</text></svg>">
 </head>
+<!--
+  index.html — Üveit Karar Destek Sistemi Ana Sayfası
+
+  Tek sayfa (single-page), scroll ile gezilen yapı:
+    1. Header        → Proje başlığı + sayfa içi navigasyon linkleri
+    2. Üveit Nedir?  → Hastalık tanımı, anatomik sınıflandırma, proje yaklaşımı
+    3. Modaliteler   → 5 görüntüleme modalitesinin detaylı açıklama kartları
+    4. Nasıl Çalışır → 3 adımlı pipeline görselleştirmesi
+    5. Canlı Demo    → Görüntü yükleme, modalite seçimi, analiz ve Grad-CAM sonuçları
+    6. Footer        → Proje bilgileri ve kullanılan teknolojiler
+
+  Dinamik içerik (modalite kartları, sonuçlar) app.js tarafından doldurulur.
+  Backend: FastAPI (app/main.py) + Inference Engine (app/inference.py)
+-->
 <body>
 
     <!-- HEADER -->
@@ -15,191 +29,416 @@
         <span class="header-icon">👁️‍🗨️</span>
         <h1>Üveit Karar Destek Sistemi</h1>
         <p>Multimodal Derin Öğrenme Tabanlı Oftalmolojik Tanı Desteği</p>
+        <nav class="header-nav">
+            <a href="#about-disease">Hastalık</a>
+            <a href="#modalities-info">Modaliteler</a>
+            <a href="#demo-section">Canlı Demo</a>
+        </nav>
     </header>
 
     <!-- MAIN CONTENT -->
     <main class="container">
 
-        <!-- STEP INDICATORS -->
-        <div class="steps">
-            <div class="step active" id="step-1">
-                <span class="step-number">1</span>
-                <span class="step-label">Görüntü Yükle</span>
-            </div>
-            <div class="step-line" id="step-line-1"></div>
-            <div class="step" id="step-2">
-                <span class="step-number">2</span>
-                <span class="step-label">Modalite Seç</span>
-            </div>
-            <div class="step-line" id="step-line-2"></div>
-            <div class="step" id="step-3">
-                <span class="step-number">3</span>
-                <span class="step-label">Analiz Et</span>
-            </div>
-        </div>
-
-        <!-- STEP 1: UPLOAD -->
-        <section class="upload-section">
-            <div class="section-title">
-                <span class="title-icon">📎</span>
-                Oftalmolojik Görüntü Yükle
-            </div>
-
-            <div class="upload-area" id="upload-area">
-                <!-- Placeholder (görüntü yüklenmeden önce) -->
-                <div class="upload-placeholder">
-                    <span class="upload-icon">🖼️</span>
-                    <div class="upload-text">
-                        Görüntüyü <strong>sürükleyip bırakın</strong> veya tıklayarak seçin
-                    </div>
-                    <div class="upload-hint">JPG, PNG, TIFF • Maks. 20 MB</div>
+        <!-- ============================================================ -->
+        <!-- SECTION: ABOUT UVEITIS                                       -->
+        <!-- ============================================================ -->
+        <section class="info-section" id="about-disease">
+            <div class="info-section-header">
+                <span class="info-icon-large">🩺</span>
+                <div>
+                    <h2 class="info-title">Üveit Nedir?</h2>
+                    <p class="info-subtitle">Gözün Görünmeyen Tehdidi</p>
                 </div>
+            </div>
 
-                <!-- Preview (görüntü yüklendikten sonra) -->
-                <div class="upload-preview">
-                    <img class="preview-image" id="preview-image" src="" alt="Yüklenen görüntü">
-                    <div class="preview-info">
-                        <div class="preview-name" id="preview-name">—</div>
-                        <div class="preview-meta" id="preview-meta">—</div>
-                        <span class="preview-change" onclick="event.stopPropagation(); document.getElementById('file-input').click();">
-                            Değiştir
-                        </span>
+            <div class="info-grid-2col">
+                <div class="info-card glass-card">
+                    <h3>📖 Tanım</h3>
+                    <p>Üveit, gözün orta tabakası olan <strong>uvea</strong>'nın (iris, siliyer cisim ve koroid) iltihaplanmasıdır. Tedavi edilmezse kalıcı görme kaybına yol açabilir. Dünya genelinde <strong>önlenebilir körlük nedenlerinin %10-15'inden</strong> sorumludur.</p>
+                </div>
+                <div class="info-card glass-card">
+                    <h3>⚠️ Neden Önemli?</h3>
+                    <p>Genellikle <strong>20-50 yaş</strong> arasındaki çalışma çağı nüfusunu etkiler. Erken tanı konulmazsa glokom, katarakt, retinal hasar ve kalıcı körlükle sonuçlanabilir. Tanı süreci karmaşık ve uzman bilgisi gerektirir.</p>
+                </div>
+            </div>
+
+            <div class="info-card glass-card" style="margin-top: 1rem;">
+                <h3>🔬 Anatomik Sınıflandırma</h3>
+                <div class="anatomy-grid">
+                    <div class="anatomy-item">
+                        <span class="anatomy-badge anterior">Anterior</span>
+                        <span class="anatomy-label">İris ve ön kamara iltihabı (iritis/iridosiklit). En sık görülen tip.</span>
+                    </div>
+                    <div class="anatomy-item">
+                        <span class="anatomy-badge intermediate">İntermediate</span>
+                        <span class="anatomy-label">Vitreus iltihabı. Genç hastalarda sık görülür.</span>
+                    </div>
+                    <div class="anatomy-item">
+                        <span class="anatomy-badge posterior">Posterior</span>
+                        <span class="anatomy-label">Retina ve koroid iltihabı. Görme kaybı riski yüksektir.</span>
+                    </div>
+                    <div class="anatomy-item">
+                        <span class="anatomy-badge panuveitis">Panüveit</span>
+                        <span class="anatomy-label">Tüm uveal yapıları etkiler. En şiddetli formdur.</span>
                     </div>
                 </div>
-
-                <input type="file" id="file-input" accept="image/*" style="display: none;">
             </div>
 
-            <!-- Sample case buttons -->
-            <div class="sample-bar" id="sample-bar">
-                <span class="sample-label">Örnek vaka yükle:</span>
-                <div style="position: relative;">
-                    <button class="sample-btn" onclick="event.stopPropagation(); showSamples('slitlamp')">🔬 Slit-lamp</button>
-                    <div class="sample-dropdown" id="samples-slitlamp"></div>
-                </div>
-                <div style="position: relative;">
-                    <button class="sample-btn" onclick="event.stopPropagation(); showSamples('octa')">🩻 OCTA</button>
-                    <div class="sample-dropdown" id="samples-octa"></div>
-                </div>
-                <div style="position: relative;">
-                    <button class="sample-btn" onclick="event.stopPropagation(); showSamples('cfp')">👁️ CFP</button>
-                    <div class="sample-dropdown" id="samples-cfp"></div>
-                </div>
-                <div style="position: relative;">
-                    <button class="sample-btn" onclick="event.stopPropagation(); showSamples('bscan_oct')">📡 B-scan</button>
-                    <div class="sample-dropdown" id="samples-bscan_oct"></div>
-                </div>
+            <div class="info-card glass-card highlight-card" style="margin-top: 1rem;">
+                <h3>🤖 Projemizin Yaklaşımı</h3>
+                <p>Bu sistem, <strong>4 farklı oftalmolojik görüntüleme modalitesinden</strong> elde edilen verileri derin öğrenme modelleriyle analiz ederek hekimlere tanı sürecinde karar desteği sağlamayı hedefler. Her modalite, hastalığın farklı bir yönünü ortaya koyar ve birlikte kullanıldığında tanı doğruluğu artar.</p>
             </div>
         </section>
 
-        <!-- STEP 2: MODALITY SELECTION -->
-        <section class="modality-section">
-            <div class="section-title">
-                <span class="title-icon">🔬</span>
-                Görüntüleme Modalitesini Seçin
-            </div>
-
-            <div class="modality-grid" id="modality-grid">
-                <!-- Kartlar JS ile doldurulur -->
-            </div>
-
-            <div class="warning-banner" id="warning-banner"></div>
-        </section>
-
-        <!-- STEP 3: ANALYZE -->
-        <section class="analyze-section">
-            <button class="analyze-btn" id="analyze-btn" disabled onclick="analyze()">
-                <span class="btn-text">🔍 Analiz Et</span>
-                <span class="spinner"><div class="spinner-circle"></div></span>
-            </button>
-        </section>
-
-        <!-- RESULTS -->
-        <section class="results-section" id="results-section">
-            <div class="results-card">
-                <div class="results-header">
-                    <h3>📊 Analiz Sonucu</h3>
+        <!-- ============================================================ -->
+        <!-- SECTION: MODALITIES INFO                                     -->
+        <!-- ============================================================ -->
+        <section class="info-section" id="modalities-info">
+            <div class="info-section-header">
+                <span class="info-icon-large">📡</span>
+                <div>
+                    <h2 class="info-title">Görüntüleme Modaliteleri</h2>
+                    <p class="info-subtitle">Her modalite, gözün farklı bir katmanını analiz eder</p>
                 </div>
+            </div>
 
-                <div class="results-body">
-                    <!-- Sol: Görüntüler -->
-                    <div class="results-images">
-                        <div class="image-tabs">
-                            <button class="image-tab active" data-tab="overlay" onclick="showImageTab('overlay')">Overlay</button>
-                            <button class="image-tab" data-tab="original" onclick="showImageTab('original')">Orijinal</button>
-                            <button class="image-tab" data-tab="gradcam" onclick="showImageTab('gradcam')">Grad-CAM</button>
+            <div class="modality-info-grid">
+                <!-- Slit-lamp -->
+                <div class="modality-info-card glass-card">
+                    <div class="modality-info-header">
+                        <span class="modality-info-icon">🔬</span>
+                        <div>
+                            <h3>Slit-lamp</h3>
+                            <span class="modality-tag">Ön Segment Fotoğrafı</span>
                         </div>
-                        <img class="result-image" id="result-img-original" src="" alt="Orijinal" style="display:none;">
-                        <img class="result-image" id="result-img-gradcam" src="" alt="Grad-CAM" style="display:none;">
-                        <img class="result-image" id="result-img-overlay" src="" alt="Overlay">
+                        <div class="modality-status-badge ready">Aktif</div>
+                    </div>
+                    <p class="modality-info-desc">Biyomikroskop ile ön kamara, iris ve lensin yüksek büyütmeli incelenmesi. Üveit'in en temel klinik bulguları (flare, hücre, sineşi) bu yöntemle saptanır.</p>
+                    <div class="modality-info-stats">
+                        <div class="stat-item"><span class="stat-value">1.309</span><span class="stat-label">Görüntü</span></div>
+                        <div class="stat-item"><span class="stat-value">0.900</span><span class="stat-label">F1 Score</span></div>
+                        <div class="stat-item"><span class="stat-value">0.988</span><span class="stat-label">AUC</span></div>
+                    </div>
+                    <div class="modality-info-footer">
+                        <span class="backbone-tag">EfficientNet-B0</span>
+                        <span class="modality-focus">🎯 Ön kamara inflamasyonu, konjonktival hiperemi</span>
+                    </div>
+                </div>
+
+                <!-- OCTA -->
+                <div class="modality-info-card glass-card">
+                    <div class="modality-info-header">
+                        <span class="modality-info-icon">🩻</span>
+                        <div>
+                            <h3>OCTA</h3>
+                            <span class="modality-tag">Optik Koherens Tomografi Anjiyografi</span>
+                        </div>
+                        <div class="modality-status-badge ready">Aktif</div>
+                    </div>
+                    <p class="modality-info-desc">Retinal vasküler yapıyı non-invaziv olarak görüntüler. Üveit'te kapiller perfüzyon değişiklikleri, foveal avasküler zon düzensizlikleri ve neovaskülarizasyon tespitinde kullanılır.</p>
+                    <div class="modality-info-stats">
+                        <div class="stat-item"><span class="stat-value">525</span><span class="stat-label">Görüntü</span></div>
+                        <div class="stat-item"><span class="stat-value">0.754</span><span class="stat-label">F1 Score</span></div>
+                        <div class="stat-item"><span class="stat-value">0.901</span><span class="stat-label">AUC</span></div>
+                    </div>
+                    <div class="modality-info-footer">
+                        <span class="backbone-tag">ResNet-18</span>
+                        <span class="modality-focus">🎯 Vasküler anormallik, perfüzyon değişiklikleri</span>
+                    </div>
+                </div>
+
+                <!-- CFP -->
+                <div class="modality-info-card glass-card">
+                    <div class="modality-info-header">
+                        <span class="modality-info-icon">👁️</span>
+                        <div>
+                            <h3>CFP</h3>
+                            <span class="modality-tag">Renkli Fundus Fotoğrafı</span>
+                        </div>
+                        <div class="modality-status-badge ready">Aktif</div>
+                    </div>
+                    <p class="modality-info-desc">Retina, optik disk ve makula bölgesinin renkli fotoğrafı. Posterior üveit bulgularından koryoretinitis lezyonları, vaskülit ve optik disk ödemi tespitinde kritik rol oynar.</p>
+                    <div class="modality-info-stats">
+                        <div class="stat-item"><span class="stat-value">870</span><span class="stat-label">Görüntü</span></div>
+                        <div class="stat-item"><span class="stat-value">0.783</span><span class="stat-label">F1 Score</span></div>
+                        <div class="stat-item"><span class="stat-value">1.000</span><span class="stat-label">AUC</span></div>
+                    </div>
+                    <div class="modality-info-footer">
+                        <span class="backbone-tag">EfficientNet-B0</span>
+                        <span class="modality-focus">🎯 Koryoretinitis lezyonları, optik disk çevresi</span>
+                    </div>
+                </div>
+
+                <!-- B-scan OCT -->
+                <div class="modality-info-card glass-card">
+                    <div class="modality-info-header">
+                        <span class="modality-info-icon">📡</span>
+                        <div>
+                            <h3>B-scan OCT</h3>
+                            <span class="modality-tag">Optik Koherens Tomografi</span>
+                        </div>
+                        <div class="modality-status-badge limited">Sınırlı</div>
+                    </div>
+                    <p class="modality-info-desc">Retinal katmanların kesitsel görüntülenmesi. Vitreus opasiteleri, maküler ödem, retinal kalınlaşma ve koroidal değişikliklerin değerlendirilmesinde kullanılır.</p>
+                    <div class="modality-info-stats">
+                        <div class="stat-item"><span class="stat-value">55</span><span class="stat-label">Görüntü</span></div>
+                        <div class="stat-item"><span class="stat-value">1.000</span><span class="stat-label">F1 Score</span></div>
+                        <div class="stat-item"><span class="stat-value">1.000</span><span class="stat-label">AUC</span></div>
+                    </div>
+                    <div class="modality-info-footer">
+                        <span class="backbone-tag">ResNet-18</span>
+                        <span class="modality-focus">⚠️ Sınırlı veri — sonuçlar dikkatle değerlendirilmeli</span>
+                    </div>
+                </div>
+
+                <!-- AS-OCT -->
+                <div class="modality-info-card glass-card disabled-card">
+                    <div class="modality-info-header">
+                        <span class="modality-info-icon">🔍</span>
+                        <div>
+                            <h3>AS-OCT</h3>
+                            <span class="modality-tag">Ön Segment OCT</span>
+                        </div>
+                        <div class="modality-status-badge upcoming">Yakında</div>
+                    </div>
+                    <p class="modality-info-desc">Ön segment yapılarının (kornea, ön kamara, iris) yüksek çözünürlüklü kesitsel görüntülenmesi. Ön kamara derinliği ve inflamatuvar değişikliklerin objektif ölçümünde kullanılır.</p>
+                    <div class="modality-info-footer">
+                        <span class="modality-focus">🔲 Model geliştirme aşamasında (Faz-2)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION: HOW IT WORKS                                        -->
+        <!-- ============================================================ -->
+        <section class="info-section" id="how-it-works">
+            <div class="info-section-header">
+                <span class="info-icon-large">⚙️</span>
+                <div>
+                    <h2 class="info-title">Nasıl Çalışır?</h2>
+                    <p class="info-subtitle">Görüntüden tanıya üç adım</p>
+                </div>
+            </div>
+
+            <div class="pipeline-steps">
+                <div class="pipeline-step glass-card">
+                    <div class="pipeline-number">1</div>
+                    <h3>Görüntü Yükleme</h3>
+                    <p>Oftalmolojik görüntüyü sisteme yükleyin veya hazır örnek vakalardan birini seçin.</p>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step glass-card">
+                    <div class="pipeline-number">2</div>
+                    <h3>Model Analizi</h3>
+                    <p>Seçilen modaliteye özel eğitilmiş derin öğrenme modeli görüntüyü analiz eder.</p>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step glass-card">
+                    <div class="pipeline-number">3</div>
+                    <h3>Sonuç & Grad-CAM</h3>
+                    <p>Tanı tahmini, olasılık ve modelin odaklandığı bölgelerin ısı haritası sunulur.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- SECTION: LIVE DEMO                                           -->
+        <!-- ============================================================ -->
+        <section class="demo-wrapper" id="demo-section">
+            <div class="info-section-header">
+                <span class="info-icon-large">🚀</span>
+                <div>
+                    <h2 class="info-title">Canlı Demo</h2>
+                    <p class="info-subtitle">Bir görüntü yükleyin, modalite seçin ve analiz edin</p>
+                </div>
+            </div>
+
+            <!-- STEP INDICATORS -->
+            <div class="steps">
+                <div class="step active" id="step-1">
+                    <span class="step-number">1</span>
+                    <span class="step-label">Görüntü Yükle</span>
+                </div>
+                <div class="step-line" id="step-line-1"></div>
+                <div class="step" id="step-2">
+                    <span class="step-number">2</span>
+                    <span class="step-label">Modalite Seç</span>
+                </div>
+                <div class="step-line" id="step-line-2"></div>
+                <div class="step" id="step-3">
+                    <span class="step-number">3</span>
+                    <span class="step-label">Analiz Et</span>
+                </div>
+            </div>
+
+            <!-- STEP 1: UPLOAD -->
+            <section class="upload-section">
+                <div class="section-title">
+                    <span class="title-icon">📎</span>
+                    Oftalmolojik Görüntü Yükle
+                </div>
+
+                <div class="upload-area" id="upload-area">
+                    <!-- Placeholder (görüntü yüklenmeden önce) -->
+                    <div class="upload-placeholder">
+                        <span class="upload-icon">🖼️</span>
+                        <div class="upload-text">
+                            Görüntüyü <strong>sürükleyip bırakın</strong> veya tıklayarak seçin
+                        </div>
+                        <div class="upload-hint">JPG, PNG, TIFF • Maks. 20 MB</div>
                     </div>
 
-                    <!-- Sağ: Detaylar -->
-                    <div class="results-details">
-                        <div id="prediction-badge" class="prediction-badge normal">—</div>
+                    <!-- Preview (görüntü yüklendikten sonra) -->
+                    <div class="upload-preview">
+                        <img class="preview-image" id="preview-image" src="" alt="Yüklenen görüntü">
+                        <div class="preview-info">
+                            <div class="preview-name" id="preview-name">—</div>
+                            <div class="preview-meta" id="preview-meta">—</div>
+                            <span class="preview-change" onclick="event.stopPropagation(); document.getElementById('file-input').click();">
+                                Değiştir
+                            </span>
+                        </div>
+                    </div>
 
-                        <div class="probability-section">
-                            <div class="prob-header">
-                                <span class="prob-label">Üveit Olasılığı</span>
-                                <span class="prob-value" id="prob-value">—</span>
+                    <input type="file" id="file-input" accept="image/*" style="display: none;">
+                </div>
+
+                <!-- Sample case buttons -->
+                <div class="sample-bar" id="sample-bar">
+                    <span class="sample-label">Örnek vaka yükle:</span>
+                    <div style="position: relative;">
+                        <button class="sample-btn" onclick="event.stopPropagation(); showSamples('slitlamp')">🔬 Slit-lamp</button>
+                        <div class="sample-dropdown" id="samples-slitlamp"></div>
+                    </div>
+                    <div style="position: relative;">
+                        <button class="sample-btn" onclick="event.stopPropagation(); showSamples('octa')">🩻 OCTA</button>
+                        <div class="sample-dropdown" id="samples-octa"></div>
+                    </div>
+                    <div style="position: relative;">
+                        <button class="sample-btn" onclick="event.stopPropagation(); showSamples('cfp')">👁️ CFP</button>
+                        <div class="sample-dropdown" id="samples-cfp"></div>
+                    </div>
+                    <div style="position: relative;">
+                        <button class="sample-btn" onclick="event.stopPropagation(); showSamples('bscan_oct')">📡 B-scan</button>
+                        <div class="sample-dropdown" id="samples-bscan_oct"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STEP 2: MODALITY SELECTION -->
+            <section class="modality-section">
+                <div class="section-title">
+                    <span class="title-icon">🔬</span>
+                    Görüntüleme Modalitesini Seçin
+                </div>
+
+                <div class="modality-grid" id="modality-grid">
+                    <!-- Kartlar JS ile doldurulur -->
+                </div>
+
+                <div class="warning-banner" id="warning-banner"></div>
+            </section>
+
+            <!-- STEP 3: ANALYZE -->
+            <section class="analyze-section">
+                <button class="analyze-btn" id="analyze-btn" disabled onclick="analyze()">
+                    <span class="btn-text">🔍 Analiz Et</span>
+                    <span class="spinner"><div class="spinner-circle"></div></span>
+                </button>
+            </section>
+
+            <!-- RESULTS -->
+            <section class="results-section" id="results-section">
+                <div class="results-card">
+                    <div class="results-header">
+                        <h3>📊 Analiz Sonucu</h3>
+                    </div>
+
+                    <div class="results-body">
+                        <!-- Sol: Görüntüler -->
+                        <div class="results-images">
+                            <div class="image-tabs">
+                                <button class="image-tab active" data-tab="overlay" onclick="showImageTab('overlay')">Overlay</button>
+                                <button class="image-tab" data-tab="original" onclick="showImageTab('original')">Orijinal</button>
+                                <button class="image-tab" data-tab="gradcam" onclick="showImageTab('gradcam')">Grad-CAM</button>
                             </div>
-                            <div class="prob-bar">
-                                <div class="prob-fill" id="prob-fill"></div>
-                            </div>
+                            <img class="result-image" id="result-img-original" src="" alt="Orijinal" style="display:none;">
+                            <img class="result-image" id="result-img-gradcam" src="" alt="Grad-CAM" style="display:none;">
+                            <img class="result-image" id="result-img-overlay" src="" alt="Overlay">
                         </div>
 
-                        <div id="confidence-badge" class="confidence-badge medium">—</div>
+                        <!-- Sağ: Detaylar -->
+                        <div class="results-details">
+                            <div id="prediction-badge" class="prediction-badge normal">—</div>
 
-                        <div class="model-info">
-                            <h4>Model Bilgileri</h4>
-                            <div class="model-info-grid">
-                                <div class="model-info-item">
-                                    <span class="info-label">Backbone: </span>
-                                    <span class="info-value" id="info-backbone">—</span>
+                            <div class="probability-section">
+                                <div class="prob-header">
+                                    <span class="prob-label">Üveit Olasılığı</span>
+                                    <span class="prob-value" id="prob-value">—</span>
                                 </div>
-                                <div class="model-info-item">
-                                    <span class="info-label">F1 Score: </span>
-                                    <span class="info-value" id="info-f1">—</span>
-                                </div>
-                                <div class="model-info-item">
-                                    <span class="info-label">AUC: </span>
-                                    <span class="info-value" id="info-auc">—</span>
-                                </div>
-                                <div class="model-info-item">
-                                    <span class="info-label">Eğitim Verisi: </span>
-                                    <span class="info-value" id="info-data">—</span>
+                                <div class="prob-bar">
+                                    <div class="prob-fill" id="prob-fill"></div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="clinical-note">
-                            <strong>📝 Klinik Not: </strong>
-                            <span id="clinical-note-text">—</span>
-                        </div>
+                            <div id="confidence-badge" class="confidence-badge medium">—</div>
 
-                        <div class="model-warning" id="model-warning" style="display: none;"></div>
+                            <div class="model-info">
+                                <h4>Model Bilgileri</h4>
+                                <div class="model-info-grid">
+                                    <div class="model-info-item">
+                                        <span class="info-label">Backbone: </span>
+                                        <span class="info-value" id="info-backbone">—</span>
+                                    </div>
+                                    <div class="model-info-item">
+                                        <span class="info-label">F1 Score: </span>
+                                        <span class="info-value" id="info-f1">—</span>
+                                    </div>
+                                    <div class="model-info-item">
+                                        <span class="info-label">AUC: </span>
+                                        <span class="info-value" id="info-auc">—</span>
+                                    </div>
+                                    <div class="model-info-item">
+                                        <span class="info-label">Eğitim Verisi: </span>
+                                        <span class="info-value" id="info-data">—</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clinical-note">
+                                <strong>📝 Klinik Not: </strong>
+                                <span id="clinical-note-text">—</span>
+                            </div>
+
+                            <div class="model-warning" id="model-warning" style="display: none;"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- SESSION HISTORY -->
-        <section class="history-section" id="history-section" style="display: none;">
-            <div class="history-header">
-                <div class="section-title" style="margin-bottom: 0;">
-                    <span class="title-icon">📋</span>
-                    Analiz Geçmişi
+            <!-- SESSION HISTORY -->
+            <section class="history-section" id="history-section" style="display: none;">
+                <div class="history-header">
+                    <div class="section-title" style="margin-bottom: 0;">
+                        <span class="title-icon">📋</span>
+                        Analiz Geçmişi
+                    </div>
+                    <button class="history-clear" onclick="clearHistory()">Temizle</button>
                 </div>
-                <button class="history-clear" onclick="clearHistory()">Temizle</button>
-            </div>
-            <div class="history-grid" id="history-grid"></div>
+                <div class="history-grid" id="history-grid"></div>
+            </section>
         </section>
 
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        Üveit Karar Destek Sistemi • Bitirme Projesi • 2026
+        <div class="footer-content">
+            <p class="footer-title">Üveit Karar Destek Sistemi</p>
+            <p>Bitirme Projesi • 2026 • Derin Öğrenme Tabanlı Oftalmolojik Tanı Desteği</p>
+            <p class="footer-tech">Python • PyTorch • FastAPI • EfficientNet • ResNet • Grad-CAM</p>
+        </div>
     </footer>
 
     <script src="/static/js/app.js"></script>

@@ -1,0 +1,5026 @@
+[
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/55_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/69 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/45_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/44 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/197_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.034,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/66 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/157_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/31 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/146_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/117 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/146 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/131_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0094,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/17 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/109 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/136 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/164_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/181 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/20_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/48 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9964,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/58_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0011,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/18_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0003,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/167_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0003,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/42 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/97 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/82 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/29 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/100_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0267,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/50 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/205_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0009,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/6 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/193_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/79_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/109_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/202_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.8294,
+    "pred": 1,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/151_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/93 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/65 (15).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/122_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0919,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/19_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/186 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/150_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.231,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/8 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9992,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/155 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/17 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9969,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/158_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/184_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/153 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/104 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9992,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/93 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/154_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/195_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.2243,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/143_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/161 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9998,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/87 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9998,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/75_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/171 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/113_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.1106,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/73_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/134_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0015,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/145_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/149 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/178_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/34 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/169 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9923,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/64 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/35 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/46_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/50 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/129 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/138 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/132 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/62.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.8868,
+    "pred": 1,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/115 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/127_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/64_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0004,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/128_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/82_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/2_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0009,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/167 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/116 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.6292,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/23_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/13 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/49_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/200_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0076,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/104_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0006,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/183_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/176 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/114_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/54_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/203_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/42_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0035,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/200_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.1697,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/41 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/66_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/96_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/70 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/2 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/22 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/201_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/194_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0006,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/132 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/179_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/189_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/130_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0083,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/21 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/64_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/36_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.298,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/149 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/176_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0005,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/3 (15).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/88 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/37_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/164 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/122 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/62_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.9978,
+    "pred": 1,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/48 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/61 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/101 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/11 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/6_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0071,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/124 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/133_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0094,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/2_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0003,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/128_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.98,
+    "pred": 1,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/107_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/85 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/79 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9998,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/76 (15).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.0007,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/41_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0245,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/54 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/153_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/181 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/60.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0004,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/186 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/191_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/120_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0424,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/13_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/108 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/15 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/100 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/163_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0003,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/201_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/24_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/10_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0527,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/74 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/120_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0023,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/85_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/112 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/45_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/78 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/118 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/125 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9997,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/7_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/158_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/70_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/41_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0105,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/146_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/78 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/32 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.995,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/138_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0057,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/103 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/126_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/135_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/75_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/118 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/106_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/101_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/56 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9879,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/76 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.7147,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/154 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/170 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/74_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/198_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.021,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/7 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/135_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0019,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/50 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9988,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/132_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.8106,
+    "pred": 1,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/46_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0076,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/115_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/131_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0347,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/147_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/43_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/143 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/63_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/146 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/133_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0473,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/59 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/29 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9998,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/6 (15).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/130 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/3 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/98_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/184_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/136_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/98_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/72_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/70 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/99_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.9756,
+    "pred": 1,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/12_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/96 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/124 (15).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/124 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/18_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0011,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/194_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0012,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/136_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/25_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/140_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/131_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.3426,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/43_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/154 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/159 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/103 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/181 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/83_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/170 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/63 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/150_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0344,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/46_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.014,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/129 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/117 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/158_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/117 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9973,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/68_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/83 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/158_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/193_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/14 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9985,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/116_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/162 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/94_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.4604,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/42 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/41 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/53 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/72 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9991,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/53_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.1059,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/125_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/27 (15).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/7_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/115 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/36_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.1499,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/186_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/90_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/120 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/35 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/150 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9992,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/137_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/143_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/125 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/96_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/9 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/176_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0034,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/125_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0003,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/144 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/143 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/38_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/18_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/115_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/11 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/153 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/109 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/99 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/44 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/158_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/20 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/86_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/132 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/133_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.008,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/132 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/124 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/168_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0003,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/175_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/29 (15).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/25 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/109_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0022,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/198_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/8_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/25 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/182 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/98.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/34 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9948,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/122 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9014,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/68_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/82 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/172 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/104 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/156 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/139 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/113 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/147 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/56_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/133_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/198_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/148 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/193_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/149 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/172 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/44 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9958,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/102_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.003,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/28_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/180_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/15_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/42 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/91_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0025,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/174 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/55_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/30_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/32.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/55 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/125 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9996,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/22 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/147_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/39_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/121 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/177_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/89_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/22_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/86 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/70_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/118 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9995,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/164 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/204_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0003,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/149 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/117_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0847,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/28 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9089,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/119_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0125,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/9 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/85 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/6 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/57 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/34 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/107 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/172_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/78_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/107 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/101 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/45 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.987,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/198_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0878,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/53_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/127 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/165 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9998,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/93 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/148 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/69_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/49_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/51_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/134 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/111_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0029,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/35_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.4085,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/78_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/156_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0005,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/176 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/66 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9994,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/32_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/49.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/122 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/142 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/35_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0006,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/57 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/183 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/179 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/164 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/83 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/175_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0051,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/75 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/181 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/62_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.2521,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/18_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/195_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/35.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/20 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/141 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9996,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/117.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0048,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/22_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/96 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/85 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/65 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/78_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/54_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/169_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/2_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0005,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/74_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/9_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/59 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/181 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/166 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/72 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/22_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0065,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/96_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/104 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9885,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/145_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0037,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/118 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/27_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0781,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/169 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/139 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/175 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/93_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/141 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/144_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/132 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/157_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0019,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/70 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/129_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0033,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/160 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/153 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/70_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/8_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/116_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/146_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/19_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/200_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0031,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/112 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/177 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/32 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/113_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0005,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/80_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/105 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/13_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/135 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/88 (15).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/24_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/158_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/204_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/169_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/54_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/200_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0602,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/10 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/40_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/186_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0004,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/92_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/59 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/138 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/174_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0261,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/183_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/50_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/135_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0058,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/84 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/121 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/99 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/88_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0015,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/8_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/34_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0071,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/54_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/115 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9829,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/66 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/139_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/56_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/33.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/177.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.013,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/60 (15).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9998,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/104_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0008,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/173 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/58 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/103 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/177 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/123 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/58_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/113 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/102 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/77 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/69_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/193_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/3 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/63 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/189_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/28_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/180_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/36_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.6295,
+    "pred": 1,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/115 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9822,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/85 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/100 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/141 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/176 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/44_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/71_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/152_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/12_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.6259,
+    "pred": 1,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/101 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/177 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9997,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/49 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/109 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/72_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0009,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/151 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/182_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/182_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/10_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0004,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/95 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/117 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9994,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/180 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/176 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/191_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0135,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/25 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/182 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/156_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/168 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/123 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/94 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/107_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/10 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9898,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/116_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/160 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9998,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/18 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9885,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/74 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/54_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/132_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0004,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/68 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/162 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/137_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/30_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/81 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/101_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0018,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/192_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.1531,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/47 (3).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/71 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.998,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/42 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/163 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9992,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/106_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0099,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/158 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/116 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/92 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/122_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0033,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/87 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9993,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/165_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/71 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/122_3.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0176,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/87 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/154_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0042,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/43_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/168 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/9_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/153 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/36_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0048,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/21_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/22_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0004,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/52 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/181_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/88 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/175 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/37 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/46 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/129_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0007,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/50_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/67 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/141 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/171_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0005,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/52 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/76_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/161_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/187_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/22_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/52 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/132 (10).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/25 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/24 (16).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9995,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/142_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/120 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9991,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/40_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/16 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/55 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/181_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0004,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/31 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/148_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0003,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/36_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0342,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/185 (15).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/162_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0174,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/32 (6).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9743,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/162 (7).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/61_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0137,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/174_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/92_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/199_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0018,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/6_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0604,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/185_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.1514,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/156_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/170 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/159_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/173_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0002,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/123 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/78 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/45_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/67_14.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/167_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0047,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/163_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/129 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9999,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/88_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/184_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0281,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/46_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0106,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/193_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/109_2.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/58_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/104_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/115 (14).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/65 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/14_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/150 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9996,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/47_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0005,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/81 (12).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/120 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/53_15.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.2381,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/12_12.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.1524,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/203_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0423,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/1_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/105_6.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/40_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/71 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9777,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/93_4.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/121 (1).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/119_11.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/5_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.015,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/123_13.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/34 (9).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.095,
+    "pred": 0,
+    "correct": 0
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/160 (5).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/134 (13).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9964,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/159_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0012,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/171_5.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/35 (2).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/44_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/142_7.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0004,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/182_16.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0866,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/128 (8).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/183 (11).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 0.9995,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Opaque Cornea/AS-OCT/AS-OCT Original Images/135 (4).jpg",
+    "label": 1,
+    "label_name": "Opaque Cornea (Patolojik)",
+    "prob": 1.0,
+    "pred": 1,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/176_9.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0005,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/127.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/34.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0405,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/122_8.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0001,
+    "pred": 0,
+    "correct": 1
+  },
+  {
+    "filepath": "/Users/recepozturk/Desktop/uveitis_project/Veri Setleri/Ön segment OCT (AS-OCT)/MCOA_ Dataset_-_asoct/Images/Normal Cornea/AS-OCT/92_10.jpg",
+    "label": 0,
+    "label_name": "Normal",
+    "prob": 0.0014,
+    "pred": 0,
+    "correct": 1
+  }
+]

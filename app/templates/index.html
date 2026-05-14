@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Üveit Karar Destek Sistemi</title>
     <meta name="description" content="Multimodal derin öğrenme tabanlı oftalmolojik üveit tanı destek sistemi">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css?v=1.3">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👁️</text></svg>">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <!--
   index.html — Üveit Karar Destek Sistemi Ana Sayfası
@@ -53,12 +54,20 @@
 
             <div class="info-grid-2col">
                 <div class="info-card glass-card">
-                    <h3>📖 Tanım</h3>
-                    <p>Üveit, gözün orta tabakası olan <strong>uvea</strong>'nın (iris, siliyer cisim ve koroid) iltihaplanmasıdır. Tedavi edilmezse kalıcı görme kaybına yol açabilir. Dünya genelinde <strong>önlenebilir körlük nedenlerinin %10-15'inden</strong> sorumludur.</p>
+                    <h3>📖 Tıbbi Tanım ve Epidemiyoloji</h3>
+                    <p>Üveit, gözün damarsal orta tabakası olan <strong>uvea</strong>'nın (iris, siliyer cisim ve koroid) ve komşu dokuların (retina, vitreus, optik sinir) inflamasyonudur. Gelişmiş ülkelerde <strong>önlenebilir körlük nedenlerinin %10-15'inden</strong> sorumludur ve her yıl 100.000'de yaklaşık 50 yeni vaka (insidans) görülür.</p>
                 </div>
                 <div class="info-card glass-card">
-                    <h3>⚠️ Neden Önemli?</h3>
-                    <p>Genellikle <strong>20-50 yaş</strong> arasındaki çalışma çağı nüfusunu etkiler. Erken tanı konulmazsa glokom, katarakt, retinal hasar ve kalıcı körlükle sonuçlanabilir. Tanı süreci karmaşık ve uzman bilgisi gerektirir.</p>
+                    <h3>🦠 Etiyoloji (Sebepler)</h3>
+                    <p>Hastalık temelde ikiye ayrılır: <strong>İnfeksiyöz</strong> (Toksoplazmozis, Tüberküloz, Sifiliz, Herpes virüsleri) ve <strong>Non-İnfeksiyöz / Otoimmün</strong> (Behçet Hastalığı, Ankilozan Spondilit, Sarkoidoz). Çoğu zaman altta yatan tehlikeli sistemik bir hastalığın ilk belirtisi olarak sadece gözde ortaya çıkar.</p>
+                </div>
+                <div class="info-card glass-card">
+                    <h3>⚠️ Klinik Komplikasyonlar</h3>
+                    <p>Özellikle <strong>20-50 yaş</strong> arası çalışma çağı nüfusunu şiddetli vurur. Geç kalınması veya yetersiz tedavi edilmesi durumunda sekonder glokom, komplike katarakt, kistoid maküler ödem (KME) ve retina dekolmanı gibi <strong>kalıcı ve geri döndürülemez görme kayıplarına</strong> yol açar.</p>
+                </div>
+                <div class="info-card glass-card">
+                    <h3>🧠 Neden Yapay Zekaya İhtiyaç Var?</h3>
+                    <p>Üveit tanısı klinik pratikte yüksek oranda <strong>hekim tecrübesine dayalıdır (subjektiftir)</strong>. Farklı anatomik bölgelerden farklı cihazlarla (multimodal) analiz gerektirir. Sistemimiz, bu karmaşık örüntüleri milisaniyeler içinde analiz ederek hekimler için <strong>objektif bir karar destek ve erken uyarı mekanizması</strong> sunar.</p>
                 </div>
             </div>
 
@@ -104,7 +113,7 @@
 
             <div class="modality-info-grid">
                 <!-- Slit-lamp -->
-                <div class="modality-info-card glass-card">
+                <div class="modality-info-card glass-card" onclick="openModelDetails('slitlamp')">
                     <div class="modality-info-header">
                         <span class="modality-info-icon">🔬</span>
                         <div>
@@ -119,6 +128,14 @@
                         <div class="stat-item"><span class="stat-value">0.900</span><span class="stat-label">F1 Score</span></div>
                         <div class="stat-item"><span class="stat-value">0.988</span><span class="stat-label">AUC</span></div>
                     </div>
+                    <div class="modality-tech-details">
+                        <div class="tech-title">Model Teknik Özellikleri:</div>
+                        <ul>
+                            <li><strong>Pre-training:</strong> ImageNet ağırlıkları ile Transfer Learning</li>
+                            <li><strong>Denge:</strong> Dengeli tahmin performansı (Precision: %87.1, Recall: %93.1)</li>
+                            <li><strong>Öne Çıkan:</strong> İnce inflamasyon bulgularını (flare) güçlü saptama</li>
+                        </ul>
+                    </div>
                     <div class="modality-info-footer">
                         <span class="backbone-tag">EfficientNet-B0</span>
                         <span class="modality-focus">🎯 Ön kamara inflamasyonu, konjonktival hiperemi</span>
@@ -126,7 +143,7 @@
                 </div>
 
                 <!-- OCTA -->
-                <div class="modality-info-card glass-card">
+                <div class="modality-info-card glass-card" onclick="openModelDetails('octa')">
                     <div class="modality-info-header">
                         <span class="modality-info-icon">🩻</span>
                         <div>
@@ -138,8 +155,16 @@
                     <p class="modality-info-desc">Retinal vasküler yapıyı non-invaziv olarak görüntüler. Üveit'te kapiller perfüzyon değişiklikleri, foveal avasküler zon düzensizlikleri ve neovaskülarizasyon tespitinde kullanılır.</p>
                     <div class="modality-info-stats">
                         <div class="stat-item"><span class="stat-value">525</span><span class="stat-label">Görüntü</span></div>
-                        <div class="stat-item"><span class="stat-value">0.754</span><span class="stat-label">F1 Score</span></div>
-                        <div class="stat-item"><span class="stat-value">0.901</span><span class="stat-label">AUC</span></div>
+                        <div class="stat-item"><span class="stat-value">0.780</span><span class="stat-label">F1 Score</span></div>
+                        <div class="stat-item"><span class="stat-value">0.910</span><span class="stat-label">AUC</span></div>
+                    </div>
+                    <div class="modality-tech-details">
+                        <div class="tech-title">Model Teknik Özellikleri:</div>
+                        <ul>
+                            <li><strong>Strateji:</strong> TTA (Test Time Augmentation) ile kararlılık artışı</li>
+                            <li><strong>Generalizasyon:</strong> Farklı tarayıcı cihazlarda (Heidelberg vs OptoVue) stabil sonuçlar</li>
+                            <li><strong>Robustness:</strong> Gürültülü OCTA kesitlerinde yüksek adaptasyon</li>
+                        </ul>
                     </div>
                     <div class="modality-info-footer">
                         <span class="backbone-tag">ResNet-18</span>
@@ -148,7 +173,7 @@
                 </div>
 
                 <!-- CFP -->
-                <div class="modality-info-card glass-card">
+                <div class="modality-info-card glass-card" onclick="openModelDetails('cfp')">
                     <div class="modality-info-header">
                         <span class="modality-info-icon">👁️</span>
                         <div>
@@ -160,8 +185,16 @@
                     <p class="modality-info-desc">Retina, optik disk ve makula bölgesinin renkli fotoğrafı. Posterior üveit bulgularından koryoretinitis lezyonları, vaskülit ve optik disk ödemi tespitinde kritik rol oynar.</p>
                     <div class="modality-info-stats">
                         <div class="stat-item"><span class="stat-value">870</span><span class="stat-label">Görüntü</span></div>
-                        <div class="stat-item"><span class="stat-value">0.783</span><span class="stat-label">F1 Score</span></div>
-                        <div class="stat-item"><span class="stat-value">1.000</span><span class="stat-label">AUC</span></div>
+                        <div class="stat-item"><span class="stat-value">0.947</span><span class="stat-label">F1 Score</span></div>
+                        <div class="stat-item"><span class="stat-value">0.998</span><span class="stat-label">AUC</span></div>
+                    </div>
+                    <div class="modality-tech-details">
+                        <div class="tech-title">Model Teknik Özellikleri:</div>
+                        <ul>
+                            <li><strong>Optimizasyon:</strong> TTA (5x) ve Optimal Karar Sınırı (Threshold: 0.68)</li>
+                            <li><strong>Klinik Güven:</strong> <strong>%100 Duyarlılık (Recall: 1.000)</strong> - Sıfır vaka kaçağı</li>
+                            <li><strong>Başarı:</strong> Aşırı dengesiz veride (1:12) F1 skorunda %16 iyileşme</li>
+                        </ul>
                     </div>
                     <div class="modality-info-footer">
                         <span class="backbone-tag">EfficientNet-B0</span>
@@ -170,40 +203,62 @@
                 </div>
 
                 <!-- B-scan OCT -->
-                <div class="modality-info-card glass-card">
+                <div class="modality-info-card glass-card" onclick="openModelDetails('bscan_oct')">
                     <div class="modality-info-header">
                         <span class="modality-info-icon">📡</span>
                         <div>
                             <h3>B-scan OCT</h3>
                             <span class="modality-tag">Optik Koherens Tomografi</span>
                         </div>
-                        <div class="modality-status-badge limited">Sınırlı</div>
+                        <div class="modality-status-badge ready">Aktif</div>
                     </div>
                     <p class="modality-info-desc">Retinal katmanların kesitsel görüntülenmesi. Vitreus opasiteleri, maküler ödem, retinal kalınlaşma ve koroidal değişikliklerin değerlendirilmesinde kullanılır.</p>
                     <div class="modality-info-stats">
-                        <div class="stat-item"><span class="stat-value">55</span><span class="stat-label">Görüntü</span></div>
-                        <div class="stat-item"><span class="stat-value">1.000</span><span class="stat-label">F1 Score</span></div>
+                        <div class="stat-item"><span class="stat-value">545</span><span class="stat-label">Görüntü</span></div>
+                        <div class="stat-item"><span class="stat-value">0.913</span><span class="stat-label">F1 Score</span></div>
                         <div class="stat-item"><span class="stat-value">1.000</span><span class="stat-label">AUC</span></div>
+                    </div>
+                    <div class="modality-tech-details">
+                        <div class="tech-title">Model Teknik Özellikleri:</div>
+                        <ul>
+                            <li><strong>Pre-training:</strong> Kermany OCT (109K görüntü) ile Domain-Specific eğitim</li>
+                            <li><strong>Veri Artırımı:</strong> Medikal Augmentation ve MixUp ile sentetik varyasyonlar</li>
+                            <li><strong>Validasyon:</strong> 5-Fold Cross Validation ile %100 test izolelği ve güvenilirlik</li>
+                        </ul>
                     </div>
                     <div class="modality-info-footer">
                         <span class="backbone-tag">ResNet-18</span>
-                        <span class="modality-focus">⚠️ Sınırlı veri — sonuçlar dikkatle değerlendirilmeli</span>
+                        <span class="modality-focus">🎯 V4 K-Fold, Vitreus/Retinal değişiklikler</span>
                     </div>
                 </div>
 
                 <!-- AS-OCT -->
-                <div class="modality-info-card glass-card disabled-card">
+                <div class="modality-info-card glass-card" onclick="openModelDetails('as_oct')">
                     <div class="modality-info-header">
                         <span class="modality-info-icon">🔍</span>
                         <div>
                             <h3>AS-OCT</h3>
                             <span class="modality-tag">Ön Segment OCT</span>
                         </div>
-                        <div class="modality-status-badge upcoming">Yakında</div>
+                        <div class="modality-status-badge ready">Aktif</div>
                     </div>
                     <p class="modality-info-desc">Ön segment yapılarının (kornea, ön kamara, iris) yüksek çözünürlüklü kesitsel görüntülenmesi. Ön kamara derinliği ve inflamatuvar değişikliklerin objektif ölçümünde kullanılır.</p>
+                    <div class="modality-info-stats">
+                        <div class="stat-item"><span class="stat-value">6.272</span><span class="stat-label">Görüntü</span></div>
+                        <div class="stat-item"><span class="stat-value">0.920</span><span class="stat-label">F1 Score</span></div>
+                        <div class="stat-item"><span class="stat-value">0.950</span><span class="stat-label">AUC</span></div>
+                    </div>
+                    <div class="modality-tech-details">
+                        <div class="tech-title">Model Teknik Özellikleri:</div>
+                        <ul>
+                            <li><strong>Mimari:</strong> <code>timm</code> kütüphanesi destekli <code>tf_efficientnet_b0_ns</code> backbone</li>
+                            <li><strong>Kapsam:</strong> MCOA veri setinde büyük ölçekli ve yüksek çözünürlüklü eğitim</li>
+                            <li><strong>Analiz:</strong> Yapısal bulanıklık ve opasitenin Grad-CAM ile piksel bazlı lokalizasyonu</li>
+                        </ul>
+                    </div>
                     <div class="modality-info-footer">
-                        <span class="modality-focus">🔲 Model geliştirme aşamasında (Faz-2)</span>
+                        <span class="backbone-tag">EfficientNet-B0</span>
+                        <span class="modality-focus">🎯 Kornea opasitesi ve ön segment inflamasyonu</span>
                     </div>
                 </div>
             </div>
@@ -355,17 +410,21 @@
                         <h3>📊 Analiz Sonucu</h3>
                     </div>
 
+                    <div id="detected-modality-banner" class="detected-banner" style="display:none; text-align:center; padding:10px; background:rgba(14, 165, 233, 0.2); border-radius:8px; margin-bottom:15px; color:var(--text-primary); font-weight:600;"></div>
+
                     <div class="results-body">
                         <!-- Sol: Görüntüler -->
                         <div class="results-images">
-                            <div class="image-tabs">
-                                <button class="image-tab active" data-tab="overlay" onclick="showImageTab('overlay')">Overlay</button>
-                                <button class="image-tab" data-tab="original" onclick="showImageTab('original')">Orijinal</button>
-                                <button class="image-tab" data-tab="gradcam" onclick="showImageTab('gradcam')">Grad-CAM</button>
+                            <div class="view-toggles" id="view-toggles" style="display: none; justify-content: center; gap: 10px; margin-bottom: 15px;">
+                                <button class="sample-btn" id="btn-gradcam" style="background: var(--primary); color: white;" onclick="switchView('gradcam')">🔥 Grad-CAM Isı Haritası</button>
+                                <button class="sample-btn" id="btn-segmentation" onclick="switchView('segmentation')">🎨 Anatomik Segmentasyon</button>
                             </div>
-                            <img class="result-image" id="result-img-original" src="" alt="Orijinal" style="display:none;">
-                            <img class="result-image" id="result-img-gradcam" src="" alt="Grad-CAM" style="display:none;">
-                            <img class="result-image" id="result-img-overlay" src="" alt="Overlay">
+                            <div class="slider-instructions" id="slider-instructions">Fareyi sürükleyerek YZ odaklanmasını (Grad-CAM) inceleyin</div>
+                            <div class="img-comp-container" id="img-comp-container">
+                                <img class="img-comp-img" id="result-img-original" src="" alt="Orijinal">
+                                <img class="img-comp-img img-comp-overlay" id="result-img-overlay" src="" alt="Overlay">
+                                <div class="img-comp-slider" id="img-comp-slider"></div>
+                            </div>
                         </div>
 
                         <!-- Sağ: Detaylar -->
@@ -411,11 +470,152 @@
                                 <span id="clinical-note-text">—</span>
                             </div>
 
+                            <div class="ai-comment-box" id="ai-comment-box" style="display: none;">
+                                <div class="ai-comment-header">
+                                    <span class="ai-icon">✨</span>
+                                    <strong>AI Klinik Rapor Özeti</strong>
+                                    <div class="typing-indicator" id="ai-typing-indicator">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <div class="ai-comment-body" id="ai-comment-text"></div>
+                                <div class="ai-comment-footer">
+                                    *Bu yorum Gemini AI tarafından üretilmiştir, kesin tanı yerine geçmez.
+                                </div>
+                            </div>
+
                             <div class="model-warning" id="model-warning" style="display: none;"></div>
+
+                            <!-- PDF Download Button -->
+                            <button class="pdf-download-btn" id="pdf-download-btn" onclick="downloadPDF()" style="display:none;" disabled>
+                                <span id="pdf-btn-icon">📄</span> <span id="pdf-btn-text">Klinik Rapor PDF İndir</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- Hidden PDF Report Template (not visible on page) -->
+            <div id="pdf-template" style="display:none;">
+                <div id="pdf-content" style="
+                    font-family: 'Segoe UI', Arial, sans-serif;
+                    background: #ffffff;
+                    color: #1a1a2e;
+                    padding: 40px;
+                    max-width: 750px;
+                    margin: 0 auto;
+                    font-size: 12px;
+                    line-height: 1.6;
+                ">
+                    <!-- Header -->
+                    <div style="border-bottom: 3px solid #0ea5e9; padding-bottom: 18px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div>
+                            <div style="font-size: 20px; font-weight: 800; color: #0f172a; letter-spacing: -0.5px;">👁️ Üveit &amp; MCOA Karar Destek Sistemi</div>
+                            <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Yapay Zeka Destekli Oftalmolojik Analiz Raporu</div>
+                        </div>
+                        <div style="text-align: right; font-size: 10px; color: #94a3b8;">
+                            <div id="pdf-report-date"></div>
+                            <div id="pdf-report-id" style="font-family: monospace; margin-top: 2px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Decision Banner -->
+                    <div id="pdf-decision-banner" style="
+                        padding: 14px 20px;
+                        border-radius: 8px;
+                        font-size: 17px;
+                        font-weight: 800;
+                        text-align: center;
+                        margin-bottom: 24px;
+                        letter-spacing: 0.5px;
+                    "></div>
+
+                    <!-- Metrics Row -->
+                    <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+                        <div style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; text-align:center;">
+                            <div style="font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:0.5px;">Cihaz / Modalite</div>
+                            <div style="font-weight:700; color:#0f172a; margin-top:4px;" id="pdf-modality">—</div>
+                        </div>
+                        <div style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; text-align:center;">
+                            <div style="font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:0.5px;">Patoloji Olasılığı</div>
+                            <div style="font-weight:800; font-size:18px; margin-top:4px;" id="pdf-probability">—</div>
+                        </div>
+                        <div style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; text-align:center;">
+                            <div style="font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:0.5px;">Sistem Güveni</div>
+                            <div style="font-weight:700; margin-top:4px;" id="pdf-confidence">—</div>
+                        </div>
+                        <div style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; text-align:center;">
+                            <div style="font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:0.5px;">Model AUC</div>
+                            <div style="font-weight:700; color:#0ea5e9; margin-top:4px;" id="pdf-auc">—</div>
+                        </div>
+                    </div>
+
+                    <!-- Images Side by Side -->
+                    <div style="margin-bottom: 24px;">
+                        <div style="font-size: 11px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; border-left: 3px solid #0ea5e9; padding-left: 8px;">Görsel Kanıtlar</div>
+                        <div style="display: flex; gap: 16px;">
+                            <div style="flex:1; text-align:center;">
+                                <img id="pdf-img-original" src="" alt="Orijinal Görüntü" style="width:100%; max-height:200px; object-fit:contain; border-radius:8px; border:1px solid #e2e8f0;">
+                                <div style="font-size:10px; color:#64748b; margin-top:6px;">Orijinal Tıbbi Görüntü</div>
+                            </div>
+                            <div style="flex:1; text-align:center;">
+                                <img id="pdf-img-heatmap" src="" alt="YZ Haritası" style="width:100%; max-height:200px; object-fit:contain; border-radius:8px; border:1px solid #e2e8f0;">
+                                <div style="font-size:10px; color:#64748b; margin-top:6px;" id="pdf-heatmap-label">Grad-CAM Isı Haritası (YZ Odak Bölgesi)</div>
+                            </div>
+                        </div>
+                        <div style="margin-top:8px; font-size:9.5px; color:#94a3b8; font-style:italic; text-align:center;" id="pdf-heatmap-note">
+                            Isı haritasındaki kırmızı/sarı bölgeler yapay zekanın patoloji tespit ettiği anatomik odak alanlarını göstermektedir.
+                        </div>
+                    </div>
+
+                    <!-- AI Clinical Commentary -->
+                    <div style="margin-bottom: 24px;">
+                        <div style="font-size: 11px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; border-left: 3px solid #a855f7; padding-left: 8px;">✨ Yapay Zeka Klinik Değerlendirmesi</div>
+                        <div style="
+                            background: #faf5ff;
+                            border: 1px solid #e9d5ff;
+                            border-radius: 8px;
+                            padding: 16px 20px;
+                            font-size: 12px;
+                            line-height: 1.75;
+                            color: #1e1b4b;
+                            font-style: italic;
+                        " id="pdf-ai-comment">—</div>
+                        <div style="font-size: 9px; color: #94a3b8; margin-top: 6px; text-align: right;">Gemini 2.5 Flash tarafından üretilmiştir</div>
+                    </div>
+
+                    <!-- Technical Metrics -->
+                    <div style="margin-bottom: 24px;">
+                        <div style="font-size: 11px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; border-left: 3px solid #10b981; padding-left: 8px;">⚙️ Model Teknik Metrikleri</div>
+                        <table style="width:100%; border-collapse:collapse; font-size:11px;">
+                            <tr style="background:#f8fafc;">
+                                <td style="padding:7px 10px; border:1px solid #e2e8f0; color:#64748b;">Mimari (Backbone)</td>
+                                <td style="padding:7px 10px; border:1px solid #e2e8f0; font-weight:600;" id="pdf-backbone">—</td>
+                                <td style="padding:7px 10px; border:1px solid #e2e8f0; color:#64748b;">F1 Score</td>
+                                <td style="padding:7px 10px; border:1px solid #e2e8f0; font-weight:600; color:#0ea5e9;" id="pdf-f1">—</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:7px 10px; border:1px solid #e2e8f0; color:#64748b;">Eğitim Verisi</td>
+                                <td style="padding:7px 10px; border:1px solid #e2e8f0; font-weight:600;" id="pdf-training">—</td>
+                                <td style="padding:7px 10px; border:1px solid #e2e8f0; color:#64748b;">AUC Skoru</td>
+                                <td style="padding:7px 10px; border:1px solid #e2e8f0; font-weight:600; color:#0ea5e9;" id="pdf-auc2">—</td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:8px; font-size:10px; color:#64748b;" id="pdf-clinical-note-row">
+                            <strong>YZ Anatomik Odak:</strong> <span id="pdf-clinical-note">—</span>
+                        </div>
+                    </div>
+
+                    <!-- Footer Disclaimer -->
+                    <div style="border-top: 1px solid #e2e8f0; padding-top: 14px; margin-top: 8px;">
+                        <div style="font-size: 9px; color: #94a3b8; line-height: 1.6; text-align: center;">
+                            ⚠️ Bu rapor <strong>Uveitis AI Decision Support System</strong> tarafından otomatik olarak üretilmiştir.<br>
+                            Yalnızca klinisyen karar desteği (second opinion) amacıyla sunulmaktadır — kesin hekim tanısı yerine geçmez.<br>
+                            Üretim Tarihi: <span id="pdf-footer-date"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- SESSION HISTORY -->
             <section class="history-section" id="history-section" style="display: none;">
@@ -441,6 +641,15 @@
         </div>
     </footer>
 
-    <script src="/static/js/app.js"></script>
+    <!-- DETAIL MODAL -->
+    <div id="detail-modal" class="detail-modal">
+        <div class="detail-modal-content glass-card">
+            <span class="detail-close" onclick="closeModelDetails()">&times;</span>
+            <h2 id="modal-title">Model Detayları</h2>
+            <div id="modal-body" class="modal-body-content"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js?v=1.3"></script>
 </body>
 </html>

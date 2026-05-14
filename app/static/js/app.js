@@ -22,6 +22,7 @@ let selectedModality = null;    // Seçili modalite ID'si (slitlamp, octa, cfp, 
 let isAnalyzing = false;        // Analiz sürüyorsa true (çift tıklamayı önler)
 let sessionHistory = [];        // Bu oturumdaki tüm analiz sonuçları
 let modalityData = [];          // /api/models'den yüklenen modalite bilgileri
+let currentResult = null;       // Son yapılan analizin sonuç objesi
 
 // === DOM ELEMENTS ===
 const uploadArea = document.getElementById('upload-area');
@@ -49,6 +50,17 @@ async function loadModalities() {
     try {
         const response = await fetch('/api/models');
         modalityData = await response.json();
+        
+        // Add Auto Detect Modality
+        modalityData.unshift({
+            id: 'auto',
+            name: 'Otomatik Tespit (Auto)',
+            icon: '🤖',
+            description: 'Görüntünün cihaz tipini yapay zekaya bırakın. Router modelimiz görüntüyü doğru hastalık modeline yönlendirecektir.',
+            available: true,
+            metrics: null
+        });
+
         renderModalityCards();
     } catch (error) {
         console.error('Modalite verileri yüklenemedi:', error);
@@ -161,12 +173,16 @@ function handleFile(file) {
 
 // === SAMPLE CASES (Örnek Vaka Yükleme) ===
 // static/samples/ klasöründeki hazır test görüntülerini yükler.
-// Görüntü fetch edilir, File nesnesine dönüştürülr ve ilgili modalite seçilir.
-async function loadSample(modality, filename) {
+// Görüntü fetch edilir, File nesnesine dönüştürülür ve ilgili modalite seçilir.
+async function loadSample(modality, filename, url) {
     try {
-        const response = await fetch(`/static/samples/${modality}/${filename}`);
+        const response = await fetch(url);
         const blob = await response.blob();
-        const file = new File([blob], filename, { type: blob.type });
+        
+        // Klasör ismi içerebilen filename'den sadece dosya adını ayıkla
+        const cleanFilename = filename.split('/').pop();
+        const file = new File([blob], cleanFilename, { type: blob.type });
+        
         handleFile(file);
         selectModality(modality);
     } catch (error) {
@@ -191,7 +207,7 @@ async function showSamples(modality) {
             dropdown.innerHTML = '<div class="sample-item" style="color: var(--text-muted);">Örnek vaka bulunamadı</div>';
         } else {
             dropdown.innerHTML = samples.map(s => `
-                <div class="sample-item" onclick="event.stopPropagation(); loadSample('${modality}', '${s.filename}')">
+                <div class="sample-item" onclick="event.stopPropagation(); loadSample('${modality}', '${s.filename}', '${s.url}')">
                     <span>${s.filename}</span>
                     <span class="sample-badge ${s.label}">${s.label_display}</span>
                 </div>
@@ -329,12 +345,22 @@ async function analyze() {
 //   - Base64 görseller (orijinal, Grad-CAM ısı haritası, overlay)
 //   - Model metrikleri ve klinik not
 function showResults(result) {
+    currentResult = result;
     resultsSection.classList.add('show');
 
-    // Prediction badge
+    // Prediction badge ve Label
     const badge = document.getElementById('prediction-badge');
+    const probLabel = document.querySelector('.prob-label');
+    
     badge.className = `prediction-badge ${result.prediction}`;
-    badge.textContent = result.prediction === 'uveitis' ? '🔴 ÜVEİT ŞÜPHESİ' : '🟢 NORMAL';
+    
+    if (result.model_info.display_name === 'AS-OCT') {
+        badge.textContent = result.prediction === 'uveitis' ? '🔴 ANORMAL BULGU' : '🟢 NORMAL';
+        probLabel.textContent = 'Patoloji Olasılığı';
+    } else {
+        badge.textContent = result.prediction === 'uveitis' ? '🔴 ÜVEİT ŞÜPHESİ' : '🟢 NORMAL';
+        probLabel.textContent = 'Üveit Olasılığı';
+    }
 
     // Probability
     const probPercent = (result.probability * 100).toFixed(1);
@@ -358,9 +384,32 @@ function showResults(result) {
 
     // Images
     document.getElementById('result-img-original').src = `data:image/png;base64,${result.original_image}`;
-    document.getElementById('result-img-gradcam').src = `data:image/png;base64,${result.gradcam_image}`;
-    document.getElementById('result-img-overlay').src = `data:image/png;base64,${result.overlay_image}`;
-    showImageTab('overlay');
+    
+    const toggles = document.getElementById('view-toggles');
+    const btnGradcam = document.getElementById('btn-gradcam');
+    const btnSeg = document.getElementById('btn-segmentation');
+    
+    if (result.segmentation_image) {
+        toggles.style.display = 'flex';
+        // Varsayılan olarak Grad-CAM göster
+        switchView('gradcam');
+    } else {
+        toggles.style.display = 'none';
+        document.getElementById('result-img-overlay').src = `data:image/png;base64,${result.overlay_image}`;
+        document.getElementById('slider-instructions').textContent = 'Fareyi sürükleyerek YZ odaklanmasını (Grad-CAM) inceleyin';
+    }
+    
+    // Initialize Slider
+    initSlider();
+
+    // Modality Detection Banner
+    const detectedBanner = document.getElementById('detected-modality-banner');
+    if (result.detected_modality_msg) {
+        detectedBanner.textContent = result.detected_modality_msg;
+        detectedBanner.style.display = 'block';
+    } else {
+        detectedBanner.style.display = 'none';
+    }
 
     // Model info
     const info = result.model_info;
@@ -383,19 +432,249 @@ function showResults(result) {
 
     // Scroll to results
     resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Show PDF button but keep it disabled until AI comment is ready
+    const pdfBtn = document.getElementById('pdf-download-btn');
+    pdfBtn.style.display = 'flex';
+    pdfBtn.disabled = true;
+    document.getElementById('pdf-btn-icon').textContent = '⏳';
+    document.getElementById('pdf-btn-text').textContent = 'AI Rapor Bekleniyor...';
+
+    // Call Gemini API asynchronously
+    generateAIComment(result);
 }
 
-// === IMAGE TAB SWITCHING (Görüntü Sekme Geçişi) ===
-// Sonuç panelinde 3 görüntü arasında geçiş: Overlay, Orijinal, Grad-CAM.
-// Overlay = orijinal görüntü + Grad-CAM ısı haritası üst üste bindirilmiş hali.
-function showImageTab(tab) {
-    document.querySelectorAll('.image-tab').forEach(t => {
-        t.classList.toggle('active', t.dataset.tab === tab);
-    });
+// === GEMINI AI INTEGRATION ===
+async function generateAIComment(result) {
+    const aiBox = document.getElementById('ai-comment-box');
+    const aiText = document.getElementById('ai-comment-text');
+    const aiTyping = document.getElementById('ai-typing-indicator');
 
-    document.getElementById('result-img-original').style.display = tab === 'original' ? 'block' : 'none';
-    document.getElementById('result-img-gradcam').style.display = tab === 'gradcam' ? 'block' : 'none';
-    document.getElementById('result-img-overlay').style.display = tab === 'overlay' ? 'block' : 'none';
+    // Reset and show box
+    aiBox.style.display = 'block';
+    aiText.innerHTML = '';
+    aiTyping.style.display = 'inline-flex';
+
+    try {
+        const response = await fetch('/api/generate_comment', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                modality: result.modality_used,
+                prediction: result.prediction,
+                probability: result.probability,
+                confidence: result.confidence,
+                model_name: result.model_info.display_name_full,
+                model_backbone: result.model_info.backbone,
+                model_f1: result.model_info.metrics.f1,
+                model_auc: result.model_info.metrics.auc,
+                clinical_note: result.model_info.clinical_note,
+                training_data: result.model_info.training_data
+            })
+        });
+
+        const data = await response.json();
+        const comment = data.comment || "Yorum alınamadı.";
+
+        // Hide typing indicator
+        aiTyping.style.display = 'none';
+
+        // Typewriter effect — enable PDF button when done
+        let i = 0;
+        function typeWriter() {
+            if (i < comment.length) {
+                aiText.innerHTML += comment.charAt(i);
+                i++;
+                setTimeout(typeWriter, 15);
+            } else {
+                // Comment fully written — populate PDF data and enable button
+                populatePDFTemplate(currentResult, comment);
+                const pdfBtn = document.getElementById('pdf-download-btn');
+                pdfBtn.disabled = false;
+                document.getElementById('pdf-btn-icon').textContent = '📄';
+                document.getElementById('pdf-btn-text').textContent = 'Klinik Rapor PDF İndir';
+            }
+        }
+        typeWriter();
+
+    } catch (error) {
+        aiTyping.style.display = 'none';
+        aiText.innerHTML = `<span style="color:var(--warning)">⚠️ Yorum alınırken bağlantı hatası oluştu.</span>`;
+        // Enable PDF even without AI comment
+        populatePDFTemplate(currentResult, 'AI yorumu alınamadı.');
+        const pdfBtn = document.getElementById('pdf-download-btn');
+        pdfBtn.disabled = false;
+        document.getElementById('pdf-btn-icon').textContent = '📄';
+        document.getElementById('pdf-btn-text').textContent = 'Klinik Rapor PDF İndir';
+    }
+}
+
+// === PDF TEMPLATE POPULATION ===
+function populatePDFTemplate(result, aiComment) {
+    const info = result.model_info;
+    const isASOCT = result.modality_used === 'as_oct';
+    const probPercent = (result.probability * 100).toFixed(1);
+    const now = new Date();
+    const dateStr = now.toLocaleDateString('tr-TR', { day:'2-digit', month:'long', year:'numeric' });
+    const timeStr = now.toLocaleTimeString('tr-TR', { hour:'2-digit', minute:'2-digit' });
+    const reportId = 'RPT-' + Math.random().toString(36).substr(2,8).toUpperCase();
+
+    // Header meta
+    document.getElementById('pdf-report-date').textContent = `${dateStr}, ${timeStr}`;
+    document.getElementById('pdf-report-id').textContent = reportId;
+    document.getElementById('pdf-footer-date').textContent = `${dateStr} ${timeStr}`;
+
+    // Decision banner
+    const banner = document.getElementById('pdf-decision-banner');
+    if (result.prediction === 'uveitis') {
+        banner.textContent = isASOCT ? '🔴 ANORMAL BULGU — Korneal Opasite (MCOA) ile Uyumlu' : '🔴 ÜVEİT ŞÜPHESİ — Anormal Oftalmolojik Bulgu';
+        banner.style.background = '#fff1f2';
+        banner.style.border = '2px solid #fca5a5';
+        banner.style.color = '#991b1b';
+    } else {
+        banner.textContent = '🟢 NORMAL — Fizyolojik Sınırlar İçinde';
+        banner.style.background = '#f0fdf4';
+        banner.style.border = '2px solid #86efac';
+        banner.style.color = '#14532d';
+    }
+
+    // Metrics
+    document.getElementById('pdf-modality').textContent = info.display_name_full || info.display_name;
+    const probEl = document.getElementById('pdf-probability');
+    probEl.textContent = `%${probPercent}`;
+    probEl.style.color = result.prediction === 'uveitis' ? '#dc2626' : '#16a34a';
+    document.getElementById('pdf-confidence').textContent = result.confidence;
+    document.getElementById('pdf-auc').textContent = info.metrics.auc.toFixed(3);
+
+    // Images
+    document.getElementById('pdf-img-original').src = `data:image/png;base64,${result.original_image}`;
+    const heatmapSrc = result.segmentation_image
+        ? `data:image/png;base64,${result.segmentation_image}`
+        : `data:image/png;base64,${result.overlay_image}`;
+    document.getElementById('pdf-img-heatmap').src = heatmapSrc;
+    if (isASOCT) {
+        document.getElementById('pdf-heatmap-label').textContent = 'U-Net Anatomik Segmentasyon Haritası';
+        document.getElementById('pdf-heatmap-note').textContent = 'Segmentasyon maskesi, modelin ön segment yapılarını (kornea, iris) anatomik olarak ayırdığını göstermektedir.';
+    }
+
+    // AI Comment
+    document.getElementById('pdf-ai-comment').textContent = aiComment;
+
+    // Technical metrics
+    document.getElementById('pdf-backbone').textContent = info.backbone;
+    document.getElementById('pdf-f1').textContent = info.metrics.f1.toFixed(3);
+    document.getElementById('pdf-training').textContent = info.training_data.toLocaleString() + ' görüntü';
+    document.getElementById('pdf-auc2').textContent = info.metrics.auc.toFixed(3);
+    document.getElementById('pdf-clinical-note').textContent = info.clinical_note;
+}
+
+// === PDF DOWNLOAD ===
+function downloadPDF() {
+    const btn = document.getElementById('pdf-download-btn');
+    btn.disabled = true;
+    document.getElementById('pdf-btn-icon').textContent = '⏳';
+    document.getElementById('pdf-btn-text').textContent = 'PDF Oluşturuluyor...';
+
+    const element = document.getElementById('pdf-content');
+    element.parentElement.style.display = 'block'; // Make visible for rendering
+
+    const reportId = document.getElementById('pdf-report-id').textContent || 'rapor';
+    const filename = `uveit_ai_rapor_${reportId}.pdf`;
+
+    const opt = {
+        margin:       [8, 8, 8, 8],
+        filename:     filename,
+        image:        { type: 'jpeg', quality: 0.95 },
+        html2canvas:  { scale: 2, useCORS: true, logging: false },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opt).from(element).save().then(() => {
+        element.parentElement.style.display = 'none';
+        btn.disabled = false;
+        document.getElementById('pdf-btn-icon').textContent = '✅';
+        document.getElementById('pdf-btn-text').textContent = 'PDF İndirildi!';
+        setTimeout(() => {
+            document.getElementById('pdf-btn-icon').textContent = '📄';
+            document.getElementById('pdf-btn-text').textContent = 'Klinik Rapor PDF İndir';
+        }, 3000);
+    }).catch(() => {
+        element.parentElement.style.display = 'none';
+        btn.disabled = false;
+        document.getElementById('pdf-btn-icon').textContent = '❌';
+        document.getElementById('pdf-btn-text').textContent = 'PDF Oluşturulamadı';
+        setTimeout(() => {
+            document.getElementById('pdf-btn-icon').textContent = '📄';
+            document.getElementById('pdf-btn-text').textContent = 'Klinik Rapor PDF İndir';
+        }, 3000);
+    });
+}
+
+// === IMAGE SLIDER (Öncesi/Sonrası) ===
+// Fare veya dokunmatik ile orijinal ve AI (Grad-CAM) görüntüleri arasında geçiş sağlar.
+function initSlider() {
+    const container = document.getElementById('img-comp-container');
+    const overlay = document.getElementById('result-img-overlay');
+    const slider = document.getElementById('img-comp-slider');
+    
+    // Her analizde pozisyonu %50'ye sıfırla
+    slider.style.left = "50%";
+    overlay.style.clipPath = `inset(0% 50% 0% 0%)`;
+    
+    let isDragging = false;
+
+    function slide(e) {
+        if (!isDragging) return;
+        
+        let rect = container.getBoundingClientRect();
+        let clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+        let x = clientX - rect.left;
+        
+        if (x < 0) x = 0;
+        if (x > rect.width) x = rect.width;
+        
+        let percent = (x / rect.width) * 100;
+        
+        slider.style.left = percent + "%";
+        overlay.style.clipPath = `inset(0% ${100 - percent}% 0% 0%)`;
+    }
+
+    // Sürükleme Olayları (Mouse)
+    slider.onmousedown = () => isDragging = true;
+    window.addEventListener('mouseup', () => isDragging = false);
+    window.addEventListener('mousemove', slide);
+    
+    // Sürükleme Olayları (Touch - Mobil Uyumluluk)
+    slider.ontouchstart = () => isDragging = true;
+    window.addEventListener('touchend', () => isDragging = false);
+    window.addEventListener('touchmove', slide, {passive: true});
+}
+
+function switchView(viewType) {
+    if (!currentResult) return;
+    
+    const btnGradcam = document.getElementById('btn-gradcam');
+    const btnSeg = document.getElementById('btn-segmentation');
+    const overlayImg = document.getElementById('result-img-overlay');
+    const instructions = document.getElementById('slider-instructions');
+
+    if (viewType === 'gradcam') {
+        btnGradcam.style.background = 'var(--primary)';
+        btnGradcam.style.color = 'white';
+        btnSeg.style.background = 'rgba(14, 165, 233, 0.1)';
+        btnSeg.style.color = 'var(--text-primary)';
+        
+        overlayImg.src = `data:image/png;base64,${currentResult.overlay_image}`;
+        instructions.textContent = 'Fareyi sürükleyerek YZ odaklanmasını (Grad-CAM) inceleyin';
+    } else if (viewType === 'segmentation') {
+        btnSeg.style.background = 'var(--primary)';
+        btnSeg.style.color = 'white';
+        btnGradcam.style.background = 'rgba(14, 165, 233, 0.1)';
+        btnGradcam.style.color = 'var(--text-primary)';
+        
+        overlayImg.src = `data:image/png;base64,${currentResult.segmentation_image}`;
+        instructions.textContent = 'Fareyi sürükleyerek Anatomik Haritayı (Segmentasyon) inceleyin';
+    }
 }
 
 // === SESSION HISTORY (Oturum Geçmişi) ===
@@ -420,18 +699,25 @@ function renderHistory() {
     }
 
     historySection.style.display = 'block';
-    historyGrid.innerHTML = sessionHistory.map((h, i) => `
+    historyGrid.innerHTML = sessionHistory.map((h, i) => {
+        let resultText = 'Normal';
+        if (h.prediction === 'uveitis') {
+            resultText = h.modality.includes('AS-OCT') ? 'Anormal Bulgu' : 'Üveit Şüphesi';
+        }
+        
+        return `
         <div class="history-card">
             <img class="history-thumb" src="data:image/png;base64,${h.thumbnail}" alt="Analiz ${i + 1}">
             <div class="history-info">
                 <div class="history-modality">${h.modality}</div>
                 <div class="history-result ${h.prediction}">
-                    ${h.prediction === 'uveitis' ? 'Üveit Şüphesi' : 'Normal'}
+                    ${resultText}
                 </div>
                 <div class="history-prob">%${(h.probability * 100).toFixed(1)} • ${h.timestamp}</div>
             </div>
         </div>
-    `).join('');
+        `;
+    }).join('');
 }
 
 // Geçmişi sıfırlar ve bölümü gizler.
@@ -439,3 +725,105 @@ function clearHistory() {
     sessionHistory = [];
     renderHistory();
 }
+
+// === MODEL DETAILS MODAL ===
+const modelDetails = {
+    'slitlamp': {
+        title: 'Slit-lamp Biyomikroskopi (Ön Segment) Detayları',
+        icon: '🔬',
+        content: `
+            <h4>1. Veri Seti ve Etiketleme Metodolojisi</h4>
+            <p>Eğitim sürecinde toplam <strong>1.309 adet yüksek çözünürlüklü ön segment fotoğrafı</strong> kullanılmıştır. Görüntüler oftalmologlar tarafından ön kamara, iris ve konjonktiva bölgelerine odaklanacak şekilde klinik standartlarda etiketlenmiştir.</p>
+            <h4>2. Mimari ve Eğitim Stratejisi (Architecture)</h4>
+            <ul>
+                <li><strong>Backbone:</strong> ImageNet ağırlıkları üzerinde ön-eğitimli (pre-trained) <code>EfficientNet-B0</code> mimarisi tercih edilmiştir.</li>
+                <li><strong>Veri Artırımı (Data Augmentation):</strong> Aşırı aydınlatma farklarını ve cihaz pozisyon varyasyonlarını tolere edebilmek için rastgele döndürme, renk titreşimi (Color Jitter), ve RandomAffine işlemleri uygulanmıştır.</li>
+                <li><strong>Optimizasyon:</strong> AdamW optimizer, Cosine Annealing Learning Rate Scheduler ile desteklenmiştir.</li>
+            </ul>
+            <h4>3. Klinik Performans ve Yorumlanabilirlik (XAI)</h4>
+            <p>Model, ön kamara hücreleri ve konjonktival hiperemiyi saptamada <strong>%93.1 Duyarlılık (Recall)</strong> ve <strong>0.988 AUC (Eğri Altında Kalan Alan)</strong> skoruna ulaşmıştır. Grad-CAM analizleri, modelin doğrudan inflamasyon odaklarına, özellikle korneoskleral limbus çevresine başarıyla odaklandığını kantitatif olarak kanıtlamıştır.</p>
+        `
+    },
+    'octa': {
+        title: 'OCT Anjiyografi (OCTA) Detayları',
+        icon: '🩻',
+        content: `
+            <h4>1. Veri Seti Spesifikasyonları ve Zorluklar</h4>
+            <p>Çalışma kapsamında <strong>525 adet OCTA (Optical Coherence Tomography Angiography)</strong> taraması kullanılmıştır. OCTA görüntüleri, doğası gereği yüksek düzeyde artefakt (hareket artefaktları, projeksiyon artefaktları) içerdiğinden, modelin yüzeysel ve derin kapiller pleksuslardaki perfüzyon kayıplarını ayırması majör bir zorluk teşkil etmiştir.</p>
+            <h4>2. Test Time Augmentation (TTA) Entegrasyonu</h4>
+            <ul>
+                <li><strong>Müdahale:</strong> Test aşamasında modelin güvenilirliğini artırmak için <code>Test Time Augmentation (TTA)</code> entegre edilmiştir.</li>
+                <li><strong>Mekanizma:</strong> Inference sırasında her görüntüye 5 farklı varyasyon (çevirme, ufak rotasyon, kontrast değişimi) uygulanıp, elde edilen tahmin olasılıklarının ortalaması (Ensemble Averaging) alınmıştır.</li>
+                <li><strong>Sonuç:</strong> Bu strateji, aşırı gürültülü taramalarda varyansı düşürmüş ve modelin F1 skorunu <strong>%78.0</strong> seviyesine tırmandırmıştır.</li>
+            </ul>
+            <h4>3. Domain Generalization (Cihaz Bağımsızlığı)</h4>
+            <p>Hem <em>Heidelberg Engineering</em> hem de <em>OptoVue</em> cihazlarından alınan farklı FOV (Field of View) taramalarında modelin klinik doğruluğunun ve kalibrasyonunun stabil kaldığı (Brier Skoru) gözlemlenmiştir.</p>
+        `
+    },
+    'cfp': {
+        title: 'Renkli Fundus Fotoğrafı (CFP) Detayları',
+        icon: '👁️',
+        content: `
+            <h4>1. Aşırı Veri Dengesizliği (Class Imbalance) Problemi</h4>
+            <p>870 görüntünün sadece 63'ü aktif üveitli vakalardan oluşmaktaydı (1:12.8 oran). Bu yapısal dengesizlik (imbalance ratio), standart modellerin loss fonksiyonlarını domine ederek sürekli "Normal" (Majority Class) tahmini yapmasına sebep olan büyük bir problemdi.</p>
+            <h4>2. Hiperparametre ve Loss Fonksiyonu Çözümleri</h4>
+            <ul>
+                <li><strong>Sınıf Ağırlıklandırması (Class Weights):</strong> Pozitif (Üveit) sınıfın ağırlığı, negatif sınıfa kıyasla orantısal olarak artırılarak loss fonksiyonunda (CrossEntropy) üveit vakalarına daha fazla penaltı kesilmesi sağlandı.</li>
+                <li><strong>Focal Loss (Gelecek Planı):</strong> Hard-to-classify (zor) örnekler için Focal Loss entegrasyon fizibilitesi analiz edildi.</li>
+                <li><strong>Youden Endeksi Optimizasyonu:</strong> Standart 0.50 karar eşiği yerine, ROC eğrisi üzerinde Sensitivite ve Spesifisiteyi maksimize eden <strong>0.68 optimal karar eşiği</strong> hesaplandı.</li>
+            </ul>
+            <h4>3. Klinik Doğrulama: Sıfır Vaka Kaçağı</h4>
+            <p>Uygulanan veri düzeltme teknikleri sayesinde model test setinde <strong>hiçbir üveit vakasını kaçırmamış (%100 Sensitivity/Recall)</strong> ve F1 skoru mükemmel bir seviye olan <strong>%94.7</strong> değerine ulaşmıştır. Model özellikle korioretinal lezyonları çok başarılı yakalamaktadır.</p>
+        `
+    },
+    'bscan_oct': {
+        title: 'Retina B-scan OCT Detayları',
+        icon: '📡',
+        content: `
+            <h4>1. Medikal Alan Adaptasyonu (Domain-Specific Transfer Learning)</h4>
+            <p>Orijinal veri setinin oldukça kısıtlı (75 resim) olması nedeniyle, sadece genel (ImageNet) ağırlıklar kullanılamazdı. Bu sorunu aşmak için model (ResNet-18), dünyaca ünlü <strong>109.000 görüntülük açık kaynak Kermany OCT Veri Seti</strong> üzerinde ön-eğitime (medikal fine-tuning) tabi tutularak, retinadaki katman yapılarını (RPE, fotoreseptör tabakaları) öğrenmesi sağlandı.</p>
+            <h4>2. Sentetik Veri Üretimi (Data Synthesis)</h4>
+            <ul>
+                <li>Eğitim verisi (Train Set), geometrik (affine) ve tıbbi (gaussian noise, blur) transformasyonlar kullanılarak <strong>1080 sentetik görüntüye</strong> artırıldı (Data Augmentation for Scarcity).</li>
+                <li><strong>Kritik Kural:</strong> Sentetik görüntüler kesinlikle Test veya Doğrulama (Validation) setlerine karıştırılmayarak <em>Data Leakage</em> engellendi.</li>
+            </ul>
+            <h4>3. İstatistiksel Kesinlik: K-Fold Cross Validation</h4>
+            <p>Sonuçların şans eseri olmadığını ispatlamak için <strong>5-Fold Cross Validation</strong> uygulandı. Her iterasyonda farklı veri kesitleri kullanılarak model doğrulanmış ve tüm katlamaların (fold) ortalamasında yüksek ve kararlı (low variance) bir istikrar grafiği elde edilmiştir.</p>
+        `
+    },
+    'as_oct': {
+        title: 'Ön Segment OCT (AS-OCT) Detayları',
+        icon: '🔍',
+        content: `
+            <h4>1. Yüksek Boyutlu Veri ve Modern Mimari</h4>
+            <p>Ön segment yapılarını incelemek için literatürdeki en kapsamlı veri tabanlarından olan yüksek çözünürlüklü <strong>MCOA (Multimodal Corneal ve Ocular Anterior) Veri Setindeki 6.664 devasa görüntü</strong> (Corneal opasite, keratit vs.) kullanılmıştır.</p>
+            <h4>2. Ağ Mimarisi: Noisy Student</h4>
+            <ul>
+                <li>Geleneksel ResNet modelleri yerine <code>timm (PyTorch Image Models)</code> kütüphanesinden <strong>Noisy Student</strong> eğitim stratejisiyle ağırlıklandırılmış gelişmiş <strong>EfficientNet-B0</strong> mimarisi entegre edilmiştir.</li>
+                <li>Bu mimari, kornea gibi ince ve şeffaf katmanlardaki milimetrik anomalileri çıkarmada (feature extraction) üstün performans sergiler.</li>
+            </ul>
+            <h4>3. Klinik Odak ve Grad-CAM Segmentasyonu</h4>
+            <p>Model özellikle korneal opasite (bulanıklık), ön kamara derinliği asimetrileri ve iridokorneal açı anomalilerini saptamak üzere çok hassas bir şekilde optimize edilmiştir. Grad-CAM sonuçları, yapay zekanın dikkatinin doğrudan ön kamara açılarına ve stromal defektlere mükemmel derecede odaklandığını göstermektedir.</p>
+        `
+    }
+};
+
+function openModelDetails(modalityId) {
+    const data = modelDetails[modalityId];
+    if (!data) return;
+    
+    document.getElementById('modal-title').innerHTML = `<span style="font-size: 1.5rem; margin-right: 10px;">${data.icon}</span> ${data.title}`;
+    document.getElementById('modal-body').innerHTML = data.content;
+    document.getElementById('detail-modal').classList.add('show');
+}
+
+function closeModelDetails() {
+    document.getElementById('detail-modal').classList.remove('show');
+}
+
+window.addEventListener('click', (e) => {
+    const modal = document.getElementById('detail-modal');
+    if (e.target === modal) {
+        closeModelDetails();
+    }
+});

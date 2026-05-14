@@ -17,9 +17,10 @@ env/
 data_raw/
 data_work/
 new-datasets/
+Veri Setleri/
 
 # Model ağırlıkları (GitHub 100MB limiti aşar)
-outputs/models/*.pth
+**/*.pth
 
 # macOS
 .DS_Store
@@ -36,10 +37,11 @@ outputs/models/*.pth
 .ipynb_checkpoints/
 notebooks/
 
-# Raporlar (kişisel akademik belgeler)
+# Raporlar (kişisel akademik belgeler — lokalde kalır)
 reports/*.pdf
 reports/*.docx
 reports/makale_plani.md
+reports/proje_tam_rapor.md
 
 # Makale dosyaları
 paper/
@@ -47,4 +49,6 @@ paper/
 # Misc
 *.log
 *.tmp
-claude_proje_ozeti.md
+
+# Gizli anahtarlar
+.env

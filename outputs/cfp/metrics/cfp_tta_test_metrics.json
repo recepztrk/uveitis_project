@@ -1,0 +1,46 @@
+{
+  "model": "cfp_efficientnetb0_best.pth (ayni agirliklar)",
+  "technique": "TTA (5x) + TTA + Optimal (0.68)",
+  "tta_count": 5,
+  "selected_threshold": 0.68,
+  "test_results": {
+    "baseline (t=0.50, no TTA)": {
+      "accuracy": 0.9618,
+      "precision": 0.6429,
+      "recall": 1.0,
+      "f1": 0.7826,
+      "roc_auc": 1.0
+    },
+    "tta_default (t=0.50)": {
+      "accuracy": 0.9618,
+      "precision": 0.6429,
+      "recall": 1.0,
+      "f1": 0.7826,
+      "roc_auc": 0.9982
+    },
+    "tta_optimal (t=0.68)": {
+      "accuracy": 0.9924,
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1": 0.9474,
+      "roc_auc": 0.9982
+    }
+  },
+  "final_decision": {
+    "selected_config": "TTA + Optimal (0.68)",
+    "final_test_metrics": {
+      "accuracy": 0.9924,
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1": 0.9474,
+      "roc_auc": 0.9982
+    },
+    "vs_baseline": {
+      "accuracy": "0.9618 -> 0.9924 (delta=0.0306)",
+      "precision": "0.6429 -> 0.9 (delta=0.2571)",
+      "recall": "1.0 -> 1.0 (delta=0.0)",
+      "f1": "0.7826 -> 0.9474 (delta=0.1648)",
+      "roc_auc": "1.0 -> 0.9982 (delta=-0.0018)"
+    }
+  }
+}

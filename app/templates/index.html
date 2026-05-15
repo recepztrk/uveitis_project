@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Üveit Karar Destek Sistemi</title>
     <meta name="description" content="Multimodal derin öğrenme tabanlı oftalmolojik üveit tanı destek sistemi">
-    <link rel="stylesheet" href="/static/css/style.css?v=1.3">
+    <link rel="stylesheet" href="/static/css/style.css?v=1.4">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👁️</text></svg>">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <!--
   index.html — Üveit Karar Destek Sistemi Ana Sayfası
@@ -378,6 +379,10 @@
                         <button class="sample-btn" onclick="event.stopPropagation(); showSamples('bscan_oct')">📡 B-scan</button>
                         <div class="sample-dropdown" id="samples-bscan_oct"></div>
                     </div>
+                    <div style="position: relative;">
+                        <button class="sample-btn" onclick="event.stopPropagation(); showSamples('as_oct')">👁️ AS-OCT</button>
+                        <div class="sample-dropdown" id="samples-as_oct"></div>
+                    </div>
                 </div>
             </section>
 
@@ -495,128 +500,200 @@
                 </div>
             </section>
 
-            <!-- Hidden PDF Report Template (not visible on page) -->
+            <!-- Hidden PDF Report Template -->
             <div id="pdf-template" style="display:none;">
                 <div id="pdf-content" style="
-                    font-family: 'Segoe UI', Arial, sans-serif;
+                    font-family: Arial, Helvetica, sans-serif;
                     background: #ffffff;
                     color: #1a1a2e;
-                    padding: 40px;
-                    max-width: 750px;
-                    margin: 0 auto;
+                    width: 794px;
+                    margin: 0;
+                    padding: 0;
                     font-size: 12px;
-                    line-height: 1.6;
+                    line-height: 1.5;
+                    box-sizing: border-box;
                 ">
-                    <!-- Header -->
-                    <div style="border-bottom: 3px solid #0ea5e9; padding-bottom: 18px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-start;">
-                        <div>
-                            <div style="font-size: 20px; font-weight: 800; color: #0f172a; letter-spacing: -0.5px;">👁️ Üveit &amp; MCOA Karar Destek Sistemi</div>
-                            <div style="font-size: 11px; color: #64748b; margin-top: 4px;">Yapay Zeka Destekli Oftalmolojik Analiz Raporu</div>
-                        </div>
-                        <div style="text-align: right; font-size: 10px; color: #94a3b8;">
-                            <div id="pdf-report-date"></div>
-                            <div id="pdf-report-id" style="font-family: monospace; margin-top: 2px;"></div>
-                        </div>
-                    </div>
 
-                    <!-- Decision Banner -->
+                    <!-- HEADER -->
+                    <table width="794" cellpadding="0" cellspacing="0" style="background:#0f172a; width:794px;">
+                        <tr>
+                            <td style="padding:26px 32px 22px 32px;">
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td style="vertical-align:top;">
+                                            <div style="font-size:21px; font-weight:800; color:#ffffff; letter-spacing:-0.5px; margin-bottom:5px;">
+                                                Uveit AI Karar Destek Sistemi
+                                            </div>
+                                            <div style="font-size:10px; color:#7dd3fc; letter-spacing:2px; text-transform:uppercase;">
+                                                Yapay Zeka Destekli Oftalmolojik Analiz Raporu
+                                            </div>
+                                        </td>
+                                        <td width="180" style="vertical-align:top; text-align:right;">
+                                            <table cellpadding="0" cellspacing="0" style="margin-left:auto; border:1px solid #334155; border-radius:6px;">
+                                                <tr>
+                                                    <td style="padding:10px 14px; background:#1e293b; border-radius:6px; text-align:center;">
+                                                        <div style="font-size:8px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Rapor Kimliği</div>
+                                                        <div id="pdf-report-id" style="font-family:monospace; font-size:10px; color:#f1f5f9; font-weight:700;">—</div>
+                                                        <div id="pdf-report-date" style="font-size:8px; color:#64748b; margin-top:3px;">—</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- DECISION BANNER -->
                     <div id="pdf-decision-banner" style="
-                        padding: 14px 20px;
-                        border-radius: 8px;
-                        font-size: 17px;
+                        padding: 14px 32px;
+                        font-size: 15px;
                         font-weight: 800;
-                        text-align: center;
-                        margin-bottom: 24px;
                         letter-spacing: 0.5px;
-                    "></div>
+                        text-align: center;
+                    ">—</div>
 
-                    <!-- Metrics Row -->
-                    <div style="display: flex; gap: 12px; margin-bottom: 24px;">
-                        <div style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; text-align:center;">
-                            <div style="font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:0.5px;">Cihaz / Modalite</div>
-                            <div style="font-weight:700; color:#0f172a; margin-top:4px;" id="pdf-modality">—</div>
-                        </div>
-                        <div style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; text-align:center;">
-                            <div style="font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:0.5px;">Patoloji Olasılığı</div>
-                            <div style="font-weight:800; font-size:18px; margin-top:4px;" id="pdf-probability">—</div>
-                        </div>
-                        <div style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; text-align:center;">
-                            <div style="font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:0.5px;">Sistem Güveni</div>
-                            <div style="font-weight:700; margin-top:4px;" id="pdf-confidence">—</div>
-                        </div>
-                        <div style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; text-align:center;">
-                            <div style="font-size:10px; color:#64748b; text-transform:uppercase; letter-spacing:0.5px;">Model AUC</div>
-                            <div style="font-weight:700; color:#0ea5e9; margin-top:4px;" id="pdf-auc">—</div>
-                        </div>
-                    </div>
+                    <!-- METRICS ROW (table) -->
+                    <table width="794" cellpadding="0" cellspacing="0" style="width:794px; border-top:1px solid #e2e8f0; border-bottom:2px solid #e2e8f0; background:#f8fafc; margin-bottom:22px;">
+                        <tr>
+                            <td width="198" style="padding:13px 14px; text-align:center; border-right:1px solid #e2e8f0;">
+                                <div style="font-size:8px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:5px;">Modalite</div>
+                                <div id="pdf-modality" style="font-weight:800; color:#0f172a; font-size:12px;">—</div>
+                            </td>
+                            <td width="198" style="padding:13px 14px; text-align:center; border-right:1px solid #e2e8f0;">
+                                <div style="font-size:8px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:5px;">Patoloji Olasılığı</div>
+                                <div id="pdf-probability" style="font-weight:800; font-size:20px; color:#0f172a;">—</div>
+                            </td>
+                            <td width="198" style="padding:13px 14px; text-align:center; border-right:1px solid #e2e8f0;">
+                                <div style="font-size:8px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:5px;">Sistem Güveni</div>
+                                <div id="pdf-confidence" style="font-weight:700; font-size:12px; color:#0f172a;">—</div>
+                            </td>
+                            <td width="200" style="padding:13px 14px; text-align:center;">
+                                <div style="font-size:8px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:5px;">ROC AUC</div>
+                                <div id="pdf-auc" style="font-weight:800; font-size:12px; color:#0ea5e9;">—</div>
+                            </td>
+                        </tr>
+                    </table>
 
-                    <!-- Images Side by Side -->
-                    <div style="margin-bottom: 24px;">
-                        <div style="font-size: 11px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; border-left: 3px solid #0ea5e9; padding-left: 8px;">Görsel Kanıtlar</div>
-                        <div style="display: flex; gap: 16px;">
-                            <div style="flex:1; text-align:center;">
-                                <img id="pdf-img-original" src="" alt="Orijinal Görüntü" style="width:100%; max-height:200px; object-fit:contain; border-radius:8px; border:1px solid #e2e8f0;">
-                                <div style="font-size:10px; color:#64748b; margin-top:6px;">Orijinal Tıbbi Görüntü</div>
-                            </div>
-                            <div style="flex:1; text-align:center;">
-                                <img id="pdf-img-heatmap" src="" alt="YZ Haritası" style="width:100%; max-height:200px; object-fit:contain; border-radius:8px; border:1px solid #e2e8f0;">
-                                <div style="font-size:10px; color:#64748b; margin-top:6px;" id="pdf-heatmap-label">Grad-CAM Isı Haritası (YZ Odak Bölgesi)</div>
-                            </div>
-                        </div>
-                        <div style="margin-top:8px; font-size:9.5px; color:#94a3b8; font-style:italic; text-align:center;" id="pdf-heatmap-note">
-                            Isı haritasındaki kırmızı/sarı bölgeler yapay zekanın patoloji tespit ettiği anatomik odak alanlarını göstermektedir.
-                        </div>
-                    </div>
+                    <!-- BODY -->
+                    <table width="730" cellpadding="0" cellspacing="0" style="width:730px; margin:0 32px;">
+                        <tr>
+                            <td style="padding-bottom:20px;">
 
-                    <!-- AI Clinical Commentary -->
-                    <div style="margin-bottom: 24px;">
-                        <div style="font-size: 11px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; border-left: 3px solid #a855f7; padding-left: 8px;">✨ Yapay Zeka Klinik Değerlendirmesi</div>
-                        <div style="
-                            background: #faf5ff;
-                            border: 1px solid #e9d5ff;
-                            border-radius: 8px;
-                            padding: 16px 20px;
-                            font-size: 12px;
-                            line-height: 1.75;
-                            color: #1e1b4b;
-                            font-style: italic;
-                        " id="pdf-ai-comment">—</div>
-                        <div style="font-size: 9px; color: #94a3b8; margin-top: 6px; text-align: right;">Gemini 2.5 Flash tarafından üretilmiştir</div>
-                    </div>
+                                <!-- Section: Görsel Kanıtlar -->
+                                <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:6px;">
+                                    <tr>
+                                        <td width="3" style="background:#0ea5e9; border-radius:2px;">&nbsp;</td>
+                                        <td style="padding-left:8px; font-size:9px; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:1.5px;">
+                                            Görsel Kanıtlar
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div style="margin-bottom:16px;"></div>
 
-                    <!-- Technical Metrics -->
-                    <div style="margin-bottom: 24px;">
-                        <div style="font-size: 11px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; border-left: 3px solid #10b981; padding-left: 8px;">⚙️ Model Teknik Metrikleri</div>
-                        <table style="width:100%; border-collapse:collapse; font-size:11px;">
-                            <tr style="background:#f8fafc;">
-                                <td style="padding:7px 10px; border:1px solid #e2e8f0; color:#64748b;">Mimari (Backbone)</td>
-                                <td style="padding:7px 10px; border:1px solid #e2e8f0; font-weight:600;" id="pdf-backbone">—</td>
-                                <td style="padding:7px 10px; border:1px solid #e2e8f0; color:#64748b;">F1 Score</td>
-                                <td style="padding:7px 10px; border:1px solid #e2e8f0; font-weight:600; color:#0ea5e9;" id="pdf-f1">—</td>
-                            </tr>
-                            <tr>
-                                <td style="padding:7px 10px; border:1px solid #e2e8f0; color:#64748b;">Eğitim Verisi</td>
-                                <td style="padding:7px 10px; border:1px solid #e2e8f0; font-weight:600;" id="pdf-training">—</td>
-                                <td style="padding:7px 10px; border:1px solid #e2e8f0; color:#64748b;">AUC Skoru</td>
-                                <td style="padding:7px 10px; border:1px solid #e2e8f0; font-weight:600; color:#0ea5e9;" id="pdf-auc2">—</td>
-                            </tr>
-                        </table>
-                        <div style="margin-top:8px; font-size:10px; color:#64748b;" id="pdf-clinical-note-row">
-                            <strong>YZ Anatomik Odak:</strong> <span id="pdf-clinical-note">—</span>
-                        </div>
-                    </div>
+                                <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+                                    <tr>
+                                        <td width="49%" style="vertical-align:top; text-align:center;">
+                                            <div style="border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; padding:8px; text-align:center;">
+                                                <img id="pdf-img-original" src="" alt="Orijinal" style="max-width:100%; max-height:185px; display:block; margin:0 auto;">
+                                            </div>
+                                            <div style="font-size:9px; color:#64748b; margin-top:6px; font-weight:600; text-align:center;">Orijinal Tıbbi Görüntü</div>
+                                        </td>
+                                        <td width="2%">&nbsp;</td>
+                                        <td width="49%" style="vertical-align:top; text-align:center;">
+                                            <div style="border:1px solid #e2e8f0; border-radius:8px; background:#f8fafc; padding:8px; text-align:center;">
+                                                <img id="pdf-img-heatmap" src="" alt="YZ Haritası" style="max-width:100%; max-height:185px; display:block; margin:0 auto;">
+                                            </div>
+                                            <div id="pdf-heatmap-label" style="font-size:9px; color:#64748b; margin-top:6px; font-weight:600; text-align:center;">Grad-CAM Isı Haritası</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div id="pdf-heatmap-note" style="font-size:8.5px; color:#94a3b8; font-style:italic; text-align:center; margin-bottom:20px; line-height:1.4;"></div>
 
-                    <!-- Footer Disclaimer -->
-                    <div style="border-top: 1px solid #e2e8f0; padding-top: 14px; margin-top: 8px;">
-                        <div style="font-size: 9px; color: #94a3b8; line-height: 1.6; text-align: center;">
-                            ⚠️ Bu rapor <strong>Uveitis AI Decision Support System</strong> tarafından otomatik olarak üretilmiştir.<br>
-                            Yalnızca klinisyen karar desteği (second opinion) amacıyla sunulmaktadır — kesin hekim tanısı yerine geçmez.<br>
-                            Üretim Tarihi: <span id="pdf-footer-date"></span>
-                        </div>
-                    </div>
+                                <!-- Section: AI Yorum -->
+                                <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:6px;">
+                                    <tr>
+                                        <td width="3" style="background:#a855f7; border-radius:2px;">&nbsp;</td>
+                                        <td style="padding-left:8px; font-size:9px; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:1.5px;">
+                                            Yapay Zeka Klinik Değerlendirmesi
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div style="margin-bottom:10px;"></div>
+                                <div style="
+                                    background:#faf5ff;
+                                    border-left:4px solid #a855f7;
+                                    padding:13px 16px;
+                                    font-size:11px;
+                                    line-height:1.75;
+                                    color:#1e1b4b;
+                                    margin-bottom:5px;
+                                " id="pdf-ai-comment">—</div>
+                                <div style="font-size:8px; color:#94a3b8; text-align:right; font-style:italic; margin-bottom:20px;">
+                                    Gemini 2.5 Flash · Google DeepMind tarafından üretilmiştir
+                                </div>
+
+                                <!-- Section: Teknik Metrikler -->
+                                <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:6px;">
+                                    <tr>
+                                        <td width="3" style="background:#10b981; border-radius:2px;">&nbsp;</td>
+                                        <td style="padding-left:8px; font-size:9px; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:1.5px;">
+                                            Model Teknik Performans Metrikleri
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div style="margin-bottom:10px;"></div>
+                                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; margin-bottom:8px;">
+                                    <tr>
+                                        <td style="padding:8px 11px; background:#f1f5f9; border:1px solid #e2e8f0; color:#64748b; width:22%; font-weight:600; font-size:11px;">Mimari</td>
+                                        <td id="pdf-backbone" style="padding:8px 11px; background:#ffffff; border:1px solid #e2e8f0; font-weight:700; font-size:11px; color:#0f172a;">—</td>
+                                        <td style="padding:8px 11px; background:#f1f5f9; border:1px solid #e2e8f0; color:#64748b; width:22%; font-weight:600; font-size:11px;">F1 Score</td>
+                                        <td id="pdf-f1" style="padding:8px 11px; background:#ffffff; border:1px solid #e2e8f0; font-weight:800; font-size:11px; color:#0ea5e9;">—</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding:8px 11px; background:#f1f5f9; border:1px solid #e2e8f0; color:#64748b; font-weight:600; font-size:11px;">Eğitim Verisi</td>
+                                        <td id="pdf-training" style="padding:8px 11px; background:#ffffff; border:1px solid #e2e8f0; font-weight:700; font-size:11px; color:#0f172a;">—</td>
+                                        <td style="padding:8px 11px; background:#f1f5f9; border:1px solid #e2e8f0; color:#64748b; font-weight:600; font-size:11px;">AUC Skoru</td>
+                                        <td id="pdf-auc2" style="padding:8px 11px; background:#ffffff; border:1px solid #e2e8f0; font-weight:800; font-size:11px; color:#0ea5e9;">—</td>
+                                    </tr>
+                                </table>
+                                <div style="font-size:10px; color:#475569; background:#f8fafc; padding:8px 11px; border-radius:5px; border:1px solid #e2e8f0;">
+                                    <span style="font-weight:700; color:#0f172a;">YZ Anatomik Odak:</span> <span id="pdf-clinical-note">—</span>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- FOOTER -->
+                    <table width="794" cellpadding="0" cellspacing="0" style="width:794px; background:#f1f5f9; border-top:2px solid #e2e8f0; margin-top:16px;">
+                        <tr>
+                            <td style="padding:12px 32px;">
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td style="font-size:8px; color:#94a3b8; line-height:1.6;">
+                                            <strong style="color:#64748b;">Sorumluluk Reddi:</strong>
+                                            Bu rapor <strong>Uveitis AI Decision Support System</strong> tarafından otomatik üretilmiştir.
+                                            Yalnızca klinisyen karar desteği amacıyla sunulmaktadır — kesin hekim tanısı yerine geçmez.
+                                        </td>
+                                        <td width="160" style="text-align:right; vertical-align:middle;">
+                                            <div style="font-size:7px; color:#94a3b8;">Üretim Tarihi</div>
+                                            <div id="pdf-footer-date" style="font-size:8.5px; color:#64748b; font-weight:600; font-family:monospace;">—</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
                 </div>
             </div>
 
+
+
+
+            
             <!-- SESSION HISTORY -->
             <section class="history-section" id="history-section" style="display: none;">
                 <div class="history-header">
@@ -650,6 +727,6 @@
         </div>
     </div>
 
-    <script src="/static/js/app.js?v=1.3"></script>
+    <script src="/static/js/app.js?v=2.2"></script>
 </body>
 </html>

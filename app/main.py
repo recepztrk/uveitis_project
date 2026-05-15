@@ -31,11 +31,22 @@ from app.inference import InferenceEngine
 APP_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = APP_DIR.parent
 
-# Gemini Başlangıç Ayarları
+# Gemini — Çoklu API Key (Round-Robin Rotation)
 load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
+
+# .env dosyasındaki "GEMINI_API_KEY" ile başlayan tüm anahtarları otomatik bul ve yorumları (#) temizle
+_raw_keys = [val.split("#")[0].strip() for key, val in os.environ.items() if key.startswith("GEMINI_API_KEY") and val.strip()]
+GEMINI_KEYS = list(set([k for k in _raw_keys if k]))  # Boşları ve tekrarları engelle
+_key_index  = 0                     # Rotation sayacı
+
+def _get_next_key() -> str | None:
+    """Round-robin ile sıradaki API key'i döndürür."""
+    global _key_index
+    if not GEMINI_KEYS:
+        return None
+    key = GEMINI_KEYS[_key_index % len(GEMINI_KEYS)]
+    _key_index += 1
+    return key
 
 class CommentRequest(BaseModel):
     modality: str
@@ -139,10 +150,15 @@ async def get_samples(modality: str):
 @app.post("/api/generate_comment")
 async def generate_comment(request: CommentRequest):
     """Analiz sonuçlarına göre Gemini API'den klinik yorum üretir."""
-    if not GEMINI_API_KEY:
+    api_key = _get_next_key()
+    if not api_key:
         return {"comment": "⚠️ Gemini API Anahtarı (.env) bulunamadı. Lütfen sistemi yapılandırın."}
-        
+
     try:
+        # 503 gRPC hatalarını önlemek için REST transport'a zorluyoruz
+        genai.configure(api_key=api_key, transport="rest")
+        
+        # Çoklu anahtar kullanıldığı için yüksek kaliteli modele geri döndük
         model = genai.GenerativeModel("gemini-2.5-flash")
         
         # Modalite ismini Türkçeleştir
@@ -201,6 +217,24 @@ async def generate_comment(request: CommentRequest):
         
         response = model.generate_content(prompt)
         return {"comment": response.text.strip()}
-        
+
     except Exception as e:
-        return {"comment": f"⚠️ Yapay zeka yorumu üretilirken hata oluştu: {str(e)}"}
+        err_str = str(e).lower()
+
+        # Günlük/dakikalık kota doldu
+        if any(k in err_str for k in ["quota", "resource_exhausted", "429", "rate limit", "ratelimit"]):
+            return {
+                "comment": "⏳ Günlük API kotası doldu.",
+                "error_type": "quota_exceeded"
+            }
+        # API anahtarı geçersiz
+        if any(k in err_str for k in ["api key", "invalid key", "api_key", "permission_denied", "403"]):
+            return {
+                "comment": "🔑 API anahtarı geçersiz veya izinsiz.",
+                "error_type": "auth_error"
+            }
+        # Genel hata
+        return {
+            "comment": f"⚠️ Yapay zeka bağlantı hatası: {str(e)[:120]}",
+            "error_type": "general_error"
+        }

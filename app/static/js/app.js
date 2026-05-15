@@ -50,7 +50,7 @@ async function loadModalities() {
     try {
         const response = await fetch('/api/models');
         modalityData = await response.json();
-        
+
         // Add Auto Detect Modality
         modalityData.unshift({
             id: 'auto',
@@ -178,11 +178,11 @@ async function loadSample(modality, filename, url) {
     try {
         const response = await fetch(url);
         const blob = await response.blob();
-        
+
         // Klasör ismi içerebilen filename'den sadece dosya adını ayıkla
         const cleanFilename = filename.split('/').pop();
         const file = new File([blob], cleanFilename, { type: blob.type });
-        
+
         handleFile(file);
         selectModality(modality);
     } catch (error) {
@@ -193,7 +193,7 @@ async function loadSample(modality, filename, url) {
 // İlgili modalitenin örnek vakalarını dropdown olarak gösterir.
 // /api/samples/{modality} endpoint'inden dosya listesini çeker.
 async function showSamples(modality) {
-    // Close any open dropdowns
+    // Tüm açık dropdown'ları kapat
     document.querySelectorAll('.sample-dropdown').forEach(d => d.classList.remove('show'));
 
     const dropdown = document.getElementById(`samples-${modality}`);
@@ -206,12 +206,35 @@ async function showSamples(modality) {
         if (samples.length === 0) {
             dropdown.innerHTML = '<div class="sample-item" style="color: var(--text-muted);">Örnek vaka bulunamadı</div>';
         } else {
-            dropdown.innerHTML = samples.map(s => `
-                <div class="sample-item" onclick="event.stopPropagation(); loadSample('${modality}', '${s.filename}', '${s.url}')">
-                    <span>${s.filename}</span>
-                    <span class="sample-badge ${s.label}">${s.label_display}</span>
+            const isASOCT = modality === 'as_oct';
+            const abnormalLabel = isASOCT ? 'MCOA (Korneal Opasite)' : 'Üveit (Aktif İnflamasyon)';
+            const normalLabel = 'Normal (Fizyolojik)';
+
+            // Tıklanınca rastgele resim seçen global handler ekleyelim (eğer yoksa)
+            if (!window.handleRandomSample) {
+                window.handleRandomSample = function(mod, label, allSamplesStr) {
+                    const allSamples = JSON.parse(decodeURIComponent(allSamplesStr));
+                    const filtered = allSamples.filter(s => s.label === label);
+                    if (filtered.length > 0) {
+                        const randomItem = filtered[Math.floor(Math.random() * filtered.length)];
+                        loadSample(mod, randomItem.filename, randomItem.url);
+                    }
+                    document.querySelectorAll('.sample-dropdown').forEach(d => d.classList.remove('show'));
+                };
+            }
+
+            const encodedSamples = encodeURIComponent(JSON.stringify(samples));
+
+            dropdown.innerHTML = `
+                <div class="sample-item" onclick="event.stopPropagation(); window.handleRandomSample('${modality}', 'uveitis', '${encodedSamples}')">
+                    <span style="font-weight:600;">🔴 Anormal Vaka</span>
+                    <span class="sample-badge uveitis" style="font-size:10px;">${abnormalLabel}</span>
                 </div>
-            `).join('');
+                <div class="sample-item" onclick="event.stopPropagation(); window.handleRandomSample('${modality}', 'normal', '${encodedSamples}')">
+                    <span style="font-weight:600;">🟢 Sağlıklı Vaka</span>
+                    <span class="sample-badge normal" style="font-size:10px;">${normalLabel}</span>
+                </div>
+            `;
         }
 
         dropdown.classList.toggle('show');
@@ -351,9 +374,9 @@ function showResults(result) {
     // Prediction badge ve Label
     const badge = document.getElementById('prediction-badge');
     const probLabel = document.querySelector('.prob-label');
-    
+
     badge.className = `prediction-badge ${result.prediction}`;
-    
+
     if (result.model_info.display_name === 'AS-OCT') {
         badge.textContent = result.prediction === 'uveitis' ? '🔴 ANORMAL BULGU' : '🟢 NORMAL';
         probLabel.textContent = 'Patoloji Olasılığı';
@@ -384,11 +407,11 @@ function showResults(result) {
 
     // Images
     document.getElementById('result-img-original').src = `data:image/png;base64,${result.original_image}`;
-    
+
     const toggles = document.getElementById('view-toggles');
     const btnGradcam = document.getElementById('btn-gradcam');
     const btnSeg = document.getElementById('btn-segmentation');
-    
+
     if (result.segmentation_image) {
         toggles.style.display = 'flex';
         // Varsayılan olarak Grad-CAM göster
@@ -398,7 +421,7 @@ function showResults(result) {
         document.getElementById('result-img-overlay').src = `data:image/png;base64,${result.overlay_image}`;
         document.getElementById('slider-instructions').textContent = 'Fareyi sürükleyerek YZ odaklanmasını (Grad-CAM) inceleyin';
     }
-    
+
     // Initialize Slider
     initSlider();
 
@@ -474,34 +497,67 @@ async function generateAIComment(result) {
         });
 
         const data = await response.json();
-        const comment = data.comment || "Yorum alınamadı.";
+        const comment = data.comment || 'Yorum alınamadı.';
+        const errorType = data.error_type || null;
 
         // Hide typing indicator
         aiTyping.style.display = 'none';
 
-        // Typewriter effect — enable PDF button when done
-        let i = 0;
-        function typeWriter() {
-            if (i < comment.length) {
-                aiText.innerHTML += comment.charAt(i);
-                i++;
-                setTimeout(typeWriter, 15);
-            } else {
-                // Comment fully written — populate PDF data and enable button
-                populatePDFTemplate(currentResult, comment);
-                const pdfBtn = document.getElementById('pdf-download-btn');
-                pdfBtn.disabled = false;
-                document.getElementById('pdf-btn-icon').textContent = '📄';
-                document.getElementById('pdf-btn-text').textContent = 'Klinik Rapor PDF İndir';
+        // Kota / auth hatası → özel banner göster
+        if (errorType === 'quota_exceeded') {
+            aiText.innerHTML = `
+                <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.3);border-radius:8px;">
+                    <span style="font-size:22px;">⏳</span>
+                    <div>
+                        <div style="font-weight:700;color:#f59e0b;margin-bottom:3px;">Günlük API Kotası Doldu</div>
+                        <div style="font-size:12px;color:var(--text-secondary);">
+                            Gemini ücretsiz planının günlük istek limiti aşıldı. Kota sıfırlanana kadar AI yorum üretilemez.<br>
+                            <span style="color:var(--text-muted);font-size:11px;">PDF rapor AI yorumu olmadan da indirilebilir.</span>
+                        </div>
+                    </div>
+                </div>`;
+            populatePDFTemplate(currentResult, '⏳ Günlük API kotası doldu — AI yorumu bu raporda mevcut değil.');
+        } else if (errorType === 'auth_error') {
+            aiText.innerHTML = `
+                <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.3);border-radius:8px;">
+                    <span style="font-size:22px;">🔑</span>
+                    <div>
+                        <div style="font-weight:700;color:#ef4444;margin-bottom:3px;">API Anahtarı Hatası</div>
+                        <div style="font-size:12px;color:var(--text-secondary);">.env dosyasındaki GEMINI_API_KEY geçersiz veya izin yetersiz.</div>
+                    </div>
+                </div>`;
+            populatePDFTemplate(currentResult, '🔑 API anahtarı hatası — AI yorumu bu raporda mevcut değil.');
+        } else {
+            // Başarılı yorum → typewriter efekti
+            let i = 0;
+            function typeWriter() {
+                if (i < comment.length) {
+                    aiText.innerHTML += comment.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 15);
+                } else {
+                    populatePDFTemplate(currentResult, comment);
+                    const pdfBtn = document.getElementById('pdf-download-btn');
+                    pdfBtn.disabled = false;
+                    document.getElementById('pdf-btn-icon').textContent = '📄';
+                    document.getElementById('pdf-btn-text').textContent = 'Klinik Rapor PDF İndir';
+                }
             }
+            typeWriter();
+            return; // PDF enable typeWriter içinde yapılıyor
         }
-        typeWriter();
+
+        // Hata durumlarında PDF yine de etkin
+        const pdfBtn = document.getElementById('pdf-download-btn');
+        pdfBtn.disabled = false;
+        document.getElementById('pdf-btn-icon').textContent = '📄';
+        document.getElementById('pdf-btn-text').textContent = 'Klinik Rapor PDF İndir';
 
     } catch (error) {
         aiTyping.style.display = 'none';
-        aiText.innerHTML = `<span style="color:var(--warning)">⚠️ Yorum alınırken bağlantı hatası oluştu.</span>`;
-        // Enable PDF even without AI comment
-        populatePDFTemplate(currentResult, 'AI yorumu alınamadı.');
+        aiText.innerHTML = `<div style="padding:10px 14px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.3);border-radius:8px;color:#ef4444;">
+            ⚠️ Bağlantı hatası — sunucuya ulaşılamıyor.</div>`;
+        populatePDFTemplate(currentResult, 'Bağlantı hatası — AI yorumu bu raporda mevcut değil.');
         const pdfBtn = document.getElementById('pdf-download-btn');
         pdfBtn.disabled = false;
         document.getElementById('pdf-btn-icon').textContent = '📄';
@@ -509,15 +565,16 @@ async function generateAIComment(result) {
     }
 }
 
+
 // === PDF TEMPLATE POPULATION ===
 function populatePDFTemplate(result, aiComment) {
     const info = result.model_info;
     const isASOCT = result.modality_used === 'as_oct';
     const probPercent = (result.probability * 100).toFixed(1);
     const now = new Date();
-    const dateStr = now.toLocaleDateString('tr-TR', { day:'2-digit', month:'long', year:'numeric' });
-    const timeStr = now.toLocaleTimeString('tr-TR', { hour:'2-digit', minute:'2-digit' });
-    const reportId = 'RPT-' + Math.random().toString(36).substr(2,8).toUpperCase();
+    const dateStr = now.toLocaleDateString('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' });
+    const timeStr = now.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
+    const reportId = 'RPT-' + Math.random().toString(36).substr(2, 8).toUpperCase();
 
     // Header meta
     document.getElementById('pdf-report-date').textContent = `${dateStr}, ${timeStr}`;
@@ -568,29 +625,59 @@ function populatePDFTemplate(result, aiComment) {
     document.getElementById('pdf-clinical-note').textContent = info.clinical_note;
 }
 
-// === PDF DOWNLOAD ===
+// === PDF DOWNLOAD (html2canvas onclone + jsPDF) ===
 function downloadPDF() {
     const btn = document.getElementById('pdf-download-btn');
     btn.disabled = true;
     document.getElementById('pdf-btn-icon').textContent = '⏳';
     document.getElementById('pdf-btn-text').textContent = 'PDF Oluşturuluyor...';
 
-    const element = document.getElementById('pdf-content');
-    element.parentElement.style.display = 'block'; // Make visible for rendering
-
-    const reportId = document.getElementById('pdf-report-id').textContent || 'rapor';
+    const source = document.getElementById('pdf-content');
+    const reportId = document.getElementById('pdf-report-id').textContent || 'RPT';
     const filename = `uveit_ai_rapor_${reportId}.pdf`;
 
-    const opt = {
-        margin:       [8, 8, 8, 8],
-        filename:     filename,
-        image:        { type: 'jpeg', quality: 0.95 },
-        html2canvas:  { scale: 2, useCORS: true, logging: false },
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
+    // html2canvas — onclone içinde template görünür yapılıyor
+    html2canvas(source, {
+        scale: 2,
+        useCORS: false,
+        allowTaint: true,
+        backgroundColor: '#ffffff',
+        logging: false,
+        onclone: function (clonedDoc) {
+            // Klonlanmış belgede pdf-template'i görünür yap
+            const tpl = clonedDoc.getElementById('pdf-template');
+            tpl.style.display = 'block';
+            tpl.style.position = 'absolute';
+            tpl.style.top = '0px';
+            tpl.style.left = '0px';
+            tpl.style.width = '794px';
+            tpl.style.zIndex = '0';
+            tpl.style.background = '#ffffff';
+        }
+    }).then(function (canvas) {
+        const { jsPDF } = window.jspdf;
+        const pdf = new jsPDF({ orientation: 'p', unit: 'mm', format: 'a4' });
+        const pageW = pdf.internal.pageSize.getWidth();   // 210 mm
+        const pageH = pdf.internal.pageSize.getHeight();  // 297 mm
 
-    html2pdf().set(opt).from(element).save().then(() => {
-        element.parentElement.style.display = 'none';
+        const imgData = canvas.toDataURL('image/jpeg', 0.93);
+        const imgH = (canvas.height * pageW) / canvas.width; // mm cinsinden yükseklik
+
+        if (imgH <= pageH) {
+            // Tek sayfaya sığıyor
+            pdf.addImage(imgData, 'JPEG', 0, 0, pageW, imgH);
+        } else {
+            // Çok sayfalı
+            let offset = 0;
+            while (offset < imgH) {
+                if (offset > 0) pdf.addPage();
+                pdf.addImage(imgData, 'JPEG', 0, -offset, pageW, imgH);
+                offset += pageH;
+            }
+        }
+
+        pdf.save(filename);
+
         btn.disabled = false;
         document.getElementById('pdf-btn-icon').textContent = '✅';
         document.getElementById('pdf-btn-text').textContent = 'PDF İndirildi!';
@@ -598,11 +685,12 @@ function downloadPDF() {
             document.getElementById('pdf-btn-icon').textContent = '📄';
             document.getElementById('pdf-btn-text').textContent = 'Klinik Rapor PDF İndir';
         }, 3000);
-    }).catch(() => {
-        element.parentElement.style.display = 'none';
+
+    }).catch(function (err) {
+        console.error('PDF hatası:', err);
         btn.disabled = false;
         document.getElementById('pdf-btn-icon').textContent = '❌';
-        document.getElementById('pdf-btn-text').textContent = 'PDF Oluşturulamadı';
+        document.getElementById('pdf-btn-text').textContent = 'Hata — Tekrar dene';
         setTimeout(() => {
             document.getElementById('pdf-btn-icon').textContent = '📄';
             document.getElementById('pdf-btn-text').textContent = 'Klinik Rapor PDF İndir';
@@ -610,31 +698,34 @@ function downloadPDF() {
     });
 }
 
+
+
+
 // === IMAGE SLIDER (Öncesi/Sonrası) ===
 // Fare veya dokunmatik ile orijinal ve AI (Grad-CAM) görüntüleri arasında geçiş sağlar.
 function initSlider() {
     const container = document.getElementById('img-comp-container');
     const overlay = document.getElementById('result-img-overlay');
     const slider = document.getElementById('img-comp-slider');
-    
+
     // Her analizde pozisyonu %50'ye sıfırla
     slider.style.left = "50%";
     overlay.style.clipPath = `inset(0% 50% 0% 0%)`;
-    
+
     let isDragging = false;
 
     function slide(e) {
         if (!isDragging) return;
-        
+
         let rect = container.getBoundingClientRect();
         let clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
         let x = clientX - rect.left;
-        
+
         if (x < 0) x = 0;
         if (x > rect.width) x = rect.width;
-        
+
         let percent = (x / rect.width) * 100;
-        
+
         slider.style.left = percent + "%";
         overlay.style.clipPath = `inset(0% ${100 - percent}% 0% 0%)`;
     }
@@ -643,16 +734,16 @@ function initSlider() {
     slider.onmousedown = () => isDragging = true;
     window.addEventListener('mouseup', () => isDragging = false);
     window.addEventListener('mousemove', slide);
-    
+
     // Sürükleme Olayları (Touch - Mobil Uyumluluk)
     slider.ontouchstart = () => isDragging = true;
     window.addEventListener('touchend', () => isDragging = false);
-    window.addEventListener('touchmove', slide, {passive: true});
+    window.addEventListener('touchmove', slide, { passive: true });
 }
 
 function switchView(viewType) {
     if (!currentResult) return;
-    
+
     const btnGradcam = document.getElementById('btn-gradcam');
     const btnSeg = document.getElementById('btn-segmentation');
     const overlayImg = document.getElementById('result-img-overlay');
@@ -663,7 +754,7 @@ function switchView(viewType) {
         btnGradcam.style.color = 'white';
         btnSeg.style.background = 'rgba(14, 165, 233, 0.1)';
         btnSeg.style.color = 'var(--text-primary)';
-        
+
         overlayImg.src = `data:image/png;base64,${currentResult.overlay_image}`;
         instructions.textContent = 'Fareyi sürükleyerek YZ odaklanmasını (Grad-CAM) inceleyin';
     } else if (viewType === 'segmentation') {
@@ -671,7 +762,7 @@ function switchView(viewType) {
         btnSeg.style.color = 'white';
         btnGradcam.style.background = 'rgba(14, 165, 233, 0.1)';
         btnGradcam.style.color = 'var(--text-primary)';
-        
+
         overlayImg.src = `data:image/png;base64,${currentResult.segmentation_image}`;
         instructions.textContent = 'Fareyi sürükleyerek Anatomik Haritayı (Segmentasyon) inceleyin';
     }
@@ -704,7 +795,7 @@ function renderHistory() {
         if (h.prediction === 'uveitis') {
             resultText = h.modality.includes('AS-OCT') ? 'Anormal Bulgu' : 'Üveit Şüphesi';
         }
-        
+
         return `
         <div class="history-card">
             <img class="history-thumb" src="data:image/png;base64,${h.thumbnail}" alt="Analiz ${i + 1}">
@@ -811,7 +902,7 @@ const modelDetails = {
 function openModelDetails(modalityId) {
     const data = modelDetails[modalityId];
     if (!data) return;
-    
+
     document.getElementById('modal-title').innerHTML = `<span style="font-size: 1.5rem; margin-right: 10px;">${data.icon}</span> ${data.title}`;
     document.getElementById('modal-body').innerHTML = data.content;
     document.getElementById('detail-modal').classList.add('show');

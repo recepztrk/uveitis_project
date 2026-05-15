@@ -315,8 +315,10 @@ AS-OCT'de `timm` kütüphanesinin JFT-300M pre-trained EfficientNet-B0'ı tercih
 | 12 Mayıs | Router v2 | 5 × 100 homojen veri, yeniden eğitim, Acc:%100 |
 | 12 Mayıs | AS-OCT XAI | Classification + Segmentation toggle arayüzde |
 | 12 Mayıs | Gemini AI | Gemini 2.5 Flash, /api/generate_comment endpoint |
-| 14 Mayıs | PDF Rapor | html2pdf.js ile istemci tarafı klinik PDF indirme |
 | 14 Mayıs | Dokümantasyon | Tüm 5 modalite raporu revize + datasets_used.md güncellendi |
+| 15 Mayıs | PDF Rapor v2 | html2canvas `onclone` + jsPDF ile %100 layout ve Türkçe karakter stabilitesi |
+| 15 Mayıs | API Quota ByPass | Sınırsız API Key rotation (`.env`) ve gRPC 503 REST Transport bypass |
+| 15 Mayıs | Demo UX | Otomatik "Sağlıklı/Anormal" vaka seçimi ve anlık daktilo (typewriter) asenkronizasyonu |
 
 ---
 

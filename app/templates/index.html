@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Üveit Karar Destek Sistemi</title>
     <meta name="description" content="Multimodal derin öğrenme tabanlı oftalmolojik üveit tanı destek sistemi">
-    <link rel="stylesheet" href="/static/css/style.css?v=1.4">
+    <link rel="stylesheet" href="/static/css/style.css?v=1.6">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👁️</text></svg>">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -56,19 +56,49 @@
             <div class="info-grid-2col">
                 <div class="info-card glass-card">
                     <h3>📖 Tıbbi Tanım ve Epidemiyoloji</h3>
-                    <p>Üveit, gözün damarsal orta tabakası olan <strong>uvea</strong>'nın (iris, siliyer cisim ve koroid) ve komşu dokuların (retina, vitreus, optik sinir) inflamasyonudur. Gelişmiş ülkelerde <strong>önlenebilir körlük nedenlerinin %10-15'inden</strong> sorumludur ve her yıl 100.000'de yaklaşık 50 yeni vaka (insidans) görülür.</p>
+                    <p>Üveit, gözün damarsal orta tabakası olan <strong>uvea</strong>'nın (iris, siliyer cisim ve koroid) ve komşu dokuların (retina, vitreus, optik sinir) <strong>inflamasyonudur</strong>. Gelişmiş ülkelerde önlenebilir körlük nedenlerinin <strong>%10–15'inden</strong> sorumludur. Her yıl 100.000 kişide yaklaşık <strong>50 yeni vaka</strong> görülür (insidans) ve yaşayan vakaların toplamında prevelans 100.000'de 115–204 arasında değişmektedir. Dünya genelinde 1,5 milyon kişiyi etkilediği tahmin edilmektedir.</p>
                 </div>
                 <div class="info-card glass-card">
                     <h3>🦠 Etiyoloji (Sebepler)</h3>
-                    <p>Hastalık temelde ikiye ayrılır: <strong>İnfeksiyöz</strong> (Toksoplazmozis, Tüberküloz, Sifiliz, Herpes virüsleri) ve <strong>Non-İnfeksiyöz / Otoimmün</strong> (Behçet Hastalığı, Ankilozan Spondilit, Sarkoidoz). Çoğu zaman altta yatan tehlikeli sistemik bir hastalığın ilk belirtisi olarak sadece gözde ortaya çıkar.</p>
+                    <p>Hastalık temelde ikiye ayrılır: <strong>İnfeksiyöz</strong> form (Toksoplazmozis, Tüberküloz, Sifiliz, CMV ve Herpes virüsleri) ile <strong>Non-İnfeksiyöz / Otoimmün</strong> form (Behçet Hastalığı, Ankilozan Spondilit, Sarkoidoz, VKH Sendromu). Vakaların yaklaşık <strong>%30'u idiyopatik</strong> kalır — yani altta yatan neden belirlenemez. Özellikle genç ve üretken çağdaki bireylerde sistemik bir otoimmün hastalığın ilk ve tek bulgusu olarak sadece gözde ortaya çıkabilir.</p>
                 </div>
                 <div class="info-card glass-card">
                     <h3>⚠️ Klinik Komplikasyonlar</h3>
-                    <p>Özellikle <strong>20-50 yaş</strong> arası çalışma çağı nüfusunu şiddetli vurur. Geç kalınması veya yetersiz tedavi edilmesi durumunda sekonder glokom, komplike katarakt, kistoid maküler ödem (KME) ve retina dekolmanı gibi <strong>kalıcı ve geri döndürülemez görme kayıplarına</strong> yol açar.</p>
+                    <p>Özellikle <strong>20–50 yaş</strong> arası çalışma çağı nüfusunu şiddetli biçimde etkiler. Geç kalınan veya yetersiz tedavi edilen olgularda ciddi ve geri döndürülemez görme kayıpları ortaya çıkabilir:</p>
+                    <ul style="margin: 8px 0 0 16px; line-height: 1.8; font-size: 0.88rem; color: var(--text-secondary);">
+                        <li><strong>Sekonder Glokom</strong> — göz içi basıncının kronik yükselmesi</li>
+                        <li><strong>Komplike Katarakt</strong> — lens saydamlığının bozulması</li>
+                        <li><strong>Kistoid Maküler Ödem (KME)</strong> — merkezi görmenin kaybı</li>
+                        <li><strong>Retina Dekolmanı</strong> — kalıcı görme yitimi riski</li>
+                        <li><strong>Arka Sineşi</strong> — iris-lens yapışmaları</li>
+                    </ul>
                 </div>
                 <div class="info-card glass-card">
-                    <h3>🧠 Neden Yapay Zekaya İhtiyaç Var?</h3>
-                    <p>Üveit tanısı klinik pratikte yüksek oranda <strong>hekim tecrübesine dayalıdır (subjektiftir)</strong>. Farklı anatomik bölgelerden farklı cihazlarla (multimodal) analiz gerektirir. Sistemimiz, bu karmaşık örüntüleri milisaniyeler içinde analiz ederek hekimler için <strong>objektif bir karar destek ve erken uyarı mekanizması</strong> sunar.</p>
+                    <h3>🔬 Tanı Süreci ve Zorluklar</h3>
+                    <p>Üveit tanısı klinik pratikte son derece <strong>güç ve zaman alıcıdır</strong>. Tanı süreci birden fazla adım içerir:</p>
+                    <ul style="margin: 8px 0 0 16px; line-height: 1.8; font-size: 0.88rem; color: var(--text-secondary);">
+                        <li>Biyomikroskop (Slit-lamp) ile ön segment muayenesi</li>
+                        <li>Fundus fotoğrafı ve OCT ile posterior segment analizi</li>
+                        <li>OCTA ile vasküler haritalaması ve perfüzyon tespiti</li>
+                        <li>Floresein Anjiyografi (FA) ile sızdırma ve iskemi tespiti</li>
+                        <li>Sistemik hastalık araştırması için kapsamlı laboratuvar testleri</li>
+                    </ul>
+                    <p style="margin-top: 8px;">Tüm bu süreç uzman deneyimine ve <strong>subjektif yoruma</strong> dayanır; farklı hekimler aynı bulguyu farklı değerlendirebilir.</p>
+                </div>
+                <div class="info-card glass-card">
+                    <h3>💊 Tedavi Yaklaşımları</h3>
+                    <p>Tedavi, üveitin tipine, lokalizasyonuna ve etiyolojisine göre bireyselleştirilir:</p>
+                    <ul style="margin: 8px 0 0 16px; line-height: 1.8; font-size: 0.88rem; color: var(--text-secondary);">
+                        <li><strong>Topikal/Sistemik Kortikosteroidler</strong> — inflamasyonun hızla baskılanması</li>
+                        <li><strong>İmmünomodülatör Tedavi (IMT)</strong> — Metotreksat, Mikofenolat, Azatioprin</li>
+                        <li><strong>Biyolojik Ajanlar</strong> — Anti-TNF (Adalimumab/HUMIRA), Anti-VEGF enjeksiyonları</li>
+                        <li><strong>Antimikrobiyaller</strong> — İnfeksiyöz etiyoloji saptanırsa</li>
+                    </ul>
+                    <p style="margin-top: 8px;">Tedavi yanıtı takip, düzenli görüntüleme gerektirdiğinden erken ve doğru tanı <strong>kritik önem</strong> taşımaktadır.</p>
+                </div>
+                <div class="info-card glass-card">
+                    <h3>🧠 Neden Yapay Zekâya İhtiyaç Var?</h3>
+                    <p>Üveit tanısında yapay zekânın değeri üç temel noktada öne çıkmaktadır. Birincisi, <strong>subjektifliğin azaltılması</strong>: farklı klinisyenler aynı görüntüyü farklı yorumlayabilir; YZ nesnel ve tekrarlanabilir bir analiz sunar. İkincisi, <strong>yük hafifletme</strong>: çoklu görüntüleme cihazlarından (Slit-lamp, OCTA, CFP, B-scan OCT, AS-OCT) elde edilen verileri milisaniyeler içinde işleyerek uzman zamanını korur. Üçüncüsü, <strong>erken uyarı</strong>: deneyimli göz hekiminin olmadığı birinci basamak sağlık merkezlerinde bile güvenilir bir ön değerlendirme kapısı oluşturabilir.</p>
                 </div>
             </div>
 
@@ -77,28 +107,29 @@
                 <div class="anatomy-grid">
                     <div class="anatomy-item">
                         <span class="anatomy-badge anterior">Anterior</span>
-                        <span class="anatomy-label">İris ve ön kamara iltihabı (iritis/iridosiklit). En sık görülen tip.</span>
+                        <span class="anatomy-label">İris ve ön kamara iltihabı (iritis / iridosiklit). En sık görülen tip olup vakaların ~%50'sini oluşturur. Genellikle akut seyirlidir ve erken tedaviye iyi yanıt verir.</span>
                     </div>
                     <div class="anatomy-item">
                         <span class="anatomy-badge intermediate">İntermediate</span>
-                        <span class="anatomy-label">Vitreus iltihabı. Genç hastalarda sık görülür.</span>
+                        <span class="anatomy-label">Siliyer cisim ve ön vitreus iltihabı (parsplanitis). Genç hastalarda sık görülür. Görme bulanıklığı ve uçuşan cisimcikler (floater) tipik şikâyetlerdir.</span>
                     </div>
                     <div class="anatomy-item">
                         <span class="anatomy-badge posterior">Posterior</span>
-                        <span class="anatomy-label">Retina ve koroid iltihabı. Görme kaybı riski yüksektir.</span>
+                        <span class="anatomy-label">Retina, koroid ve arka vitreus iltihabı (koryoretinit, retinit). Görme kaybı riski en yüksek formdur; Toksoplazmozis ve CMV sık nedenler arasındadır.</span>
                     </div>
                     <div class="anatomy-item">
                         <span class="anatomy-badge panuveitis">Panüveit</span>
-                        <span class="anatomy-label">Tüm uveal yapıları etkiler. En şiddetli formdur.</span>
+                        <span class="anatomy-label">Tüm uveal yapıları etkileyen en şiddetli formdur. Behçet Hastalığı, VKH Sendromu ve Sarkoidoz sık nedenlerdir. Kalıcı görme kaybı riski en yüksek gruptur.</span>
                     </div>
                 </div>
             </div>
 
             <div class="info-card glass-card highlight-card" style="margin-top: 1rem;">
                 <h3>🤖 Projemizin Yaklaşımı</h3>
-                <p>Bu sistem, <strong>4 farklı oftalmolojik görüntüleme modalitesinden</strong> elde edilen verileri derin öğrenme modelleriyle analiz ederek hekimlere tanı sürecinde karar desteği sağlamayı hedefler. Her modalite, hastalığın farklı bir yönünü ortaya koyar ve birlikte kullanıldığında tanı doğruluğu artar.</p>
+                <p>Bu sistem, <strong>5 farklı oftalmolojik görüntüleme modalitesinden</strong> elde edilen verileri derin öğrenme modelleriyle analiz ederek hekimlere tanı sürecinde karar desteği sağlamayı hedefler. Her modalite, hastalığın farklı bir anatomik yönünü ve boyutunu ortaya koyar; birlikte kullanıldığında tanı doğruluğu önemli ölçüde artar. Sistem ayrıca yüklenen görüntünün hangi cihaza ait olduğunu otomatik tespit eden bir <strong>Otonom Modalite Router</strong> (MobileNetV3, Doğruluk: %100) ve analiz sonuçlarını EHR kalitesinde raporlayan <strong>Gemini 2.5 Flash yapay zekâ</strong> modülü içermektedir.</p>
             </div>
         </section>
+
 
         <!-- ============================================================ -->
         <!-- SECTION: MODALITIES INFO                                     -->
@@ -475,6 +506,29 @@
                                 <span id="clinical-note-text">—</span>
                             </div>
 
+                            <!-- GÖRÜNTÜ KALİTE SKORU -->
+                            <div class="quality-badge-row" id="quality-badge-row" style="display:none;">
+                                <span class="quality-label">🔬 Görüntü Kalitesi:</span>
+                                <span id="quality-badge" class="quality-badge">—</span>
+                                <span id="quality-issues" class="quality-issues"></span>
+                            </div>
+
+                            <!-- BELİRSİZLİK BÖLGESİ UYARISI -->
+                            <div class="uncertainty-warning" id="uncertainty-warning" style="display:none;">
+                                <div class="uncertainty-header">
+                                    <span class="uncertainty-icon">⚠️</span>
+                                    <strong>Belirsiz Bulgu — Ek Değerlendirme Önerilir</strong>
+                                </div>
+                                <p class="uncertainty-body">
+                                    Model bu görüntü için net bir karar verememektedir. Üveit olasılığı <strong id="uncertainty-prob">—</strong> olarak hesaplandı; bu değer sistemin belirsizlik bölgesine (%40–%60) düşmektedir.
+                                </p>
+                                <ul class="uncertainty-list">
+                                    <li>🔄 Farklı bir görüntüleme modalitesi ile destekleyiniz</li>
+                                    <li>👨‍⚕️ Uzman oftalmolog değerlendirmesi önerilir</li>
+                                    <li>📷 Mümkünse daha yüksek kaliteli görüntü ile tekrar deneyin</li>
+                                </ul>
+                            </div>
+
                             <div class="ai-comment-box" id="ai-comment-box" style="display: none;">
                                 <div class="ai-comment-header">
                                     <span class="ai-icon">✨</span>
@@ -727,6 +781,6 @@
         </div>
     </div>
 
-    <script src="/static/js/app.js?v=2.2"></script>
+    <script src="/static/js/app.js?v=2.3"></script>
 </body>
 </html>

@@ -444,6 +444,35 @@ function showResults(result) {
     // Clinical note
     document.getElementById('clinical-note-text').textContent = info.clinical_note;
 
+    // === GÖRÜNTÜ KALİTE SKORU ===
+    const qualityRow = document.getElementById('quality-badge-row');
+    const qualityBadge = document.getElementById('quality-badge');
+    const qualityIssues = document.getElementById('quality-issues');
+    if (result.quality_info) {
+        const q = result.quality_info;
+        qualityRow.style.display = 'flex';
+        qualityBadge.textContent = q.score_label;
+        qualityBadge.className = `quality-badge quality-${q.score}`;
+        if (q.issues && q.issues.length > 0) {
+            qualityIssues.textContent = '— ' + q.issues.join('; ');
+            qualityIssues.style.display = 'inline';
+        } else {
+            qualityIssues.textContent = '';
+        }
+    } else {
+        qualityRow.style.display = 'none';
+    }
+
+    // === BELİRSİZLİK BÖLGESİ UYARISI ===
+    const uncertaintyBox = document.getElementById('uncertainty-warning');
+    if (result.uncertainty_zone) {
+        const probPercent2 = (result.probability * 100).toFixed(1);
+        document.getElementById('uncertainty-prob').textContent = `%${probPercent2}`;
+        uncertaintyBox.style.display = 'block';
+    } else {
+        uncertaintyBox.style.display = 'none';
+    }
+
     // Model warning
     const warningEl = document.getElementById('model-warning');
     if (info.warning) {

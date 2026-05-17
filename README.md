@@ -245,6 +245,9 @@ ImageNet → ResNet-18 (genel görsel)
 - **Akademik Teknik Modallar:** Her modalite kartında detaylı eğitim bilgisi pop-up'ı
 - **Session History:** Art arda analizler thumbnail galeri olarak kaydedilir
 - **Otomatik Tespit:** "🤖 Otomatik Tespit" seçeneği ile kullanıcı cihaz seçmez
+- **🆕 Görüntü Kalite Skoru Badge'i:** Her analizde görüntünün çözünürlük, bulanıklık ve kontrast değerleri ölçülerek Yeşil/Sarı/Kırmızı kalite rozeti gösterilir; sorun varsa açıklama eklenir
+- **🆕 Belirsizlik Bölgesi Uyarısı:** Model olasılığı %40–%60 arasına düştüğünde animasyonlu sarı uyarı paneli görünür; kullanıcıya ek tetkik ve uzman görüşü önerilir
+- **🆕 Genişletilmiş Hastalık Bilgi Bölümü:** "Üveit Nedir?" bölümü 4 → 6 karta çıkarıldı; Tanı Süreci & Zorlukları ve Tedavi Yaklaşımları kartları eklendi; anatomik sınıflandırma açıklamaları detaylandırıldı
 
 ### 8.3 Çalıştırma
 
@@ -319,6 +322,9 @@ AS-OCT'de `timm` kütüphanesinin JFT-300M pre-trained EfficientNet-B0'ı tercih
 | 15 Mayıs | PDF Rapor v2 | html2canvas `onclone` + jsPDF ile %100 layout ve Türkçe karakter stabilitesi |
 | 15 Mayıs | API Quota ByPass | Sınırsız API Key rotation (`.env`) ve gRPC 503 REST Transport bypass |
 | 15 Mayıs | Demo UX | Otomatik "Sağlıklı/Anormal" vaka seçimi ve anlık daktilo (typewriter) asenkronizasyonu |
+| 17 Mayıs | Görüntü Kalite Skoru | `check_image_quality()`: Laplacian varyansı + çözünürlük + kontrast; modaliteye özel adaptif eşikler |
+| 17 Mayıs | Belirsizlik Bölgesi | %40–%60 olasılık aralığında `uncertainty_zone` tespiti + animasyonlu frontend uyarı paneli |
+| 17 Mayıs | Hastalık Bilgi Bölümü | "Üveit Nedir?" 4→6 kart; Tanı Süreci, Tedavi kartları eklendi; anatomik sınıflandırma genişletildi; "4→5 modalite" hatası düzeltildi |
 
 ---
 

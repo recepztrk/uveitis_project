@@ -1,6 +1,6 @@
 # Proje Güncel Durum Raporu — Agent Brifing Belgesi
 
-**Son Güncelleme:** 11 Mayıs 2026  
+**Son Güncelleme:** 17 Mayıs 2026  
 **Amaç:** Bu belge, yeni bir sohbette AI agent'a projenin mevcut durumunu detaylıca aktarmak için hazırlanmıştır. Projenin tam teknik raporu (model hiperparametreleri, confusion matrix'ler, veri seti detayları) `README.md` dosyasındadır. Modalite bazlı detaylı final raporları `reports/phase1_unimodal/` klasöründedir.
 
 ---
@@ -123,16 +123,24 @@ uvicorn app.main:app --reload
 
 ### Mevcut Özellikler
 1. **6 Modalite Kartı:** 5 cihaz + 1 "Otomatik Tespit (Auto)" kartı. Kartlar `/api/models` endpoint'inden dinamik yüklenir, Auto kartı frontend'de (app.js) eklenir.
-2. **Grad-CAM İnteraktif Slider:** Orijinal görüntü ve ısı haritası arasında fare sürüklenerek karşılaştırma yapılır. `clipPath` CSS özelliği kullanılır.
-3. **Akademik Teknik Modallar:** Her cihaz kartında "Detay" butonu var. Tıklandığında `modelDetails` objesindeki (app.js ~satır 491) HTML içerik pop-up olarak gösterilir. İçerikler: veri seti metodolojisi, mimari, eğitim stratejisi, klinik performans, XAI gözlemleri.
+2. **Grad-CAM İnteraktif Slider:** Orijinal görüntü ve ısı haritası arasında fare sürükleyerek karşılaştırma yapılır. `clipPath` CSS özelliği kullanılır.
+3. **Akademik Teknik Modallar:** Her cihaz kartında "Detay" butonu var. Tıklandığında `modelDetails` objesindeki (app.js ~satır 491) HTML içerik pop-up olarak gösterilir.
 4. **Session History:** Her analiz sonucu `sessionHistory` array'ine kaydedilir, sayfanın altında thumbnail + sonuç + saat olarak gösterilir.
 5. **Detected Modality Banner:** Auto mod kullanıldığında sonuç ekranının üstünde mavi bir balonla "Sistem X cihazı algıladı" mesajı gösterilir.
 6. **Güven Badge'i:** Tahmin olasılığına göre Yüksek/Orta/Düşük güven göstergesi.
+7. **Gemini AI Klinik Rapor:** `/api/generate_comment` üzerinden Gemini 2.5 Flash ile daktilo efektli akademik klinik yorum. Çoklu API key rotation ile kota yönetimi.
+8. **PDF Klinik Rapor İndirme:** `html2canvas` + `jsPDF` ile istemci tarafında A4 formatında tam klinik rapor çıktısı (orijinal görüntü, Grad-CAM/Segmentasyon, AI yorumu, model metrikleri).
+9. **🆕 Görüntü Kalite Değerlendirme Sistemi:** `inference.py::check_image_quality()` fonksiyonu üç metrikle görüntü kalitesini ölçer:
+   - **Çözünürlük:** Modaliteye özel minimum piksel boyutu kontrolü
+   - **Bulanıklık:** Laplacian varyansı (akademik yöntem; modaliteye göre adaptif eşik)
+   - **Kontrast:** Piksel standart sapması
+   - Sonuç API response'una `quality_info` alanı olarak eklenir; frontend Yeşil/Sarı/Kırmızı badge olarak gösterir.
+10. **🆕 Belirsizlik Bölgesi Uyarı Paneli:** Model üveit olasılığı %40–%60 arasına düştüğünde `uncertainty_zone: true` döner. Frontend sarmal kenarlary animasyonlu uyarı kutusu gösterir: "Ek Değerlendirme Önerilir + farklı modalite önerisi + uzman görüşü".
+11. **🆕 Genişletilmiş Hastalık Bilgi Bölümü:** "Üveit Nedir?" 4 → 6 karta çıkarıldı. Yeni kartlar: Tanı Süreci & Zorlukları, Tedavi Yaklaşımları. Anatomik sınıflandırma açıklamaları genişletildi.
 
-### Bilinen Sorunlar / Eksiklikler
-- B-scan ve AS-OCT modelleri için Grad-CAM demo arayüzünde çalışıyor ama spesifik doğrulama yapılmadı
-- PDF raporlama özelliği henüz yok
-- Mobil responsive tam test edilmedi
+### Bilinen Sınırlılıklar
+- Demo'da gerçek zamanlı TTA uygulanmıyor (yalnızca evaluation scriptlerinde). Gösterilen F1/AUC metrikleri TTA sonrası değerlerdir.
+- Mobil responsive tam test edilmedi.
 
 ---
 

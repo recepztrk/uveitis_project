@@ -225,6 +225,83 @@ def _numpy_to_base64(np_img: np.ndarray) -> str:
     return _pil_to_base64(pil_img)
 
 
+# === GÖRÜNTÜ KALİTE DEĞERLENDİRME ===
+# Her modalite için minimum önerilen çözünürlükler (piksel)
+# Klinik veri setlerindeki tipik minimum boyutlara göre kalibre edilmiştir
+_MIN_RESOLUTION = {
+    "slitlamp":  (224, 224),   # biyomikroskop fotoğrafları genellikle 250+ px
+    "octa":      (350, 350),   # OCTA taramaları genellikle 400+ px
+    "cfp":       (350, 350),   # fundus fotoğrafları genellikle 500+ px
+    "bscan_oct": (224, 150),   # B-scan kesitleri dar olabilir
+    "as_oct":    (224, 150),   # AS-OCT kesitleri dar olabilir
+}
+
+def check_image_quality(pil_image: Image.Image, modality: str) -> dict:
+    """Görüntü kalitesini üç metrikle değerlendirir:
+        1. Çözünürlük  — modaliteye özel minimum boyut kontrolü
+        2. Bulanıklık  — Laplacian varyansı (akademik yöntem)
+        3. Kontrast    — piksel standart sapması
+
+    Returns:
+        dict: {
+            score: 'high' | 'medium' | 'low',
+            score_label: Türkçe görüntü kalitesi etiketi,
+            blur_score: float,
+            contrast_score: float,
+            resolution: (w, h),
+            issues: list[str]   # tespit edilen sorunlar
+        }
+    """
+    w, h = pil_image.size
+    issues = []
+
+    # --- 1. Çözünürlük Kontrolü ---
+    min_w, min_h = _MIN_RESOLUTION.get(modality, (300, 300))
+    resolution_ok = (w >= min_w and h >= min_h)
+    if not resolution_ok:
+        issues.append(f"Düşük çözünürlük ({w}×{h}px — önerilen min. {min_w}×{min_h}px)")
+
+    # --- 2. Bulanıklık (Laplacian Varyansı) ---
+    gray = cv2.cvtColor(np.array(pil_image.resize((512, 512))), cv2.COLOR_RGB2GRAY)
+    blur_score = float(cv2.Laplacian(gray, cv2.CV_64F).var())
+    # Modaliteye göre adaptif eşik:
+    #   CFP / OCTA  — doğal olarak daha yumuşak görüntüler (düşük eşik)
+    #   Slit-lamp   — yüksek netlik beklenir (yüksek eşik)
+    _blur_thresh = {"slitlamp": 60, "octa": 25, "cfp": 20, "bscan_oct": 30, "as_oct": 30}
+    blur_threshold = _blur_thresh.get(modality, 40)
+    blur_ok = blur_score >= blur_threshold
+    if not blur_ok:
+        issues.append(f"Bulanık görüntü (keskinlik skoru: {blur_score:.0f} — bu modalite için önerilen min. {blur_threshold})")
+
+    # --- 3. Kontrast (Piksel Standart Sapması) ---
+    contrast_score = float(gray.std())
+    # Eşik: <20 çok düşük kontrast, 20-40 orta
+    contrast_ok = contrast_score >= 20
+    if not contrast_ok:
+        issues.append(f"Düşük kontrast (kontrast skoru: {contrast_score:.0f} — önerilen min. 20)")
+
+    # --- Genel Kalite Skoru ---
+    passed = sum([resolution_ok, blur_ok, contrast_ok])
+    if passed == 3:
+        score = "high"
+        score_label = "Yüksek Kalite"
+    elif passed == 2:
+        score = "medium"
+        score_label = "Orta Kalite"
+    else:
+        score = "low"
+        score_label = "Düşük Kalite"
+
+    return {
+        "score": score,
+        "score_label": score_label,
+        "blur_score": round(blur_score, 1),
+        "contrast_score": round(contrast_score, 1),
+        "resolution": (w, h),
+        "issues": issues,
+    }
+
+
 class InferenceEngine:
     """Tüm modalite modellerini yönetir ve tahmin yapar.
 
@@ -360,6 +437,9 @@ class InferenceEngine:
         pil_image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
         display_image = pil_image.resize((224, 224))
 
+        # 1.5 Görüntü Kalite Değerlendirmesi
+        quality_info = check_image_quality(pil_image, modality)
+
         # 2. Tahmin (gradient hesaplanmaz — hızlı)
         input_tensor = EVAL_TRANSFORM(pil_image).unsqueeze(0).to(DEVICE)
         model.eval()
@@ -424,10 +504,17 @@ class InferenceEngine:
         else:
             confidence = "Düşük"
 
+        # 7. Belirsizlik Bölgesi Tespiti (%40-%60 arası — modelin kararsız kaldığı bölge)
+        UNCERTAINTY_LOW  = 0.40
+        UNCERTAINTY_HIGH = 0.60
+        in_uncertainty_zone = UNCERTAINTY_LOW <= probability <= UNCERTAINTY_HIGH
+
         return {
             "prediction": prediction,
             "probability": round(probability, 4),
             "confidence": confidence,
+            "uncertainty_zone": in_uncertainty_zone,
+            "quality_info": quality_info,
             "original_image": original_b64,
             "gradcam_image": gradcam_b64,
             "overlay_image": overlay_b64,

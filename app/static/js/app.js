@@ -561,9 +561,9 @@ async function generateAIComment(result) {
             let i = 0;
             function typeWriter() {
                 if (i < comment.length) {
-                    aiText.innerHTML += comment.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 15);
+                    aiText.innerHTML += comment.substring(i, i + 3);
+                    i += 3;
+                    setTimeout(typeWriter, 5);
                 } else {
                     populatePDFTemplate(currentResult, comment);
                     const pdfBtn = document.getElementById('pdf-download-btn');

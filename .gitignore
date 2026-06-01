@@ -37,9 +37,7 @@ Veri Setleri/
 .ipynb_checkpoints/
 notebooks/
 
-# Raporlar (kişisel akademik belgeler — lokalde kalır)
-reports/*.pdf
-reports/*.docx
+# Raporlar
 reports/makale_plani.md
 reports/proje_tam_rapor.md
 

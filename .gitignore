@@ -43,16 +43,15 @@ reports/*.docx
 reports/makale_plani.md
 reports/proje_tam_rapor.md
 
-# Makale dosyaları
-paper/
-
 # Misc
 *.log
 *.tmp
+*.txt
 
 # Gizli anahtarlar
 .env
 
-gorsel_ciktilar.txt
-
+# Büyük PDF'ler (root dizinindeki kişisel belgeler)
+Recep_Ozturk_Uveitis_AI_Paper_Draft.pdf
+uveitis_project_poster.pdf
 YMH432-Poster_Video_Yonergesi-2026-4.pdf

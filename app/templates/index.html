@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Üveit Karar Destek Sistemi</title>
     <meta name="description" content="Multimodal derin öğrenme tabanlı oftalmolojik üveit tanı destek sistemi">
-    <link rel="stylesheet" href="/static/css/style.css?v=1.6">
+    <link rel="stylesheet" href="/static/css/style.css?v=1.8">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👁️</text></svg>">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -34,6 +34,7 @@
         <nav class="header-nav">
             <a href="#about-disease">Hastalık</a>
             <a href="#modalities-info">Modaliteler</a>
+            <a href="#performance-section">Performans</a>
             <a href="#demo-section">Canlı Demo</a>
         </nav>
     </header>
@@ -55,15 +56,15 @@
 
             <div class="info-grid-2col">
                 <div class="info-card glass-card">
-                    <h3>📖 Tıbbi Tanım ve Epidemiyoloji</h3>
+                    <h3>Tıbbi Tanım ve Epidemiyoloji</h3>
                     <p>Üveit, gözün damarsal orta tabakası olan <strong>uvea</strong>'nın (iris, siliyer cisim ve koroid) ve komşu dokuların (retina, vitreus, optik sinir) <strong>inflamasyonudur</strong>. Gelişmiş ülkelerde önlenebilir körlük nedenlerinin <strong>%10–15'inden</strong> sorumludur. Her yıl 100.000 kişide yaklaşık <strong>50 yeni vaka</strong> görülür (insidans) ve yaşayan vakaların toplamında prevelans 100.000'de 115–204 arasında değişmektedir. Dünya genelinde 1,5 milyon kişiyi etkilediği tahmin edilmektedir.</p>
                 </div>
                 <div class="info-card glass-card">
-                    <h3>🦠 Etiyoloji (Sebepler)</h3>
+                    <h3>Etiyoloji (Sebepler)</h3>
                     <p>Hastalık temelde ikiye ayrılır: <strong>İnfeksiyöz</strong> form (Toksoplazmozis, Tüberküloz, Sifiliz, CMV ve Herpes virüsleri) ile <strong>Non-İnfeksiyöz / Otoimmün</strong> form (Behçet Hastalığı, Ankilozan Spondilit, Sarkoidoz, VKH Sendromu). Vakaların yaklaşık <strong>%30'u idiyopatik</strong> kalır — yani altta yatan neden belirlenemez. Özellikle genç ve üretken çağdaki bireylerde sistemik bir otoimmün hastalığın ilk ve tek bulgusu olarak sadece gözde ortaya çıkabilir.</p>
                 </div>
                 <div class="info-card glass-card">
-                    <h3>⚠️ Klinik Komplikasyonlar</h3>
+                    <h3>Klinik Komplikasyonlar</h3>
                     <p>Özellikle <strong>20–50 yaş</strong> arası çalışma çağı nüfusunu şiddetli biçimde etkiler. Geç kalınan veya yetersiz tedavi edilen olgularda ciddi ve geri döndürülemez görme kayıpları ortaya çıkabilir:</p>
                     <ul style="margin: 8px 0 0 16px; line-height: 1.8; font-size: 0.88rem; color: var(--text-secondary);">
                         <li><strong>Sekonder Glokom</strong> — göz içi basıncının kronik yükselmesi</li>
@@ -74,7 +75,7 @@
                     </ul>
                 </div>
                 <div class="info-card glass-card">
-                    <h3>🔬 Tanı Süreci ve Zorluklar</h3>
+                    <h3>Tanı Süreci ve Zorluklar</h3>
                     <p>Üveit tanısı klinik pratikte son derece <strong>güç ve zaman alıcıdır</strong>. Tanı süreci birden fazla adım içerir:</p>
                     <ul style="margin: 8px 0 0 16px; line-height: 1.8; font-size: 0.88rem; color: var(--text-secondary);">
                         <li>Biyomikroskop (Slit-lamp) ile ön segment muayenesi</li>
@@ -86,7 +87,7 @@
                     <p style="margin-top: 8px;">Tüm bu süreç uzman deneyimine ve <strong>subjektif yoruma</strong> dayanır; farklı hekimler aynı bulguyu farklı değerlendirebilir.</p>
                 </div>
                 <div class="info-card glass-card">
-                    <h3>💊 Tedavi Yaklaşımları</h3>
+                    <h3>Tedavi Yaklaşımları</h3>
                     <p>Tedavi, üveitin tipine, lokalizasyonuna ve etiyolojisine göre bireyselleştirilir:</p>
                     <ul style="margin: 8px 0 0 16px; line-height: 1.8; font-size: 0.88rem; color: var(--text-secondary);">
                         <li><strong>Topikal/Sistemik Kortikosteroidler</strong> — inflamasyonun hızla baskılanması</li>
@@ -97,13 +98,17 @@
                     <p style="margin-top: 8px;">Tedavi yanıtı takip, düzenli görüntüleme gerektirdiğinden erken ve doğru tanı <strong>kritik önem</strong> taşımaktadır.</p>
                 </div>
                 <div class="info-card glass-card">
-                    <h3>🧠 Neden Yapay Zekâya İhtiyaç Var?</h3>
+                    <h3>Neden Yapay Zekâya İhtiyaç Var?</h3>
                     <p>Üveit tanısında yapay zekânın değeri üç temel noktada öne çıkmaktadır. Birincisi, <strong>subjektifliğin azaltılması</strong>: farklı klinisyenler aynı görüntüyü farklı yorumlayabilir; YZ nesnel ve tekrarlanabilir bir analiz sunar. İkincisi, <strong>yük hafifletme</strong>: çoklu görüntüleme cihazlarından (Slit-lamp, OCTA, CFP, B-scan OCT, AS-OCT) elde edilen verileri milisaniyeler içinde işleyerek uzman zamanını korur. Üçüncüsü, <strong>erken uyarı</strong>: deneyimli göz hekiminin olmadığı birinci basamak sağlık merkezlerinde bile güvenilir bir ön değerlendirme kapısı oluşturabilir.</p>
+                </div>
+                <div class="info-card glass-card">
+                    <h3>Sistemin Geleceği: Multimodal Füzyon</h3>
+                    <p>Mevcut karar destek sistemimiz şu an her modaliteyi (Slit-lamp, OCT, OCTA vb.) kendi özel derin öğrenme mimarisiyle bağımsız olarak değerlendirip klinisyene sunmaktadır. Projenin bir sonraki fazı olan <strong>"Late Fusion" (Geç Füzyon)</strong> mimarisinde, tüm bu 5 bağımsız ağın karar mekanizmaları tek bir Meta-Model altında birleştirilecektir. Bu sayede, örneğin sadece ön segmentte bulgu veren ama arka segmenti sağlam olan kompleks vakalar, bir bütün olarak değerlendirilip <strong>tekil ve entegre bir "Genel Üveit Teşhisi"</strong> konulabilecektir.</p>
                 </div>
             </div>
 
             <div class="info-card glass-card" style="margin-top: 1rem;">
-                <h3>🔬 Anatomik Sınıflandırma</h3>
+                <h3>Anatomik Sınıflandırma</h3>
                 <div class="anatomy-grid">
                     <div class="anatomy-item">
                         <span class="anatomy-badge anterior">Anterior</span>
@@ -125,7 +130,7 @@
             </div>
 
             <div class="info-card glass-card highlight-card" style="margin-top: 1rem;">
-                <h3>🤖 Projemizin Yaklaşımı</h3>
+                <h3>Projemizin Yaklaşımı</h3>
                 <p>Bu sistem, <strong>5 farklı oftalmolojik görüntüleme modalitesinden</strong> elde edilen verileri derin öğrenme modelleriyle analiz ederek hekimlere tanı sürecinde karar desteği sağlamayı hedefler. Her modalite, hastalığın farklı bir anatomik yönünü ve boyutunu ortaya koyar; birlikte kullanıldığında tanı doğruluğu önemli ölçüde artar. Sistem ayrıca yüklenen görüntünün hangi cihaza ait olduğunu otomatik tespit eden bir <strong>Otonom Modalite Router</strong> (MobileNetV3, Doğruluk: %100) ve analiz sonuçlarını EHR kalitesinde raporlayan <strong>Gemini 2.5 Flash yapay zekâ</strong> modülü içermektedir.</p>
             </div>
         </section>
@@ -147,7 +152,7 @@
                 <!-- Slit-lamp -->
                 <div class="modality-info-card glass-card" onclick="openModelDetails('slitlamp')">
                     <div class="modality-info-header">
-                        <span class="modality-info-icon">🔬</span>
+                        <span class="modality-info-icon"></span>
                         <div>
                             <h3>Slit-lamp</h3>
                             <span class="modality-tag">Ön Segment Fotoğrafı</span>
@@ -170,14 +175,14 @@
                     </div>
                     <div class="modality-info-footer">
                         <span class="backbone-tag">EfficientNet-B0</span>
-                        <span class="modality-focus">🎯 Ön kamara inflamasyonu, konjonktival hiperemi</span>
+                        <span class="modality-focus"> Ön kamara inflamasyonu, konjonktival hiperemi</span>
                     </div>
                 </div>
 
                 <!-- OCTA -->
                 <div class="modality-info-card glass-card" onclick="openModelDetails('octa')">
                     <div class="modality-info-header">
-                        <span class="modality-info-icon">🩻</span>
+                        <span class="modality-info-icon"></span>
                         <div>
                             <h3>OCTA</h3>
                             <span class="modality-tag">Optik Koherens Tomografi Anjiyografi</span>
@@ -200,14 +205,14 @@
                     </div>
                     <div class="modality-info-footer">
                         <span class="backbone-tag">ResNet-18</span>
-                        <span class="modality-focus">🎯 Vasküler anormallik, perfüzyon değişiklikleri</span>
+                        <span class="modality-focus"> Vasküler anormallik, perfüzyon değişiklikleri</span>
                     </div>
                 </div>
 
                 <!-- CFP -->
                 <div class="modality-info-card glass-card" onclick="openModelDetails('cfp')">
                     <div class="modality-info-header">
-                        <span class="modality-info-icon">👁️</span>
+                        <span class="modality-info-icon"></span>
                         <div>
                             <h3>CFP</h3>
                             <span class="modality-tag">Renkli Fundus Fotoğrafı</span>
@@ -230,14 +235,14 @@
                     </div>
                     <div class="modality-info-footer">
                         <span class="backbone-tag">EfficientNet-B0</span>
-                        <span class="modality-focus">🎯 Koryoretinitis lezyonları, optik disk çevresi</span>
+                        <span class="modality-focus"> Koryoretinitis lezyonları, optik disk çevresi</span>
                     </div>
                 </div>
 
                 <!-- B-scan OCT -->
                 <div class="modality-info-card glass-card" onclick="openModelDetails('bscan_oct')">
                     <div class="modality-info-header">
-                        <span class="modality-info-icon">📡</span>
+                        <span class="modality-info-icon"></span>
                         <div>
                             <h3>B-scan OCT</h3>
                             <span class="modality-tag">Optik Koherens Tomografi</span>
@@ -260,14 +265,14 @@
                     </div>
                     <div class="modality-info-footer">
                         <span class="backbone-tag">ResNet-18</span>
-                        <span class="modality-focus">🎯 V4 K-Fold, Vitreus/Retinal değişiklikler</span>
+                        <span class="modality-focus"> V4 K-Fold, Vitreus/Retinal değişiklikler</span>
                     </div>
                 </div>
 
                 <!-- AS-OCT -->
                 <div class="modality-info-card glass-card" onclick="openModelDetails('as_oct')">
                     <div class="modality-info-header">
-                        <span class="modality-info-icon">🔍</span>
+                        <span class="modality-info-icon"></span>
                         <div>
                             <h3>AS-OCT</h3>
                             <span class="modality-tag">Ön Segment OCT</span>
@@ -290,7 +295,7 @@
                     </div>
                     <div class="modality-info-footer">
                         <span class="backbone-tag">EfficientNet-B0</span>
-                        <span class="modality-focus">🎯 Kornea opasitesi ve ön segment inflamasyonu</span>
+                        <span class="modality-focus"> Kornea opasitesi ve ön segment inflamasyonu</span>
                     </div>
                 </div>
             </div>
@@ -330,11 +335,165 @@
         </section>
 
         <!-- ============================================================ -->
+        <!-- SECTION: MODEL PERFORMANCE COMPARISON                        -->
+        <!-- ============================================================ -->
+        <section class="info-section" id="performance-section">
+            <div class="info-section-header">
+                <span class="info-icon-large">📊</span>
+                <div>
+                    <h2 class="info-title">Model Performans Karşılaştırması</h2>
+                    <p class="info-subtitle">5 uzman modelin bağımsız test seti üzerindeki detaylı metrikleri</p>
+                </div>
+            </div>
+
+            <div class="glass-card" style="padding: 1.5rem;">
+                <h3 style="margin:0 0 1.25rem 0; color:var(--text-primary); font-size:1rem; font-weight:600;">
+                    Final Test Metrikleri — Bağımsız Hold-out Test Seti
+                </h3>
+                <div style="overflow-x: auto;">
+                    <table style="width:100%; border-collapse:collapse; font-size:0.83rem; min-width:960px;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid rgba(14,165,233,0.35);">
+                                <th style="text-align:left; padding:11px 14px; color:var(--text-secondary); font-weight:600; white-space:nowrap;">Model (Modalite)</th>
+                                <th style="text-align:center; padding:11px 9px; color:var(--text-secondary); font-weight:600;">Backbone</th>
+                                <th style="text-align:center; padding:11px 8px; color:var(--text-secondary); font-weight:600;">Test (n)</th>
+                                <th style="text-align:center; padding:11px 8px; color:#94a3b8; font-weight:600;">Accuracy</th>
+                                <th style="text-align:center; padding:11px 8px; color:#94a3b8; font-weight:600;">Specificity</th>
+                                <th style="text-align:center; padding:11px 8px; color:#94a3b8; font-weight:600;">Precision</th>
+                                <th style="text-align:center; padding:11px 8px; color:#94a3b8; font-weight:600;">NPV</th>
+                                <th style="text-align:center; padding:11px 8px; color:#0ea5e9; font-weight:700;">Recall</th>
+                                <th style="text-align:center; padding:11px 8px; color:#0ea5e9; font-weight:700;">F1</th>
+                                <th style="text-align:center; padding:11px 8px; color:#0ea5e9; font-weight:700;">AUC</th>
+                                <th style="text-align:center; padding:11px 8px; color:#94a3b8; font-weight:600;">Threshold</th>
+                                <th style="text-align:left; padding:11px 9px; color:#94a3b8; font-weight:600; white-space:nowrap;">Temel Strateji</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Slit-lamp: Accuracy=96.95%, Precision=87.10%, Recall=93.10%, F1=0.9000, AUC=0.9883
+                                 Confusion: TN=164, FP=4, FN=2, TP=27  → Specificity=164/168=97.62%, NPV=164/166=98.80% -->
+                            <tr style="border-bottom:1px solid rgba(255,255,255,0.06); transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.background=''">
+                                <td style="padding:12px 14px; font-weight:600; white-space:nowrap;"> Slit-lamp</td>
+                                <td style="padding:12px 9px; text-align:center; color:var(--text-secondary); font-size:0.79rem;">EfficientNet-B0</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">197</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">96.95%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">97.62%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">87.10%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">98.80%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#10b981;">93.10%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#10b981;">0.900</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#10b981;">0.988</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-muted); font-size:0.79rem;">0.50</td>
+                                <td style="padding:12px 9px; color:var(--text-secondary); font-size:0.77rem;">ImageNet Transfer Learning, Cosine Annealing LR</td>
+                            </tr>
+                            <!-- OCTA: Accuracy=84.34%, Precision=74.19%, Recall=82.14%, F1=0.7797, AUC=0.9104
+                                 Confusion: TN=47, FP=8, FN=5, TP=23  → Specificity=47/55=85.45%, NPV=47/52=90.38% -->
+                            <tr style="border-bottom:1px solid rgba(255,255,255,0.06); transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.background=''">
+                                <td style="padding:12px 14px; font-weight:600; white-space:nowrap;"> OCTA <span style="font-size:0.72rem; color:#94a3b8; font-weight:400;">(V5)</span></td>
+                                <td style="padding:12px 9px; text-align:center; color:var(--text-secondary); font-size:0.79rem;">ResNet-18</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">83</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">84.34%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">85.45%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">74.19%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">90.38%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#f59e0b;">82.14%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#f59e0b;">0.780</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#f59e0b;">0.910</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-muted); font-size:0.79rem;">0.50</td>
+                                <td style="padding:12px 9px; color:var(--text-secondary); font-size:0.77rem;">TTA ×5, GroupKFold, Class Weighting</td>
+                            </tr>
+                            <!-- CFP: Accuracy=99.24%, Precision=90.00%, Recall=100.00%, F1=0.9474, AUC=0.9982
+                                 Confusion: TN=121, FP=1, FN=0, TP=9  → Specificity=121/122=99.18%, NPV=121/121=100.00% -->
+                            <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:rgba(14,165,233,0.03); transition:background 0.2s;" onmouseover="this.style.background='rgba(14,165,233,0.07)'" onmouseout="this.style.background='rgba(14,165,233,0.03)'">
+                                <td style="padding:12px 14px; font-weight:600; white-space:nowrap;"> CFP <span style="font-size:0.72rem; color:#94a3b8; font-weight:400;">(TTA)</span></td>
+                                <td style="padding:12px 9px; text-align:center; color:var(--text-secondary); font-size:0.79rem;">EfficientNet-B0</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">131</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">99.24%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">99.18%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">90.00%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#0ea5e9;">100.00%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:800; color:#0ea5e9;">100.00%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:800; color:#0ea5e9;">0.947</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:800; color:#0ea5e9;">0.998</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#a78bfa; font-size:0.79rem;">0.68</td>
+                                <td style="padding:12px 9px; color:var(--text-secondary); font-size:0.77rem;">TTA ×5, Youden-optimized threshold, Class Weights</td>
+                            </tr>
+                            <!-- B-scan: Accuracy=99.94%, Precision=81.82%, Recall=100.00%, F1=0.9000, AUC=1.0000
+                                 Confusion (agg): TN=9626, FP=6, FN=0, TP=27  → Specificity=9626/9632=99.94%, NPV=9626/9626=100% -->
+                            <tr style="border-bottom:1px solid rgba(255,255,255,0.06); transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.background=''">
+                                <td style="padding:12px 14px; font-weight:600; white-space:nowrap;"> B-scan OCT <span style="font-size:0.72rem; color:#94a3b8; font-weight:400;">(V4)</span></td>
+                                <td style="padding:12px 9px; text-align:center; color:var(--text-secondary); font-size:0.79rem;">ResNet-18 <span style="display:block; font-size:0.7rem; color:#7c3aed;">(Kermany PT)</span></td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">9,659</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">99.94%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">99.94%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">81.82%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#0ea5e9;">100.00%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:800; color:#0ea5e9;">100.00%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#10b981;">0.900</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:800; color:#0ea5e9;">1.000</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-muted); font-size:0.79rem;">0.50</td>
+                                <td style="padding:12px 9px; color:var(--text-secondary); font-size:0.77rem;">5-Fold CV, Kermany domain pre-training, MixUp</td>
+                            </tr>
+                            <!-- AS-OCT: Accuracy=~94%, F1=0.920, AUC=0.950, Recall=~92%, Specificity=~94% (rapor tahminsel) -->
+                            <tr style="transition:background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.background=''">
+                                <td style="padding:12px 14px; font-weight:600; white-space:nowrap;"> AS-OCT <span style="font-size:0.72rem; color:#94a3b8; font-weight:400;">(MCOA)</span></td>
+                                <td style="padding:12px 9px; text-align:center; color:var(--text-secondary); font-size:0.79rem;">EfficientNet-B0 <span style="display:block; font-size:0.7rem; color:#7c3aed;">(Noisy Student)</span></td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">628</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">~94.0%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">~94.0%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">~90.0%</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-secondary);">—</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#10b981;">~92.0%</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#10b981;">0.920</td>
+                                <td style="padding:12px 8px; text-align:center; font-weight:700; color:#10b981;">0.950</td>
+                                <td style="padding:12px 8px; text-align:center; color:var(--text-muted); font-size:0.79rem;">0.50</td>
+                                <td style="padding:12px 9px; color:var(--text-secondary); font-size:0.77rem;">Noisy Student weights, U-Net segmentation head</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Alt Açıklamalar -->
+                <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:0.75rem;">
+                    <div style="padding-top:0.75rem; border-top:1px solid rgba(255,255,255,0.08);">
+                        <div style="font-size:0.78rem; color:var(--text-secondary); font-weight:600; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.5px;">Model Notları</div>
+                        <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap:0.6rem;">
+                            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:10px 12px;">
+                                <span style="font-weight:600; color:var(--text-primary); font-size:0.8rem;"> Slit-lamp</span>
+                                <p style="margin:4px 0 0 0; font-size:0.76rem; color:var(--text-secondary); line-height:1.5;">4 farklı ön segment patolojisiyle eğitildi; en gerçekçi sınıf dağılımına sahip model. FN=2, FP=4.</p>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:10px 12px;">
+                                <span style="font-weight:600; color:var(--text-primary); font-size:0.8rem;"> OCTA (V5)</span>
+                                <p style="margin:4px 0 0 0; font-size:0.76rem; color:var(--text-secondary); line-height:1.5;">GroupKFold kullanılarak aynı hastanın test&train'de bulunması (data leakage) engellendi. Çapraz cihaz genellemesi test edildi.</p>
+                            </div>
+                            <div style="background:rgba(14,165,233,0.05); border:1px solid rgba(14,165,233,0.2); border-radius:8px; padding:10px 12px;">
+                                <span style="font-weight:600; color:#0ea5e9; font-size:0.8rem;"> CFP (TTA + t=0.68)</span>
+                                <p style="margin:4px 0 0 0; font-size:0.76rem; color:var(--text-secondary); line-height:1.5;">1:12.8 aşırı dengesizlikte Youden Index ile optimize edilen 0.68 eşiği ile sıfır FN (FN=0) elde edildi. NPV=%100.</p>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:10px 12px;">
+                                <span style="font-weight:600; color:var(--text-primary); font-size:0.8rem;"> B-scan OCT (V4 K-Fold)</span>
+                                <p style="margin:4px 0 0 0; font-size:0.76rem; color:var(--text-secondary); line-height:1.5;">9,659 görüntülük aggregated test. AUC=1.000 dikkatle yorumlanmalı: 1:357 sınıf oranı ve küçük pozitif sınıf (n=27) bu sonucu etkileyebilir.</p>
+                            </div>
+                            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:10px 12px;">
+                                <span style="font-weight:600; color:var(--text-primary); font-size:0.8rem;"> AS-OCT (MCOA)</span>
+                                <p style="margin:4px 0 0 0; font-size:0.76rem; color:var(--text-secondary); line-height:1.5;">Makak maymunu MCOA veri seti kullanıldı. İnsan verisiyle klinik validasyon gerektirir. Kesin confusion matrix değerleri JSON dosyasından alınabilir.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="font-size:0.73rem; color:var(--text-muted); display:flex; gap:1.5rem; flex-wrap:wrap; padding-top:0.25rem;">
+                        <span>Tüm metrikler raporlarda belgelenen bağımsız hold-out test setlerinden hesaplanmıştır.</span>
+                        <span>CFP threshold=0.68, Youden Index (Se+Sp−1) optimizasyonuyla belirlenmiştir.</span>
+                        <span>B-scan test n=9,659: 5-Fold CV aggregated evaluation.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
         <!-- SECTION: LIVE DEMO                                           -->
         <!-- ============================================================ -->
         <section class="demo-wrapper" id="demo-section">
             <div class="info-section-header">
-                <span class="info-icon-large">🚀</span>
+                <span class="info-icon-large">💻</span>
                 <div>
                     <h2 class="info-title">Canlı Demo</h2>
                     <p class="info-subtitle">Bir görüntü yükleyin, modalite seçin ve analiz edin</p>
@@ -362,14 +521,14 @@
             <!-- STEP 1: UPLOAD -->
             <section class="upload-section">
                 <div class="section-title">
-                    <span class="title-icon">📎</span>
+                    <span class="title-icon"></span>
                     Oftalmolojik Görüntü Yükle
                 </div>
 
                 <div class="upload-area" id="upload-area">
                     <!-- Placeholder (görüntü yüklenmeden önce) -->
                     <div class="upload-placeholder">
-                        <span class="upload-icon">🖼️</span>
+                        <span class="upload-icon"></span>
                         <div class="upload-text">
                             Görüntüyü <strong>sürükleyip bırakın</strong> veya tıklayarak seçin
                         </div>
@@ -781,6 +940,6 @@
         </div>
     </div>
 
-    <script src="/static/js/app.js?v=2.3"></script>
+    <script src="/static/js/app.js?v=2.8"></script>
 </body>
 </html>

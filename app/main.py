@@ -130,7 +130,10 @@ async def get_samples(modality: str):
         if img_path.is_file() and img_path.suffix.lower() in [".jpg", ".jpeg", ".png", ".tiff", ".tif", ".bmp"]:
             
             parent_name = img_path.parent.name.lower()
-            if "uveitis" in parent_name or "mcoa" in parent_name:
+            if "non" in parent_name or "normal" in parent_name:
+                label = "normal"
+                label_display = "Normal"
+            elif "uveitis" in parent_name or "mcoa" in parent_name:
                 label = "uveitis"
                 label_display = "Anormal (Üveit / MCOA)"
             else:

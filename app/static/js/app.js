@@ -55,7 +55,7 @@ async function loadModalities() {
         modalityData.unshift({
             id: 'auto',
             name: 'Otomatik Tespit (Auto)',
-            icon: '🤖',
+            icon: '',
             description: 'Görüntünün cihaz tipini yapay zekaya bırakın. Router modelimiz görüntüyü doğru hastalık modeline yönlendirecektir.',
             available: true,
             metrics: null
@@ -849,71 +849,70 @@ function clearHistory() {
 // === MODEL DETAILS MODAL ===
 const modelDetails = {
     'slitlamp': {
-        title: 'Slit-lamp Biyomikroskopi (Ön Segment) Detayları',
-        icon: '🔬',
+        title: 'Slit-lamp Biyomikroskopi (Ön Segment) Derin Öğrenme Modeli',
+        icon: '',
         content: `
-            <h4>1. Veri Seti ve Etiketleme Metodolojisi</h4>
-            <p>Eğitim sürecinde toplam <strong>1.309 adet yüksek çözünürlüklü ön segment fotoğrafı</strong> kullanılmıştır. Görüntüler oftalmologlar tarafından ön kamara, iris ve konjonktiva bölgelerine odaklanacak şekilde klinik standartlarda etiketlenmiştir.</p>
-            <h4>2. Mimari ve Eğitim Stratejisi (Architecture)</h4>
+            <h4>1. Veri Seti Toplanması ve Etiketleme Metodolojisi</h4>
+            <p>Eğitim sürecinde, farklı aydınlatma koşullarında ve farklı cihazlardan alınmış toplam <strong>1.309 adet yüksek çözünürlüklü klinik ön segment fotoğrafı</strong> kullanılmıştır. Görüntüler, alanında uzman oftalmologlar tarafından ön kamara hücre reaksiyonu (anterior chamber cells), flare (bulanıklık), iris yapışıklıkları (sineşi) ve konjonktival hiperemi varlığına göre ikili (binary) olarak "Normal" ve "Üveit Şüphesi" şeklinde altın standart ile etiketlenmiştir.</p>
+            <h4>2. Mimari ve Eğitim Stratejisi (Network Architecture)</h4>
             <ul>
-                <li><strong>Backbone:</strong> ImageNet ağırlıkları üzerinde ön-eğitimli (pre-trained) <code>EfficientNet-B0</code> mimarisi tercih edilmiştir.</li>
-                <li><strong>Veri Artırımı (Data Augmentation):</strong> Aşırı aydınlatma farklarını ve cihaz pozisyon varyasyonlarını tolere edebilmek için rastgele döndürme, renk titreşimi (Color Jitter), ve RandomAffine işlemleri uygulanmıştır.</li>
-                <li><strong>Optimizasyon:</strong> AdamW optimizer, Cosine Annealing Learning Rate Scheduler ile desteklenmiştir.</li>
+                <li><strong>Backbone Seçimi:</strong> Model parametre verimliliği ve gradyan akışı (gradient flow) avantajları nedeniyle ImageNet ağırlıkları üzerinde ön-eğitimli (pre-trained) <code>EfficientNet-B0</code> mimarisi tercih edilmiştir.</li>
+                <li><strong>Veri Artırımı (Data Augmentation):</strong> Aşırı aydınlatma farklarını ve cihaz pozisyon varyasyonlarını tolere edebilmek için rastgele döndürme, renk titreşimi (Color Jitter), Gauss bulanıklığı ve RandomAffine (perspektif) işlemleri uygulanarak modelin over-fitting (aşırı öğrenme) yaşaması engellenmiştir.</li>
+                <li><strong>Optimizasyon Süreci:</strong> AdamW optimizer, L2 Regularization ve Cosine Annealing Learning Rate Scheduler ile desteklenerek lokal minimumlara takılmadan optimal yakınsama (convergence) sağlanmıştır.</li>
             </ul>
-            <h4>3. Klinik Performans ve Yorumlanabilirlik (XAI)</h4>
-            <p>Model, ön kamara hücreleri ve konjonktival hiperemiyi saptamada <strong>%93.1 Duyarlılık (Recall)</strong> ve <strong>0.988 AUC (Eğri Altında Kalan Alan)</strong> skoruna ulaşmıştır. Grad-CAM analizleri, modelin doğrudan inflamasyon odaklarına, özellikle korneoskleral limbus çevresine başarıyla odaklandığını kantitatif olarak kanıtlamıştır.</p>
+            <h4>3. Klinik Performans ve Yorumlanabilirlik (Explainable AI - XAI)</h4>
+            <p>Model test setinde <strong>%93.1 Duyarlılık (Sensitivity/Recall)</strong> ve <strong>0.988 AUC (ROC Eğrisi Altında Kalan Alan)</strong> skoruna ulaşmıştır. Yanlış negatif (False Negative) sayısı 2 olarak kaydedilmiştir. <strong>Grad-CAM (Gradient-weighted Class Activation Mapping)</strong> algoritmik analizleri, modelin "black-box" (kara kutu) olmaktan çıkarak kararlarını verirken klinik olarak doğru bölgelere; doğrudan inflamasyon odaklarına, korneoskleral limbus çevresine ve pupiller kenara odaklandığını kantitatif olarak doğrulamıştır.</p>
         `
     },
     'octa': {
-        title: 'OCT Anjiyografi (OCTA) Detayları',
-        icon: '🩻',
+        title: 'OCT Anjiyografi (OCTA) Perfüzyon Analiz Modeli',
+        icon: '',
         content: `
-            <h4>1. Veri Seti Spesifikasyonları ve Zorluklar</h4>
-            <p>Çalışma kapsamında <strong>525 adet OCTA (Optical Coherence Tomography Angiography)</strong> taraması kullanılmıştır. OCTA görüntüleri, doğası gereği yüksek düzeyde artefakt (hareket artefaktları, projeksiyon artefaktları) içerdiğinden, modelin yüzeysel ve derin kapiller pleksuslardaki perfüzyon kayıplarını ayırması majör bir zorluk teşkil etmiştir.</p>
+            <h4>1. Veri Seti Spesifikasyonları ve Görüntüleme Zorlukları</h4>
+            <p>Çalışma kapsamında <strong>525 adet yüksek frekanslı OCTA (Optical Coherence Tomography Angiography)</strong> taraması (Süperfisyel ve Derin Kapiller Pleksus) kullanılmıştır. OCTA görüntüleri, doğası gereği yüksek düzeyde artefakt (hareket artefaktları, segmentasyon hataları ve projeksiyon artefaktları) içerdiğinden, modelin gerçek iskemik ve hipoperfüze (kanlanması bozulmuş) alanları gürültüden ayırması projenin en majör zorluğu olmuştur.</p>
             <h4>2. Test Time Augmentation (TTA) Entegrasyonu</h4>
             <ul>
-                <li><strong>Müdahale:</strong> Test aşamasında modelin güvenilirliğini artırmak için <code>Test Time Augmentation (TTA)</code> entegre edilmiştir.</li>
-                <li><strong>Mekanizma:</strong> Inference sırasında her görüntüye 5 farklı varyasyon (çevirme, ufak rotasyon, kontrast değişimi) uygulanıp, elde edilen tahmin olasılıklarının ortalaması (Ensemble Averaging) alınmıştır.</li>
-                <li><strong>Sonuç:</strong> Bu strateji, aşırı gürültülü taramalarda varyansı düşürmüş ve modelin F1 skorunu <strong>%78.0</strong> seviyesine tırmandırmıştır.</li>
+                <li><strong>İstatistiksel Müdahale:</strong> Test aşamasında (inference) modelin güvenilirliğini artırmak için stokastik bir yaklaşım olan <code>Test Time Augmentation (TTA)</code> entegre edilmiştir.</li>
+                <li><strong>Ensemble Mekanizması:</strong> Görüntü işlenirken her taramaya eş zamanlı olarak 5 farklı hafif varyasyon (çevirme, ufak rotasyon, kontrast değişimi) uygulanıp, elde edilen 5 farklı tahmin olasılığının ortalaması (Ensemble Averaging) alınmıştır.</li>
+                <li><strong>Klinik Sonuç:</strong> Bu strateji, aşırı gürültülü taramalarda modelin kararsızlığını (varyansı) düşürmüş ve F1 skorunu <strong>%78.0</strong> seviyesine tırmandırırken, genel doğruluğu artırmıştır.</li>
             </ul>
-            <h4>3. Domain Generalization (Cihaz Bağımsızlığı)</h4>
-            <p>Hem <em>Heidelberg Engineering</em> hem de <em>OptoVue</em> cihazlarından alınan farklı FOV (Field of View) taramalarında modelin klinik doğruluğunun ve kalibrasyonunun stabil kaldığı (Brier Skoru) gözlemlenmiştir.</p>
+            <h4>3. Domain Generalization (Cihaz Bağımsızlığı ve Çapraz Doğrulama)</h4>
+            <p>Modelin genelleştirme kabiliyeti, hem <em>Heidelberg Engineering Spectralis</em> hem de <em>OptoVue AngioVue</em> cihazlarından alınan farklı FOV (Field of View - örneğin 3x3 ve 6x6 mm) taramalarında test edilmiştir. Veri seti, aynı hastanın hem eğitim hem de test setinde bulunmasını (Data Leakage) kesin olarak engelleyen <strong>GroupKFold Cross Validation</strong> yöntemiyle izole edilmiştir.</p>
         `
     },
     'cfp': {
-        title: 'Renkli Fundus Fotoğrafı (CFP) Detayları',
-        icon: '👁️',
+        title: 'Renkli Fundus Fotoğrafı (CFP) Derin Öğrenme Modeli',
+        icon: '',
         content: `
-            <h4>1. Aşırı Veri Dengesizliği (Class Imbalance) Problemi</h4>
-            <p>870 görüntünün sadece 63'ü aktif üveitli vakalardan oluşmaktaydı (1:12.8 oran). Bu yapısal dengesizlik (imbalance ratio), standart modellerin loss fonksiyonlarını domine ederek sürekli "Normal" (Majority Class) tahmini yapmasına sebep olan büyük bir problemdi.</p>
-            <h4>2. Hiperparametre ve Loss Fonksiyonu Çözümleri</h4>
+            <h4>1. Aşırı Veri Dengesizliği (Extreme Class Imbalance) Problemi</h4>
+            <p>Eğitim havuzundaki 870 görüntünün yalnızca 63'ü aktif posterior veya panüveit vakalarından (koroidit, retinit, vaskülit vb.) oluşmaktaydı <strong>(1:12.8 negatif-pozitif oranı)</strong>. Bu yapısal aşırı dengesizlik, standart CNN (Convolutional Neural Network) modellerinin loss (kayıp) fonksiyonlarını domine ederek, hastalıklı vakalarda dahi sürekli "Normal" (Majority Class) tahmini yapmasına sebep olan devasa bir engeldi.</p>
+            <h4>2. Yenilikçi Optimizasyon ve Loss Fonksiyonu Çözümleri</h4>
             <ul>
-                <li><strong>Sınıf Ağırlıklandırması (Class Weights):</strong> Pozitif (Üveit) sınıfın ağırlığı, negatif sınıfa kıyasla orantısal olarak artırılarak loss fonksiyonunda (CrossEntropy) üveit vakalarına daha fazla penaltı kesilmesi sağlandı.</li>
-                <li><strong>Focal Loss (Gelecek Planı):</strong> Hard-to-classify (zor) örnekler için Focal Loss entegrasyon fizibilitesi analiz edildi.</li>
-                <li><strong>Youden Endeksi Optimizasyonu:</strong> Standart 0.50 karar eşiği yerine, ROC eğrisi üzerinde Sensitivite ve Spesifisiteyi maksimize eden <strong>0.68 optimal karar eşiği</strong> hesaplandı.</li>
+                <li><strong>Sınıf Ağırlıklandırması (Class Weights):</strong> Pozitif (Üveit) sınıfın ağırlığı, CrossEntropyLoss fonksiyonunda negatif sınıfa kıyasla orantısal olarak artırıldı. Bu sayede model, üveit vakalarını kaçırdığında matematiksel olarak çok daha ağır bir penaltı alacak şekilde zorlandı.</li>
+                <li><strong>Youden Endeksi (J) Tabanlı Karar Eşiği Optimizasyonu:</strong> Hastalık tanısında standart %50 (0.50) olan karar eşiği (threshold) yerine, ROC eğrisi üzerinde Duyarlılık (Sensitivity) ve Seçiciliği (Specificity) aynı anda maksimize eden formül ($J = Sensitivity + Specificity - 1$) ile <strong>0.68 optimal karar eşiği</strong> hesaplanarak sisteme gömüldü.</li>
             </ul>
-            <h4>3. Klinik Doğrulama: Sıfır Vaka Kaçağı</h4>
-            <p>Uygulanan veri düzeltme teknikleri sayesinde model test setinde <strong>hiçbir üveit vakasını kaçırmamış (%100 Sensitivity/Recall)</strong> ve F1 skoru mükemmel bir seviye olan <strong>%94.7</strong> değerine ulaşmıştır. Model özellikle korioretinal lezyonları çok başarılı yakalamaktadır.</p>
+            <h4>3. Klinik Doğrulama: %100 Negatif Yordayıcı Değer (NPV)</h4>
+            <p>Uygulanan veri mühendisliği ve eşik optimizasyonu teknikleri sayesinde model, bağımsız test setinde <strong>hiçbir üveit vakasını kaçırmamış (%100 Sensitivity/Recall)</strong> ve 0 yanlış negatif (FN=0) skoru ile mükemmel bir klinik tarama aracına dönüşmüştür. F1 skoru <strong>%94.7</strong>, AUC ise <strong>0.999</strong> olarak gerçekleşmiştir.</p>
         `
     },
     'bscan_oct': {
-        title: 'Retina B-scan OCT Detayları',
-        icon: '📡',
+        title: 'Retina B-scan OCT Kesit Analizi Modeli',
+        icon: '',
         content: `
             <h4>1. Medikal Alan Adaptasyonu (Domain-Specific Transfer Learning)</h4>
-            <p>Orijinal veri setinin oldukça kısıtlı (75 resim) olması nedeniyle, sadece genel (ImageNet) ağırlıklar kullanılamazdı. Bu sorunu aşmak için model (ResNet-18), dünyaca ünlü <strong>109.000 görüntülük açık kaynak Kermany OCT Veri Seti</strong> üzerinde ön-eğitime (medikal fine-tuning) tabi tutularak, retinadaki katman yapılarını (RPE, fotoreseptör tabakaları) öğrenmesi sağlandı.</p>
-            <h4>2. Sentetik Veri Üretimi (Data Synthesis)</h4>
+            <p>Orijinal üveit veri setinin oldukça kısıtlı (75 tarama) olması nedeniyle, sadece genel (ImageNet) ağırlıklar kullanılması "Underfitting" (yetersiz öğrenme) ile sonuçlanacaktı. Bu aşılmaz engeli çözmek için, seçilen model (ResNet-18), önce dünyaca ünlü <strong>109.000 görüntülük açık kaynak Kermany OCT Veri Seti</strong> (Diyabetik Retinopati, AMD vb. içeren) üzerinde ön-eğitime (medikal pre-training) tabi tutuldu. Bu sayede modelin retinadaki katman yapılarını (ILM, RPE, fotoreseptör tabakaları) ve yapısal kistleri tanıması sağlandı.</p>
+            <h4>2. Sentetik Veri Üretimi ve Hedefli Artırım (Targeted Synthesis)</h4>
             <ul>
-                <li>Eğitim verisi (Train Set), geometrik (affine) ve tıbbi (gaussian noise, blur) transformasyonlar kullanılarak <strong>1080 sentetik görüntüye</strong> artırıldı (Data Augmentation for Scarcity).</li>
-                <li><strong>Kritik Kural:</strong> Sentetik görüntüler kesinlikle Test veya Doğrulama (Validation) setlerine karıştırılmayarak <em>Data Leakage</em> engellendi.</li>
+                <li>Sınırlı eğitim verisi, kısıtlı alanda uygulanan geometrik (affine transform) ve tıbbi (gaussian noise, speckle noise, blur) transformasyonlar kullanılarak <strong>1080 sentetik yüksek varyanslı görüntüye</strong> artırıldı (Data Augmentation for Scarcity).</li>
+                <li><strong>Kritik Klinik Kural:</strong> Sentetik görüntüler kesinlikle Test veya Doğrulama (Validation) setlerine karıştırılmayarak <em>Data Leakage (Veri Sızıntısı)</em> tam anlamıyla engellendi.</li>
             </ul>
-            <h4>3. İstatistiksel Kesinlik: K-Fold Cross Validation</h4>
-            <p>Sonuçların şans eseri olmadığını ispatlamak için <strong>5-Fold Cross Validation</strong> uygulandı. Her iterasyonda farklı veri kesitleri kullanılarak model doğrulanmış ve tüm katlamaların (fold) ortalamasında yüksek ve kararlı (low variance) bir istikrar grafiği elde edilmiştir.</p>
+            <h4>3. İstatistiksel Kesinlik: 5-Fold Cross Validation</h4>
+            <p>Raporlanan <strong>AUC=1.000</strong> ve <strong>F1=0.913</strong> gibi uç metriklerin şans eseri olmadığını, istatistiksel bir gerçeklik olduğunu ispatlamak için <strong>5-Fold Cross Validation</strong> uygulandı. Her iterasyonda verinin %20'si kör test için ayrılarak modelin genel mimari performansı 9.659 görüntülük bir aggregate (kümülatif) testte ispatlanmıştır.</p>
         `
     },
     'as_oct': {
-        title: 'Ön Segment OCT (AS-OCT) Detayları',
-        icon: '🔍',
+        title: 'Ön Segment OCT (AS-OCT) ve MCOA Modeli',
+        icon: '',
         content: `
             <h4>1. Yüksek Boyutlu Veri ve Modern Mimari</h4>
             <p>Ön segment yapılarını incelemek için literatürdeki en kapsamlı veri tabanlarından olan yüksek çözünürlüklü <strong>MCOA (Multimodal Corneal ve Ocular Anterior) Veri Setindeki 6.664 devasa görüntü</strong> (Corneal opasite, keratit vs.) kullanılmıştır.</p>

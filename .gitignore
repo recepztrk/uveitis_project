@@ -1,58 +1,37 @@
-# ==============================================================
-# .gitignore — Üveit Karar Destek Sistemi
-# ==============================================================
-
-# ── Python ─────────────────────────────────────────────────────
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
 *.so
 *.egg
 *.egg-info/
 dist/
 build/
 
-# ── Sanal Ortam ────────────────────────────────────────────────
+# Sanal Ortam
 .venv/
 venv/
 env/
 
-# ── Ham ve İşlenmiş Veri (çok büyük — GitHub'a gitmemeli) ─────
+# Veri Setleri (çok büyük)
 data_raw/
 data_work/
-new-datasets/
 Veri Setleri/
 
-# ── Model Ağırlıkları (GitHub 100 MB limiti aşar) ─────────────
+# Model Ağırlıkları (100 MB+ GitHub limiti)
 **/*.pth
 
-# ── Gizli Anahtarlar ───────────────────────────────────────────
+# Gizli Anahtarlar
 .env
 
-# ── macOS Sistem Dosyaları ─────────────────────────────────────
+# macOS
 .DS_Store
-.AppleDouble
-.LSOverride
 
-# ── IDE ────────────────────────────────────────────────────────
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# ── Jupyter ────────────────────────────────────────────────────
-.ipynb_checkpoints/
-notebooks/
-
-# ── Log ve Geçici Dosyalar ─────────────────────────────────────
+# Geçici
 *.log
 *.tmp
-
-# ── Kişisel Belgeler (root dizinindeki geçici PDF'ler) ────────
-YMH432-Poster_Video_Yonergesi-2026-4.pdf
-
-# ── Raporlar (taslak / kişisel notlar) ────────────────────────
-reports/makale_plani.md
-reports/proje_tam_rapor.md
-
-# NOT: Proje belgeleri docs/ klasöründe toplanmıştır (GitHub'da takip edilir)

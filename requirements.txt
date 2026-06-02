@@ -10,7 +10,7 @@ python-multipart==0.0.9
 jinja2==3.1.6
 
 # --- Yapay Zeka API ---
-google-generativeai==0.8.3
+google-generativeai==0.8.6
 python-dotenv==1.0.0
 
 # --- Derin Öğrenme ---
